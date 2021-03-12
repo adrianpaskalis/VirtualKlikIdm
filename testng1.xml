@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+    <classes>
+      <class name="Tests.HomePageTest"> 
+      	<methods> 
+      		<include name="UITestLogo"> 
+      		</include> 
+      		<include name="UITestDownload"> 
+      		</include> 
+      		<include name="UITestFacebook"> 
+      		</include> 
+      		<include name="UITestInstagram"> 
+      		</include> 
+      		<include name="UITestLayananPelanggan"> 
+      		</include> 
+      		<include name="UITestDaftarTrx"> 
+      		</include> 
+      		<include name="UITestItemSaldo"> 
+      		</include> 
+      		<include name="UITestUserProfile"> 
+      		</include> 
+      		
+      	</methods>
+      </class>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

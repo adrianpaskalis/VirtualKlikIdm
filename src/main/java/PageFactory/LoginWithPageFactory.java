@@ -49,7 +49,7 @@ public class LoginWithPageFactory {
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 
     }
-
+    
     //Set user name in textbox
 
 //    public void setUserName(String strUserName){
