@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Tests</title>
+<title>TestNG:  Test PLN</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Tests</h2><table border='1' align="center">
+<h2 align='center'>Test PLN</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 18 13:51:10 WIB 2021</td>
+<td>Started on:</td><td>Thu Mar 18 18:35:00 WIB 2021</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1086 ms)</td>
+<tr><td>Total time:</td><td>52 seconds (52973 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,19 +75,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.LoginTest.goToLoginPage()'><b>goToLoginPage</b><br>Test class: Tests.LoginTest</td>
+<td title='Tests.plnTest.goToLoginPage()'><b>goToLoginPage</b><br>Test class: Tests.plnTest</td>
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
 	at Pages.LoginPage.clickButtonLoginHome(LoginPage.java:45)
-	at Tests.LoginTest.goToLoginPage(LoginTest.java:43)
+	at Tests.plnTest.goToLoginPage(plnTest.java:25)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace353023213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace353023213'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace176955204", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace176955204'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertTrue(Assert.java:45)
 	at org.testng.Assert.assertTrue(Assert.java:55)
 	at Pages.LoginPage.clickButtonLoginHome(LoginPage.java:45)
-	at Tests.LoginTest.goToLoginPage(LoginTest.java:43)
+	at Tests.plnTest.goToLoginPage(plnTest.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -110,7 +110,6 @@ function toggleAllBoxes() {
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1213)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
 	at org.testng.TestNG.runSuites(TestNG.java:1069)
 	at org.testng.TestNG.run(TestNG.java:1037)
@@ -119,7 +118,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>Tests.LoginTest@6e0dec4a</td></tr>
+<td>Tests.plnTest@794cb805</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -129,10 +128,50 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.LoginTest.testLogin()'><b>testLogin</b><br>Test class: Tests.LoginTest</td>
+<td title='Tests.plnTest.checkOutPLN()'><b>checkOutPLN</b><br>Test class: Tests.plnTest</td>
+<td></td>
+<td>3</td>
+<td>Tests.plnTest@794cb805</td></tr>
+<tr>
+<td title='Tests.plnTest.goToCheckOut()'><b>goToCheckOut</b><br>Test class: Tests.plnTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.LoginTest@6e0dec4a</td></tr>
+<td>Tests.plnTest@794cb805</td></tr>
+<tr>
+<td title='Tests.plnTest.goToPLNTest()'><b>goToPLNTest</b><br>Test class: Tests.plnTest</td>
+<td></td>
+<td>6</td>
+<td>Tests.plnTest@794cb805</td></tr>
+<tr>
+<td title='Tests.plnTest.goTokenListrikPLN()'><b>goTokenListrikPLN</b><br>Test class: Tests.plnTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.plnTest@794cb805</td></tr>
+<tr>
+<td title='Tests.plnTest.inputTokenPLN()'><b>inputTokenPLN</b><br>Test class: Tests.plnTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.plnTest@794cb805</td></tr>
+<tr>
+<td title='Tests.plnTest.paymentCenterFrame()'><b>paymentCenterFrame</b><br>Test class: Tests.plnTest</td>
+<td></td>
+<td>41</td>
+<td>Tests.plnTest@794cb805</td></tr>
+<tr>
+<td title='Tests.plnTest.setDenomPLN()'><b>setDenomPLN</b><br>Test class: Tests.plnTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.plnTest@794cb805</td></tr>
+<tr>
+<td title='Tests.plnTest.setNominalPLN()'><b>setNominalPLN</b><br>Test class: Tests.plnTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.plnTest@794cb805</td></tr>
+<tr>
+<td title='Tests.plnTest.testLogin()'><b>testLogin</b><br>Test class: Tests.plnTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.plnTest@794cb805</td></tr>
 </table><p>
 </body>
 </html>
