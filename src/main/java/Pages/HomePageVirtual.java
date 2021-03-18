@@ -33,13 +33,14 @@ public class HomePageVirtual extends LoginWithPageFactory {
 	 @FindBy(xpath="//*[@id=\"follow_us\"]/a[1]")
 	 public WebElement linkFacebook;  
 	 
-	 @FindBy(xpath="//*[@id=\\\"follow_us\\\"]/a[2]")
+	 @FindBy(xpath="//*[@id=\"follow_us\"]/a[2]") 
+
 	 public WebElement linkInstagram;  
 	 
 	 @FindBy(xpath="//*[@id=\"siteHeader\"]/div[1]/div/div[1]/div[2]/div[1]") 
 	 public WebElement layananPelanggan; 
 	 
-	 @FindBy(id="itemStatus")
+	 @FindBy(xpath="//*[@id=\"itemStatus\"]")
 	 public WebElement daftarTrxHome; 
 	 
 	 @FindBy(id="itemSaldo")
@@ -47,6 +48,12 @@ public class HomePageVirtual extends LoginWithPageFactory {
 	 
 	 @FindBy(id="dropdownUser")
 	 public WebElement profileUser;
+	 
+	 @FindBy(name="search")
+	 public WebElement search;
+
+	 @FindBy(xpath="//*[@id=\"site-content\"]/div[1]")
+	 public WebElement bannerVirtual; 
 	 
 	 
 	public HomePageVirtual(WebDriver driver) {
@@ -135,9 +142,9 @@ public class HomePageVirtual extends LoginWithPageFactory {
 			// TODO: handle exception
 		} 
 	}  
-	
-	
+
 	public void profileIsDisplay() throws NoSuchElementException{
+
 		try { 
 			waitElement();
 			Boolean status = profileUser.isDisplayed();
@@ -147,6 +154,30 @@ public class HomePageVirtual extends LoginWithPageFactory {
 			// TODO: handle exception
 		} 
 	} 
+	
+
+	public void searchIsDisplay() throws NoSuchElementException{
+		try { 
+			waitElement();
+			Boolean status = search.isDisplayed();
+			Assert.assertTrue(status);
+			
+		} catch (NoSuchElementException e) {
+			// TODO: handle exception
+		} 
+	} 
+	
+	public void bannerIsDisplay() throws NoSuchElementException {
+		try { 
+			waitElement();
+			Boolean status = bannerVirtual.isDisplayed();
+			Assert.assertTrue(status);
+			
+		} catch (NoSuchElementException e) {
+			// TODO: handle exception
+		} 
+	
+	}
 	
 	
 	

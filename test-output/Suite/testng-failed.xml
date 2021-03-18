@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Test PLN(failed)">
     <classes>
-      <class name="Tests.HomePageTest">
+      <class name="Tests.plnTest">
         <methods>
-          <include name="UITestInstagram"/>
-          <include name="UITestDaftarTrx"/>
-          <include name="UITestItemSaldo"/>
-          <include name="UITestUserProfile"/>
+          <include name="goToLoginPage"/>
           <include name="startApps"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- Tests.HomePageTest -->
+      </class> <!-- Tests.plnTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test PLN(failed) -->
 </suite> <!-- Failed suite [Suite] -->

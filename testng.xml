@@ -5,6 +5,9 @@
     <classes>
       <class name="Tests.LoginTest"> 
       	<methods> 
+      	
+      		<include name="goToLoginPage"> 
+      		</include>
       		<include name="testLogin"> 
       		</include>
       	</methods>

@@ -17,7 +17,6 @@ public class driverTest {
 	public void startApps() {
 		System.setProperty("webdriver.chrome.driver", "D:\\browserdrivers\\chromedriver88.exe");	
 		testUrl = "https://virtual.klikindomaret.com/";
-
 		driver = new ChromeDriver(); 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 

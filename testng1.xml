@@ -22,6 +22,10 @@
       		</include> 
       		<include name="UITestUserProfile"> 
       		</include> 
+      		<include name="UITestSearch"> 
+      		</include> 
+      		<include name="UITestBanner"> 
+      		</include> 
       		
       	</methods>
       </class>

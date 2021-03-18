@@ -35,7 +35,20 @@ public class LoginTest extends driverTest {
 //				driver.get(testUrl); 
 //				}
 
-	  
+	  	@Test 
+	  	public void goToLoginPage() throws InterruptedException{
+			try {
+				objLogin  = new LoginPage(driver);
+				
+				objLogin.clickButtonLoginHome();
+				
+				Thread.sleep(20);
+				
+			} catch (InterruptedException e) {
+				
+				// TODO: handle exception
+			}
+			}
 		@Test 
 			public void testLogin() throws InterruptedException{
 			try { 

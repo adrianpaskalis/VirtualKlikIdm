@@ -48,6 +48,19 @@ public class LoginWithPageFactory {
     public void waitElement(){
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 
+    } 
+    
+    public void currentUrl() {
+		 driver.getCurrentUrl();
+
+    }
+    
+    public void PaymentCenterFrame() {
+    	driver.switchTo().frame("paymentCenterFrame");
+    } 
+    
+    public void defaultContent() {
+    	driver.switchTo().defaultContent();
     }
     
     //Set user name in textbox
