@@ -42,17 +42,18 @@ public  WebElement passwordVirtual;
 		try {
 			LoginHomeVirtual.click();
 		
-			Assert.assertTrue(driver.getCurrentUrl().contains("\"/account.klikindomaret.com/?ReturnUrl=https://virtual.klikindomaret.com/\""));
+		//	Assert.assertTrue(driver.getCurrentUrl().contains("\"/account.klikindomaret.com/?ReturnUrl=https://virtual.klikindomaret.com/\""));
 			
 		} catch  (NoSuchElementException e) {
 			// TODO: handle exception
 		}
 	}
 	
-	public void setUserName(String strUserName) throws NoSuchElementException{
+	public void setUserName(String strUserName) {
 		try {
 			userNameVirtual.sendKeys(strUserName);
-		} catch  (NoSuchElementException e) {
+			Thread.sleep(2);
+		} catch  (InterruptedException e) {
 			// TODO: handle exception
 		}
 		
@@ -63,8 +64,8 @@ public  WebElement passwordVirtual;
 		try {
 			waitElement();
 			passwordVirtual.sendKeys(strPassword); 
-			
-		} catch ( NoSuchElementException e) {
+			Thread.sleep(2);
+		} catch ( InterruptedException e) {
 			// TODO: handle exception
 		}
 	
@@ -74,7 +75,8 @@ public  WebElement passwordVirtual;
 		try {
 			waitElement();
 			login.click();
-		} catch (NoSuchElementException e) {
+			Thread.sleep(2);
+		} catch (InterruptedException e) {
 			// TODO: handle exception
 		}
 		

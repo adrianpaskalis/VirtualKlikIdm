@@ -212,7 +212,7 @@ public class plnTest extends driverTest {
 		
 		
 	} 
-	@Test (priority=9, groups= "PLN Virtual")
+	@Test (priority=10, groups= "PLN Virtual")
 	public void goToPaymentCenter() throws InterruptedException{
 		try { 
 			//objPlnPage  = new PlnPage(driver);
@@ -235,15 +235,40 @@ public class plnTest extends driverTest {
 		
 	} 
 	
-	@Test (priority=10, groups= "PLN Virtual")
-	public void paymentCenterFrame() throws InterruptedException{
+	@Test (priority=11, groups= "PLN Virtual")
+	public void PilihAlatBayar() throws InterruptedException{
 		try { 
 			//objPlnPage  = new PlnPage(driver);
 			// login insert username + password
 			//objPlnPage.clickButtonBayar();
 			objPCFrame = new PaymentCenterPage(driver);
 			objPCFrame.pickPayment();
+			
+	
+			
+		
+		//	objHomePage = new HomePageVirtual(driver);
+		//Assert.assertTrue(objHomePage.getProfileUsername().toLowerCase().contains("adrian paskalis"));
+			Thread.sleep(10);
+			
+		} catch (InterruptedException e) {
+		
+			// TODO: handle exception
+		}
+		//membuat objek halaman login 
+		
+		
+	} 
+	
+	@Test (priority=12, groups= "PLN Virtual")
+	public void clickBayar() throws InterruptedException{
+		try { 
+			//objPlnPage  = new PlnPage(driver);
+			// login insert username + password
+			//objPlnPage.clickButtonBayar();
+			objPCFrame = new PaymentCenterPage(driver);
 			objPCFrame.clickBayar();
+			
 	
 			
 		

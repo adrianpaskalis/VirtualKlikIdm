@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test PLN">
+  <test thread-count="5" name="Test PLN" group-by-instances="true">
    <classes>
       <class name="Tests.plnTest"> 
       	<methods> 
@@ -23,9 +23,12 @@
       		</include> 
       		<include name="checkOutPLN"> 
       		</include> 
-      		<include name="paymentCenterFrame"> 
+      		<include name="goToPaymentCenter"> 
+      		</include> 
+      		<include name="PilihAlatBayar"> 
       		</include>
-      		
+      		<include name="clickBayar"> 
+      		</include>
       		
       		
       		    		

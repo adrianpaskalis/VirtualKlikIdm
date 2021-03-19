@@ -17,8 +17,13 @@ public class PaymentCenterPage extends LoginWithPageFactory {
 	@FindBy (id="paymentCenterFrame")
 	public WebElement PCFrame;
 	
-	@FindBy (id="402")
+	@FindBy (xpath="//*[@id=\"402\"]")
+	
 	public WebElement BcaVA;
+	
+	@FindBy (id="402")
+	public WebElement ATM;
+
 	
 	@FindBy (id="payButton")
 	public WebElement btnBayar; 
@@ -30,14 +35,14 @@ public class PaymentCenterPage extends LoginWithPageFactory {
 	
 	public void pickPayment() throws NoSuchElementException{
 		try {
-			
-			waitElement();
+			waitElementLong();
 			PaymentCenterFrame();
 			BcaVA.click();
+			System.out.println("BCA VA BISA");
 			
-			
-		}catch (NoSuchElementException e) {
-			// TODO: handle exception
+		}catch (NoSuchElementException e ) {
+			System.out.println("ATM BISA");
+			ATM.click();
 		} 
 		
 	}
@@ -45,13 +50,13 @@ public class PaymentCenterPage extends LoginWithPageFactory {
 		public void clickBayar() throws NoSuchElementException{
 			try {
 				
-				waitElement();
+				waitElementLong();
 				btnBayar.click();
 				defaultContent();
-				waitElement();
+			
 				
 			}catch (NoSuchElementException e) {
-				// TODO: handle exception
+				System.out.println(e);
 			} 
 		
 	}

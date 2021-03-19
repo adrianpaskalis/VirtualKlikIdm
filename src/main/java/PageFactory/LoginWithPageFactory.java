@@ -46,7 +46,12 @@ public class LoginWithPageFactory {
     } 
     
     public void waitElement(){
-        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    } 
+    
+    public void waitElementLong(){
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
     } 
     

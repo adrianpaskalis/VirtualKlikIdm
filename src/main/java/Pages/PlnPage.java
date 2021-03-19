@@ -27,7 +27,8 @@ public class PlnPage extends LoginWithPageFactory {
 	public WebElement pilih20k;
 	
 	@FindBy (xpath="//*[@id=\"3f74698b-6cc6-4f84-b507-bb02eb2f9567\"]/div[3]/div/div[2]/button")
-	public WebElement buttonBayar;
+	public WebElement buttonBayar; 
+
 	
  	public PlnPage(WebDriver driver) {
 		super(driver);
@@ -95,8 +96,9 @@ public class PlnPage extends LoginWithPageFactory {
 	
 	public void clickButtonBayar() throws NoSuchElementException{
 		try {
-			waitElement(); 
+			waitElementLong(); 
 			buttonBayar.click();
+			waitElementLong(); 
 			
 		} catch (NoSuchElementException e) {
 			

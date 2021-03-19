@@ -5,7 +5,7 @@
     <classes>
       <class name="Tests.plnTest">
         <methods>
-          <include name="goToLoginPage"/>
+          <include name="clickBayar"/>
           <include name="startApps"/>
           <include name="closeApp"/>
         </methods>

@@ -41,7 +41,7 @@ public class CheckoutPage extends LoginWithPageFactory {
 	@FindBy (xpath="//*[@id=\"addCoupon\"]")
 	public WebElement buttonAddCoupon;
 	
-	@FindBy (xpath="//*[@id=\"paymentCenter\"]")
+	@FindBy (id="paymentCenter")
 	public WebElement lanjutPembayaran; 
 	
 	
@@ -171,16 +171,18 @@ public class CheckoutPage extends LoginWithPageFactory {
 		
 	}
 	
-	public void goToPaymentCenter() throws NoSuchElementException{
+	public void goToPaymentCenter() {
 		try {
 			
-		
-			 lanjutPembayaran.click();
 			 waitElement();
-		
-						
-		}catch (NoSuchElementException e) {
-			// TODO: handle exception
+			 lanjutPembayaran.click();
+			 
+			 
+			 System.out.println("Element ditemukan");
+			 Thread.sleep(2);	
+		}catch (InterruptedException e) {
+			e.printStackTrace(); 
+			 System.out.println("Element tidak ditemukan");
 		} 
 		
 	}

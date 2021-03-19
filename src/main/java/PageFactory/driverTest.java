@@ -29,7 +29,7 @@ public class driverTest {
 	
 	@AfterSuite
 	public void closeApp() {
-		driver.quit();
+		//driver.quit();
 	}
 
 
