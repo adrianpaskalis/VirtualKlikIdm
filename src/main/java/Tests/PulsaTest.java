@@ -1,34 +1,38 @@
 package Tests;
 
+import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
 import PageFactory.driverTest;
 import Pages.CheckoutPage;
 import Pages.LoginPage;
 import Pages.PaymentCenterPage;
-import Pages.PlnPage; 
+import Pages.PlnPage;
+import Pages.PulsaPage;
 
-
-
-public class plnTest extends driverTest {
+public class PulsaTest extends driverTest {
 	LoginPage objLogin; 
-	PlnPage objPlnPage; 
+	PulsaPage objPulsaPage; 
 	CheckoutPage objCheckOutPage;
 	PaymentCenterPage objPCFrame;
 	public	String testUrl; 
+
 	
-  	@Test (priority=1)
-  	public void goToLoginPage() throws InterruptedException{
+	@Test (priority=1)
+	public void goToLoginPage() throws InterruptedException{
 		try {
 			objLogin  = new LoginPage(driver);
-			objLogin.clickButtonLoginHome();
-			Thread.sleep(20);
-			} catch (InterruptedException e) {
 			
+			objLogin.clickButtonLoginHome();
+			
+			Thread.sleep(20);
+			
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+
 			// TODO: handle exception
 			}
 		}
-  	
 	@Test (priority=2)
 	public void testLogin() throws InterruptedException{
 		try { 
@@ -38,82 +42,95 @@ public class plnTest extends driverTest {
 			objLogin.clikcLogin(); 
 			Thread.sleep(20);
 			
-			} catch (InterruptedException e) {
-			// TODO: handle exception
-			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+
+		}
 	}
 	
 	@Test (priority=3)
-	public void goToPLNTest() throws InterruptedException{
+	public void goToPulsaTest() throws InterruptedException{
 		try { 
-			objPlnPage  = new PlnPage(driver);
-			objPlnPage.goToPLN();
+			objPulsaPage  = new PulsaPage(driver);
+			objPulsaPage.goToPulsa();
 			Thread.sleep(10);
 			} catch (InterruptedException e) {
+				e.printStackTrace();
+
 			// TODO: handle exception
-			}	
-	}  
+			}
+		
+	}
+	
 	@Test (priority=4)
-	public void goTokenListrikPLN() throws InterruptedException{ 
+	public void goToCategoryPulsa() throws InterruptedException{ 
+
 		try { 
-			objPlnPage  = new PlnPage(driver);
-			objPlnPage.gotToTokenListrikPLN();
+			objPulsaPage  = new PulsaPage(driver);
+			objPulsaPage.goToCategoryPulsa();
 			Thread.sleep(10);
-			} catch (InterruptedException e) {
+			
+		} catch (InterruptedException e) {	
+			e.printStackTrace();
 			// TODO: handle exception
-			}
+		}
+			
 	} 
+	
 	@Test (priority=5)
-	public void inputTokenPLN() throws InterruptedException{
+	public void inputNomorPulsa() throws InterruptedException{
 		try { 
-			objPlnPage  = new PlnPage(driver);
-			objPlnPage.setInquiryPLN("10000000100");
+			objPulsaPage  = new PulsaPage(driver);
+			objPulsaPage.inputNomorPulsa("081500100100");	
+		
 			Thread.sleep(10);
-			} catch (InterruptedException e) {
+			
+		} catch (InterruptedException e) {		
+			e.printStackTrace();
+
 			// TODO: handle exception
-			}
+		}
+	
 	}  
 	
 	@Test (priority=6)
-	public void setDenomPLN() throws InterruptedException{
+	public void setDenomPulsa() throws InterruptedException{
 		try { 
-			objPlnPage  = new PlnPage(driver);
-			objPlnPage.setDenomPLN();
-			Thread.sleep(10);
-			
-			} catch (InterruptedException e) {
+			objPulsaPage  = new PulsaPage(driver);
+			objPulsaPage.pilihDenomPulsa();
+			Thread.sleep(20);
+		
+		} catch (InterruptedException e) {	
+			e.printStackTrace();
 			// TODO: handle exception
-			}
-		
-		
+		}
+	
 	} 
+	
 	@Test (priority=7)
-	public void setNominalPLN() throws InterruptedException{
-		try { 
-			objPlnPage  = new PlnPage(driver);
-			objPlnPage.chooseDenomPLN();
-			Thread.sleep(10);
-			
-			} catch (InterruptedException e) {
-			// TODO: handle exception
-			}
-
-	} 
+	public void pilihPulsa25() throws InterruptedException{
+		try {
+			objPulsaPage = new PulsaPage(driver);
+			objPulsaPage.pilihPulsa25();
+			Thread.sleep(20);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 	
 	@Test (priority=8)
-	public void goToCheckOut() throws InterruptedException{
-		try { 
-			objPlnPage  = new PlnPage(driver);
-			objPlnPage.clickButtonBayar();
+	public void goToCheckOutPulsa() throws InterruptedException{
+		try {
+			objPulsaPage = new PulsaPage(driver);
+			objPulsaPage.clickButtonBayarPulsa();
 			Thread.sleep(10);
-			} catch (InterruptedException e) {
-			// TODO: handle exception
-			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 	
-	} 
-	
-	@Test (priority=9, groups= "PLN Virtual")
-	public void checkOutPLN() throws InterruptedException{
+	@Test (priority=9)
+	public void checkOutPulsa() throws InterruptedException{
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
 			objCheckOutPage.logoCheckoutIsDisplay();
@@ -124,54 +141,57 @@ public class plnTest extends driverTest {
 			objCheckOutPage.itemSubtotalIsDisplay();
 			objCheckOutPage.itemTotalIsDisplay();
 			objCheckOutPage.inputCouponIsDisplay();
-			objCheckOutPage.buttonAddCouponIsDisplay();	
+			objCheckOutPage.buttonAddCouponIsDisplay();
 			Thread.sleep(10);
 			
-			} catch (InterruptedException e) {
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 			// TODO: handle exception
-			}
+		}
 		
 	} 
-	@Test (priority=10, groups= "PLN Virtual")
+	
+	@Test (priority=10)
 	public void goToPaymentCenter() throws InterruptedException{
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
 			objCheckOutPage.goToPaymentCenter();
 			Thread.sleep(10);
 			
-			} catch (InterruptedException e) {
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 			// TODO: handle exception
-			}
-	
+		}
+		
 	} 
 	
-	@Test (priority=11, groups= "PLN Virtual")
+	@Test (priority=11)
 	public void PilihAlatBayar() throws InterruptedException{
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
 			objPCFrame.pickPayment();
 			Thread.sleep(10);
 			
-			} catch (InterruptedException e) {
-		
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 			// TODO: handle exception
-			}
-		
+		}
+	
 	} 
 	
-	@Test (priority=12, groups= "PLN Virtual")
+	@Test (priority=12)
 	public void clickBayar() throws InterruptedException{
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
 			objPCFrame.clickBayar();
 			Thread.sleep(10);
 			
-			} catch (InterruptedException e) {
-		
+		} catch (InterruptedException e) {	
+			e.printStackTrace();
 			// TODO: handle exception
-			}
+		}
 	
+		
 	} 
-	
 	
 }

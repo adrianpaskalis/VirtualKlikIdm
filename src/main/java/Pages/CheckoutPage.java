@@ -176,8 +176,6 @@ public class CheckoutPage extends LoginWithPageFactory {
 			
 			 waitElement();
 			 lanjutPembayaran.click();
-			 
-			 
 			 System.out.println("Element ditemukan");
 			 Thread.sleep(2);	
 		}catch (InterruptedException e) {

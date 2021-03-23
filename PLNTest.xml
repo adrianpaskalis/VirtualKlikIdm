@@ -5,30 +5,30 @@
    <classes>
       <class name="Tests.plnTest"> 
       	<methods> 
-      	<include name="goToLoginPage"> 
-      		</include> 
+      		<include name="goToLoginPage"> 
+      			</include> 
       		<include name="testLogin"> 
-      		</include> 
+      			</include> 
       		<include name="goToPLNTest"> 
-      		</include> 
+      			</include> 
       		<include name="goTokenListrikPLN"> 
-      		</include> 
+      			</include> 
       		<include name="inputTokenPLN"> 
-      		</include> 
+      			</include> 
       		<include name="setDenomPLN"> 
-      		</include> 
+      			</include> 
       		<include name="setNominalPLN"> 
-      		</include> 
+      			</include> 
       		<include name="goToCheckOut"> 
-      		</include> 
+      			</include> 
       		<include name="checkOutPLN"> 
-      		</include> 
+      			</include> 
       		<include name="goToPaymentCenter"> 
-      		</include> 
+      			</include> 
       		<include name="PilihAlatBayar"> 
-      		</include>
+      			</include>
       		<include name="clickBayar"> 
-      		</include>
+      			</include>
       		
       		
       		    		
