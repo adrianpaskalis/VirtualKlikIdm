@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\COBASKRIPSI\SKRIPSI\VirtualKlikIDM\PLNTest.xml</span>
+                    <span>D:\COBASKRIPSI\SKRIPSI\VirtualKlikIDM\PDAMTest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods,   12 passed</span>
+                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Tests.PdamTest" class="method navigator-link" hash-for-method="btnCancelIsDisplay">btnCancelIsDisplay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,62 +118,62 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Tests.plnTest" class="method navigator-link" hash-for-method="PilihAlatBayar">PilihAlatBayar</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Tests.PdamTest" class="method navigator-link" hash-for-method="PilihAlatBayar">PilihAlatBayar</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Tests.plnTest" class="method navigator-link" hash-for-method="checkOutPLN">checkOutPLN</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Tests.PdamTest" class="method navigator-link" hash-for-method="checkOutPDAM">checkOutPDAM</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Tests.plnTest" class="method navigator-link" hash-for-method="clickBayar">clickBayar</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Tests.PdamTest" class="method navigator-link" hash-for-method="clickBayar">clickBayar</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Tests.plnTest" class="method navigator-link" hash-for-method="goToCheckOut">goToCheckOut</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Tests.PdamTest" class="method navigator-link" hash-for-method="goToCheckoutPDAM">goToCheckoutPDAM</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Tests.plnTest" class="method navigator-link" hash-for-method="goToLoginPage">goToLoginPage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Tests.PdamTest" class="method navigator-link" hash-for-method="goToLoginPage">goToLoginPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Tests.plnTest" class="method navigator-link" hash-for-method="goToPLNTest">goToPLNTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Tests.PdamTest" class="method navigator-link" hash-for-method="goToPaymentCenter">goToPaymentCenter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Tests.plnTest" class="method navigator-link" hash-for-method="goToPaymentCenter">goToPaymentCenter</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Tests.PdamTest" class="method navigator-link" hash-for-method="goToPdamTest">goToPdamTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Tests.plnTest" class="method navigator-link" hash-for-method="goTokenListrikPLN">goTokenListrikPLN</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Tests.PdamTest" class="method navigator-link" hash-for-method="inputCustomerNoPDAM">inputCustomerNoPDAM</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Tests.plnTest" class="method navigator-link" hash-for-method="inputTokenPLN">inputTokenPLN</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Tests.PdamTest" class="method navigator-link" hash-for-method="inputTextPDAM">inputTextPDAM</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Tests.plnTest" class="method navigator-link" hash-for-method="setDenomPLN">setDenomPLN</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Tests.PdamTest" class="method navigator-link" hash-for-method="pilihNamaPDAM">pilihNamaPDAM</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Tests.plnTest" class="method navigator-link" hash-for-method="setNominalPLN">setNominalPLN</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Tests.PdamTest" class="method navigator-link" hash-for-method="selectInputTextPDAM">selectInputTextPDAM</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Tests.plnTest" class="method navigator-link" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Tests.PdamTest" class="method navigator-link" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -174,10 +188,31 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.PdamTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="btnCancelIsDisplay">
+                  </a> <!-- btnCancelIsDisplay -->
+                  <span class="method-name">btnCancelIsDisplay</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at Pages.PdamPages.btnCancelIsDisplay(PdamPages.java:87)
+	at Tests.PdamTest.btnCancelIsDisplay(PdamTest.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Tests.plnTest</span>
+              <span class="class-name">Tests.PdamTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -189,9 +224,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="checkOutPLN">
-                  </a> <!-- checkOutPLN -->
-                  <span class="method-name">checkOutPLN</span>
+                  <a name="checkOutPDAM">
+                  </a> <!-- checkOutPDAM -->
+                  <span class="method-name">checkOutPDAM</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -203,9 +238,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="goToCheckOut">
-                  </a> <!-- goToCheckOut -->
-                  <span class="method-name">goToCheckOut</span>
+                  <a name="goToCheckoutPDAM">
+                  </a> <!-- goToCheckoutPDAM -->
+                  <span class="method-name">goToCheckoutPDAM</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -217,13 +252,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="goToPLNTest">
-                  </a> <!-- goToPLNTest -->
-                  <span class="method-name">goToPLNTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="goToPaymentCenter">
                   </a> <!-- goToPaymentCenter -->
                   <span class="method-name">goToPaymentCenter</span>
@@ -231,30 +259,37 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="goTokenListrikPLN">
-                  </a> <!-- goTokenListrikPLN -->
-                  <span class="method-name">goTokenListrikPLN</span>
+                  <a name="goToPdamTest">
+                  </a> <!-- goToPdamTest -->
+                  <span class="method-name">goToPdamTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="inputTokenPLN">
-                  </a> <!-- inputTokenPLN -->
-                  <span class="method-name">inputTokenPLN</span>
+                  <a name="inputCustomerNoPDAM">
+                  </a> <!-- inputCustomerNoPDAM -->
+                  <span class="method-name">inputCustomerNoPDAM</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="setDenomPLN">
-                  </a> <!-- setDenomPLN -->
-                  <span class="method-name">setDenomPLN</span>
+                  <a name="inputTextPDAM">
+                  </a> <!-- inputTextPDAM -->
+                  <span class="method-name">inputTextPDAM</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="setNominalPLN">
-                  </a> <!-- setNominalPLN -->
-                  <span class="method-name">setNominalPLN</span>
+                  <a name="pilihNamaPDAM">
+                  </a> <!-- pilihNamaPDAM -->
+                  <span class="method-name">pilihNamaPDAM</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectInputTextPDAM">
+                  </a> <!-- selectInputTextPDAM -->
+                  <span class="method-name">selectInputTextPDAM</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -269,33 +304,34 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\COBASKRIPSI\SKRIPSI\VirtualKlikIDM\PLNTest.xml</span>
+            <span class="header-content">D:\COBASKRIPSI\SKRIPSI\VirtualKlikIDM\PDAMTest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test PLN&quot; group-by-instances=&quot;true&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test PDAM&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Tests.plnTest&quot;&gt;
+      &lt;class name=&quot;Tests.PdamTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;goToLoginPage&quot;/&gt;
           &lt;include name=&quot;testLogin&quot;/&gt;
-          &lt;include name=&quot;goToPLNTest&quot;/&gt;
-          &lt;include name=&quot;goTokenListrikPLN&quot;/&gt;
-          &lt;include name=&quot;inputTokenPLN&quot;/&gt;
-          &lt;include name=&quot;setDenomPLN&quot;/&gt;
-          &lt;include name=&quot;setNominalPLN&quot;/&gt;
-          &lt;include name=&quot;goToCheckOut&quot;/&gt;
-          &lt;include name=&quot;checkOutPLN&quot;/&gt;
+          &lt;include name=&quot;goToPdamTest&quot;/&gt;
+          &lt;include name=&quot;pilihNamaPDAM&quot;/&gt;
+          &lt;include name=&quot;inputTextPDAM&quot;/&gt;
+          &lt;include name=&quot;selectInputTextPDAM&quot;/&gt;
+          &lt;include name=&quot;btnCancelIsDisplay&quot;/&gt;
+          &lt;include name=&quot;inputCustomerNoPDAM&quot;/&gt;
+          &lt;include name=&quot;goToCheckoutPDAM&quot;/&gt;
+          &lt;include name=&quot;checkOutPDAM&quot;/&gt;
           &lt;include name=&quot;goToPaymentCenter&quot;/&gt;
           &lt;include name=&quot;PilihAlatBayar&quot;/&gt;
           &lt;include name=&quot;clickBayar&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- Tests.plnTest --&gt;
+      &lt;/class&gt; &lt;!-- Tests.PdamTest --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test PLN --&gt;
+  &lt;/test&gt; &lt;!-- Test PDAM --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -307,7 +343,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test PLN (1 class)</span>
+                <span class="test-name">Test PDAM (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -317,26 +353,6 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">PLN Virtual</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">PilihAlatBayar</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">checkOutPLN</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">clickBayar</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">goToPaymentCenter</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -353,60 +369,64 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(13);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'PilihAlatBayar')
-data.setCell(0, 2, 'Tests.plnTest')
-data.setCell(0, 3, 60661);
+data.setCell(0, 2, 'Tests.PdamTest')
+data.setCell(0, 3, 120205);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'goToPLNTest')
-data.setCell(1, 2, 'Tests.plnTest')
-data.setCell(1, 3, 7369);
+data.setCell(1, 1, 'goToPdamTest')
+data.setCell(1, 2, 'Tests.PdamTest')
+data.setCell(1, 3, 6072);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkOutPLN')
-data.setCell(2, 2, 'Tests.plnTest')
-data.setCell(2, 3, 2492);
+data.setCell(2, 1, 'checkOutPDAM')
+data.setCell(2, 2, 'Tests.PdamTest')
+data.setCell(2, 3, 2811);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'setDenomPLN')
-data.setCell(3, 2, 'Tests.plnTest')
-data.setCell(3, 3, 964);
+data.setCell(3, 1, 'clickBayar')
+data.setCell(3, 2, 'Tests.PdamTest')
+data.setCell(3, 3, 1009);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'clickBayar')
-data.setCell(4, 2, 'Tests.plnTest')
-data.setCell(4, 3, 942);
+data.setCell(4, 1, 'goToLoginPage')
+data.setCell(4, 2, 'Tests.PdamTest')
+data.setCell(4, 3, 945);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'goToLoginPage')
-data.setCell(5, 2, 'Tests.plnTest')
-data.setCell(5, 3, 752);
+data.setCell(5, 1, 'testLogin')
+data.setCell(5, 2, 'Tests.PdamTest')
+data.setCell(5, 3, 353);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testLogin')
-data.setCell(6, 2, 'Tests.plnTest')
-data.setCell(6, 3, 285);
+data.setCell(6, 1, 'inputTextPDAM')
+data.setCell(6, 2, 'Tests.PdamTest')
+data.setCell(6, 3, 227);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'inputTokenPLN')
-data.setCell(7, 2, 'Tests.plnTest')
-data.setCell(7, 3, 144);
+data.setCell(7, 1, 'pilihNamaPDAM')
+data.setCell(7, 2, 'Tests.PdamTest')
+data.setCell(7, 3, 166);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'goTokenListrikPLN')
-data.setCell(8, 2, 'Tests.plnTest')
-data.setCell(8, 3, 102);
+data.setCell(8, 1, 'inputCustomerNoPDAM')
+data.setCell(8, 2, 'Tests.PdamTest')
+data.setCell(8, 3, 104);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'goToCheckOut')
-data.setCell(9, 2, 'Tests.plnTest')
-data.setCell(9, 3, 94);
+data.setCell(9, 1, 'selectInputTextPDAM')
+data.setCell(9, 2, 'Tests.PdamTest')
+data.setCell(9, 3, 100);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'setNominalPLN')
-data.setCell(10, 2, 'Tests.plnTest')
-data.setCell(10, 3, 80);
+data.setCell(10, 1, 'goToCheckoutPDAM')
+data.setCell(10, 2, 'Tests.PdamTest')
+data.setCell(10, 3, 76);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'goToPaymentCenter')
-data.setCell(11, 2, 'Tests.plnTest')
-data.setCell(11, 3, 70);
+data.setCell(11, 2, 'Tests.PdamTest')
+data.setCell(11, 3, 74);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'btnCancelIsDisplay')
+data.setCell(12, 2, 'Tests.PdamTest')
+data.setCell(12, 3, 61);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -432,62 +452,68 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.plnTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Tests.PdamTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startApps</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">13663 ms</span>
+                <span class="method-start">7428 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testLogin</span>
-                <span class="method-start">14419 ms</span>
+                <span class="method-start">8380 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">goToPLNTest</span>
-                <span class="method-start">14705 ms</span>
+                <span class="method-name">goToPdamTest</span>
+                <span class="method-start">8734 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">goTokenListrikPLN</span>
-                <span class="method-start">22078 ms</span>
+                <span class="method-name">pilihNamaPDAM</span>
+                <span class="method-start">14807 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">inputTokenPLN</span>
-                <span class="method-start">22183 ms</span>
+                <span class="method-name">inputTextPDAM</span>
+                <span class="method-start">14977 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">setDenomPLN</span>
-                <span class="method-start">22328 ms</span>
+                <span class="method-name">selectInputTextPDAM</span>
+                <span class="method-start">15205 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">setNominalPLN</span>
-                <span class="method-start">23293 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">btnCancelIsDisplay</span>
+                <span class="method-start">15307 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">goToCheckOut</span>
-                <span class="method-start">23383 ms</span>
+                <span class="method-name">inputCustomerNoPDAM</span>
+                <span class="method-start">15372 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">checkOutPLN</span>
-                <span class="method-start">23478 ms</span>
+                <span class="method-name">goToCheckoutPDAM</span>
+                <span class="method-start">15477 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkOutPDAM</span>
+                <span class="method-start">15558 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">goToPaymentCenter</span>
-                <span class="method-start">25971 ms</span>
+                <span class="method-start">18370 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PilihAlatBayar</span>
-                <span class="method-start">26042 ms</span>
+                <span class="method-start">18446 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickBayar</span>
-                <span class="method-start">86704 ms</span>
+                <span class="method-start">138653 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">87828 ms</span>
+                <span class="method-start">140187 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

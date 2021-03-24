@@ -22,8 +22,16 @@ public class PaymentCenterPage extends LoginWithPageFactory {
 	public WebElement BcaVA;
 	
 	@FindBy (id="402")
-	public WebElement ATM;
-
+	public WebElement ATM; 
+	
+	@FindBy (xpath="//*[@id=\"BPISAKU\"]")
+	public WebElement IsakuXpath; 
+	
+	@FindBy (id="BPISAKU")
+	public WebElement IsakuID;
+	
+	@FindBy (xpath="//*[@id=\"popupSeamlessISaku\"]/div/div[1]/div/div/div[1]/a")
+	public WebElement CloseIsaku;
 	
 	@FindBy (id="payButton")
 	public WebElement btnBayar; 
@@ -47,6 +55,21 @@ public class PaymentCenterPage extends LoginWithPageFactory {
 		
 	}
 	
+	public void pickPaymentIsaku() throws NoSuchElementException{
+		try {
+			waitElementLong();
+			PaymentCenterFrame();
+			IsakuID.click();
+			System.out.println("ISaku BISA");
+			
+		}catch (NoSuchElementException e ) {
+			System.out.println("Isaku BISA");
+			IsakuXpath.click();
+		} 
+		
+	}
+	
+	
 		public void clickBayar() throws NoSuchElementException{
 			try {
 				
@@ -58,6 +81,21 @@ public class PaymentCenterPage extends LoginWithPageFactory {
 			}catch (NoSuchElementException e) {
 				System.out.println(e);
 			} 
+	} 
 		
+		public void clickBayarIsaku() throws NoSuchElementException{
+			try {
+				
+				waitElementLong();
+				btnBayar.click();
+				waitElement(); 
+				CloseIsaku.click();
+				
+				defaultContent();
+			
+				
+			}catch (NoSuchElementException e) {
+				System.out.println(e);
+			} 
 	}
 } 

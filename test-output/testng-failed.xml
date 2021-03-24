@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Samsat Test(failed)">
+  <test thread-count="5" name="Test PDAM(failed)">
     <classes>
-      <class name="Tests.SamsatTest">
+      <class name="Tests.PdamTest">
         <methods>
-          <include name="checkOutSamsat"/>
+          <include name="btnCancelIsDisplay"/>
           <include name="startApps"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- Tests.SamsatTest -->
+      </class> <!-- Tests.PdamTest -->
     </classes>
-  </test> <!-- Samsat Test(failed) -->
+  </test> <!-- Test PDAM(failed) -->
 </suite> <!-- Failed suite [Suite] -->

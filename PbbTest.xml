@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test PBB">
+    <classes>
+      <class name="Tests.PbbTest">
+      <methods> 
+      					<include name="goToLoginPage"> 
+      						</include> 
+      					<include name="testLogin"> 
+      						</include> 
+      					<include name="goToPbbTest"> 
+      						</include> 
+      					<include name="goToPbbJakarta"> 
+      						</include> 
+      					<include name="inputNomorPajak"> 
+      						</include> 
+      					<include name="logoPbbInputIsDisplay"> 
+      						</include> 
+      					<include name="btnCancelIsDisplay"> 
+      						</include> 
+      					<include name="clickListPajak"> 
+      						</include> 
+      					<include name="textInputTahunPajakIsDisplay"> 
+      						</include>
+      					<include name="pilihTahunPajak"> 
+      						</include>
+      						<include name="goToCheckoutPbbJakarta"> 
+      						</include>
+      						<include name="checkOutPbb"> 
+      						</include>
+      						<include name="goToPaymentCenter"> 
+      						</include>
+      						<include name="PilihAlatBayar"> 
+      						</include>
+      						<include name="clickBayar"> 
+      						</include>
+      			</methods>
+      </class>
+    </classes>
+  </test> <!-- Test PBB -->
+</suite> <!-- Suite -->

@@ -19,6 +19,9 @@ public class PdamPages extends LoginWithPageFactory {
 	@FindBy (xpath="//*[@id=\"site-content\"]/div[3]/div[3]/div/div/div[2]/div[1]/div[1]/div/div/input")
 	public WebElement InputTextPDAM; 
 	
+	@FindBy (xpath="//*[@id=\"site-content\"]/div[3]/div[3]/div/div/div[2]/div[1]/div[1]/div/ul/li[217]/a")
+	public WebElement selectInputTextPDAM;
+	
 	@FindBy (xpath="//*[@id=\"CustomerNo\"]")
 	public WebElement CustomerNo; 
 	
@@ -63,6 +66,16 @@ public class PdamPages extends LoginWithPageFactory {
 			InputTextPDAM.sendKeys(strNamaPDAM);
 			Thread.sleep(6);
 		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	} 
+	
+	public void selectInputTextPDAM() { 
+		try { 
+			waitElement();
+			selectInputTextPDAM.click();
+			Thread.sleep(6);
+		} catch (InterruptedException e) { 
 			e.printStackTrace();
 		}
 	}
