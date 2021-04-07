@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="13" passed="12" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-24T19:06:27 WIB" name="Suite" finished-at="2021-03-24T19:08:39 WIB" duration-ms="132357">
+  <suite started-at="2021-03-25T12:17:10 WIB" name="Suite" finished-at="2021-03-25T12:19:27 WIB" duration-ms="137415">
     <groups>
     </groups>
-    <test started-at="2021-03-24T19:06:27 WIB" name="Test PDAM" finished-at="2021-03-24T19:08:39 WIB" duration-ms="132357">
+    <test started-at="2021-03-25T12:17:10 WIB" name="Test PDAM" finished-at="2021-03-25T12:19:27 WIB" duration-ms="137415">
       <class name="Tests.PdamTest">
-        <test-method is-config="true" signature="startApps()[pri:0, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-24T19:06:19 WIB" name="startApps" finished-at="2021-03-24T19:06:27 WIB" duration-ms="7290" status="PASS">
+        <test-method is-config="true" signature="startApps()[pri:0, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-25T12:16:51 WIB" name="startApps" finished-at="2021-03-25T12:17:10 WIB" duration-ms="18814" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApps -->
-        <test-method signature="goToLoginPage()[pri:1, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-24T19:06:27 WIB" name="goToLoginPage" finished-at="2021-03-24T19:06:28 WIB" duration-ms="945" status="PASS">
+        <test-method signature="goToLoginPage()[pri:1, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-25T12:17:10 WIB" name="goToLoginPage" finished-at="2021-03-25T12:17:13 WIB" duration-ms="3562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="testLogin()[pri:2, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-24T19:06:28 WIB" name="testLogin" finished-at="2021-03-24T19:06:28 WIB" duration-ms="353" status="PASS">
+        <test-method signature="testLogin()[pri:2, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-25T12:17:13 WIB" name="testLogin" finished-at="2021-03-25T12:17:14 WIB" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method signature="goToPdamTest()[pri:3, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-24T19:06:28 WIB" name="goToPdamTest" finished-at="2021-03-24T19:06:34 WIB" duration-ms="6072" status="PASS">
+        <test-method signature="goToPdamTest()[pri:3, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-25T12:17:14 WIB" name="goToPdamTest" finished-at="2021-03-25T12:17:21 WIB" duration-ms="7475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToPdamTest -->
-        <test-method signature="pilihNamaPDAM()[pri:4, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-24T19:06:34 WIB" name="pilihNamaPDAM" finished-at="2021-03-24T19:06:34 WIB" duration-ms="166" status="PASS">
+        <test-method signature="pilihNamaPDAM()[pri:4, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-25T12:17:21 WIB" name="pilihNamaPDAM" finished-at="2021-03-25T12:17:21 WIB" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pilihNamaPDAM -->
-        <test-method signature="inputTextPDAM()[pri:5, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-24T19:06:34 WIB" name="inputTextPDAM" finished-at="2021-03-24T19:06:35 WIB" duration-ms="227" status="PASS">
+        <test-method signature="inputTextPDAM()[pri:5, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-25T12:17:21 WIB" name="inputTextPDAM" finished-at="2021-03-25T12:17:21 WIB" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputTextPDAM -->
-        <test-method signature="selectInputTextPDAM()[pri:6, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-24T19:06:35 WIB" name="selectInputTextPDAM" finished-at="2021-03-24T19:06:35 WIB" duration-ms="100" status="PASS">
+        <test-method signature="selectInputTextPDAM()[pri:6, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-25T12:17:21 WIB" name="selectInputTextPDAM" finished-at="2021-03-25T12:17:21 WIB" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectInputTextPDAM -->
-        <test-method signature="btnCancelIsDisplay()[pri:7, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-24T19:06:35 WIB" name="btnCancelIsDisplay" finished-at="2021-03-24T19:06:35 WIB" duration-ms="61" status="FAIL">
+        <test-method signature="btnCancelIsDisplay()[pri:7, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-25T12:17:21 WIB" name="btnCancelIsDisplay" finished-at="2021-03-25T12:17:22 WIB" duration-ms="63" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -82,31 +82,31 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- btnCancelIsDisplay -->
-        <test-method signature="inputCustomerNoPDAM()[pri:8, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-24T19:06:35 WIB" name="inputCustomerNoPDAM" finished-at="2021-03-24T19:06:35 WIB" duration-ms="104" status="PASS">
+        <test-method signature="inputCustomerNoPDAM()[pri:8, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-25T12:17:22 WIB" name="inputCustomerNoPDAM" finished-at="2021-03-25T12:17:22 WIB" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputCustomerNoPDAM -->
-        <test-method signature="goToCheckoutPDAM()[pri:9, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-24T19:06:35 WIB" name="goToCheckoutPDAM" finished-at="2021-03-24T19:06:35 WIB" duration-ms="76" status="PASS">
+        <test-method signature="goToCheckoutPDAM()[pri:9, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-25T12:17:22 WIB" name="goToCheckoutPDAM" finished-at="2021-03-25T12:17:22 WIB" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToCheckoutPDAM -->
-        <test-method signature="checkOutPDAM()[pri:10, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-24T19:06:35 WIB" name="checkOutPDAM" finished-at="2021-03-24T19:06:38 WIB" duration-ms="2811" status="PASS">
+        <test-method signature="checkOutPDAM()[pri:10, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-25T12:17:22 WIB" name="checkOutPDAM" finished-at="2021-03-25T12:17:26 WIB" duration-ms="3810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutPDAM -->
-        <test-method signature="goToPaymentCenter()[pri:11, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-24T19:06:38 WIB" name="goToPaymentCenter" finished-at="2021-03-24T19:06:38 WIB" duration-ms="74" status="PASS">
+        <test-method signature="goToPaymentCenter()[pri:11, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-25T12:17:26 WIB" name="goToPaymentCenter" finished-at="2021-03-25T12:17:26 WIB" duration-ms="70" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToPaymentCenter -->
-        <test-method signature="PilihAlatBayar()[pri:12, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-24T19:06:38 WIB" name="PilihAlatBayar" finished-at="2021-03-24T19:08:38 WIB" duration-ms="120205" status="PASS">
+        <test-method signature="PilihAlatBayar()[pri:12, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-25T12:17:26 WIB" name="PilihAlatBayar" finished-at="2021-03-25T12:19:26 WIB" duration-ms="120358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PilihAlatBayar -->
-        <test-method signature="clickBayar()[pri:13, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-24T19:08:38 WIB" name="clickBayar" finished-at="2021-03-24T19:08:39 WIB" duration-ms="1009" status="PASS">
+        <test-method signature="clickBayar()[pri:13, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-25T12:19:26 WIB" name="clickBayar" finished-at="2021-03-25T12:19:27 WIB" duration-ms="969" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickBayar -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-24T19:08:40 WIB" name="closeApp" finished-at="2021-03-24T19:08:40 WIB" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:Tests.PdamTest@59d016c9]" started-at="2021-03-25T12:19:28 WIB" name="closeApp" finished-at="2021-03-25T12:19:28 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->

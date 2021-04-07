@@ -69,7 +69,8 @@ public class HomePageVirtual extends LoginWithPageFactory {
 			Assert.assertTrue(status);
 			
 		} catch (NoSuchElementException e) {
-			// TODO: handle exception
+			// TODO: handle exception 
+			e.printStackTrace();
 		} 
 		
 	} 
@@ -83,6 +84,7 @@ public class HomePageVirtual extends LoginWithPageFactory {
 			
 		} catch (NoSuchElementException e) {
 			// TODO: handle exception
+			e.printStackTrace();
 		} 
 		
 	}
@@ -96,6 +98,7 @@ public class HomePageVirtual extends LoginWithPageFactory {
 				
 			} catch (NoSuchElementException e) {
 				// TODO: handle exception
+				e.printStackTrace();
 			} 
 	} 
 
@@ -106,7 +109,8 @@ public class HomePageVirtual extends LoginWithPageFactory {
 			Assert.assertTrue(status);
 			
 		} catch (NoSuchElementException e) {
-			// TODO: handle exception
+			// TODO: handle exception 
+			e.printStackTrace();
 		} 
 	}  
 	
@@ -117,7 +121,8 @@ public class HomePageVirtual extends LoginWithPageFactory {
 			Assert.assertTrue(status);
 			
 		} catch (NoSuchElementException e) {
-			// TODO: handle exception
+			// TODO: handle exception 
+			e.printStackTrace();
 		} 
 	} 
 	

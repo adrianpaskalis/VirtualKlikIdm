@@ -311,7 +311,7 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test PDAM&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test PDAM&quot; group-by-instances=&quot;true&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Tests.PdamTest&quot;&gt;
         &lt;methods&gt;
@@ -373,55 +373,55 @@ data.addRows(13);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'PilihAlatBayar')
 data.setCell(0, 2, 'Tests.PdamTest')
-data.setCell(0, 3, 120205);
+data.setCell(0, 3, 120358);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'goToPdamTest')
 data.setCell(1, 2, 'Tests.PdamTest')
-data.setCell(1, 3, 6072);
+data.setCell(1, 3, 7475);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'checkOutPDAM')
 data.setCell(2, 2, 'Tests.PdamTest')
-data.setCell(2, 3, 2811);
+data.setCell(2, 3, 3810);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'clickBayar')
+data.setCell(3, 1, 'goToLoginPage')
 data.setCell(3, 2, 'Tests.PdamTest')
-data.setCell(3, 3, 1009);
+data.setCell(3, 3, 3562);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'goToLoginPage')
+data.setCell(4, 1, 'clickBayar')
 data.setCell(4, 2, 'Tests.PdamTest')
-data.setCell(4, 3, 945);
+data.setCell(4, 3, 969);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testLogin')
 data.setCell(5, 2, 'Tests.PdamTest')
-data.setCell(5, 3, 353);
+data.setCell(5, 3, 377);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'inputTextPDAM')
 data.setCell(6, 2, 'Tests.PdamTest')
-data.setCell(6, 3, 227);
+data.setCell(6, 3, 178);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'pilihNamaPDAM')
 data.setCell(7, 2, 'Tests.PdamTest')
-data.setCell(7, 3, 166);
+data.setCell(7, 3, 125);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'inputCustomerNoPDAM')
 data.setCell(8, 2, 'Tests.PdamTest')
-data.setCell(8, 3, 104);
+data.setCell(8, 3, 101);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'selectInputTextPDAM')
 data.setCell(9, 2, 'Tests.PdamTest')
-data.setCell(9, 3, 100);
+data.setCell(9, 3, 81);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'goToCheckoutPDAM')
 data.setCell(10, 2, 'Tests.PdamTest')
-data.setCell(10, 3, 76);
+data.setCell(10, 3, 78);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'goToPaymentCenter')
 data.setCell(11, 2, 'Tests.PdamTest')
-data.setCell(11, 3, 74);
+data.setCell(11, 3, 70);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'btnCancelIsDisplay')
 data.setCell(12, 2, 'Tests.PdamTest')
-data.setCell(12, 3, 61);
+data.setCell(12, 3, 63);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -459,61 +459,61 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">goToLoginPage</span>
-                <span class="method-start">7428 ms</span>
+                <span class="method-start">18960 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testLogin</span>
-                <span class="method-start">8380 ms</span>
+                <span class="method-start">22530 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">goToPdamTest</span>
-                <span class="method-start">8734 ms</span>
+                <span class="method-start">22908 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">pilihNamaPDAM</span>
-                <span class="method-start">14807 ms</span>
+                <span class="method-start">30384 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">inputTextPDAM</span>
-                <span class="method-start">14977 ms</span>
+                <span class="method-start">30510 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectInputTextPDAM</span>
-                <span class="method-start">15205 ms</span>
+                <span class="method-start">30689 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">btnCancelIsDisplay</span>
-                <span class="method-start">15307 ms</span>
+                <span class="method-start">30773 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">inputCustomerNoPDAM</span>
-                <span class="method-start">15372 ms</span>
+                <span class="method-start">30840 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">goToCheckoutPDAM</span>
-                <span class="method-start">15477 ms</span>
+                <span class="method-start">30941 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkOutPDAM</span>
-                <span class="method-start">15558 ms</span>
+                <span class="method-start">31020 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">goToPaymentCenter</span>
-                <span class="method-start">18370 ms</span>
+                <span class="method-start">34831 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PilihAlatBayar</span>
-                <span class="method-start">18446 ms</span>
+                <span class="method-start">34902 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickBayar</span>
-                <span class="method-start">138653 ms</span>
+                <span class="method-start">155261 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">140187 ms</span>
+                <span class="method-start">156941 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
