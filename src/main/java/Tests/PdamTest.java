@@ -4,16 +4,20 @@ import org.testng.annotations.Test;
 
 import PageFactory.driverTest;
 import Pages.CheckoutPage;
+import Pages.DaftarTrxPage;
 import Pages.LoginPage;
 import Pages.PaymentCenterPage;
 import Pages.PbbPages;
 import Pages.PdamPages;
+import Pages.ThankYouPage;
 
 public class PdamTest extends driverTest {
 	LoginPage objLogin; 
 	PdamPages  objPdamPage; 
 	CheckoutPage objCheckOutPage;
 	PaymentCenterPage objPCFrame;
+	ThankYouPage objTQPage;
+	DaftarTrxPage objDaftarTrx;
 	public	String testUrl;  
 	
 	
@@ -189,6 +193,65 @@ public class PdamTest extends driverTest {
 	
 		
 	} 
+	
+	@Test (priority=14)
+	public void TQPageTest() throws InterruptedException{
+		try {
+			objTQPage = new ThankYouPage(driver);
+			objTQPage.headerTQPIsDisplayed();
+			objTQPage.keteranganStatusIsDisplayed();
+			objTQPage.petunjukBayarIsDisplayed();
+			objTQPage.lihatDaftarTrxIsDisplayed();
+			objTQPage.backToHomeIsDisplayed();
+			objTQPage.rincianPembayaranIsDisplayed();
+			objTQPage.kodeBayarIsDisplayed();
+			objTQPage.metodeBayarIsDisplayed();
+			objTQPage.TanggalPesanIsDisplayed();
+			objTQPage.batasWaktuIsDisplayed();
+			objTQPage.totalBayarIsDisplayed();
+			objTQPage.bottomListIsDisplayed();
+			objTQPage.moreInfoIsDisplayed();
+			objTQPage.goToDaftarTrx();
+
+			Thread.sleep(10);
+			
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} 
+	}
+	
+	@Test (priority=15)
+	public void DaftarTrxTest() throws InterruptedException{
+		try {
+			objDaftarTrx = new DaftarTrxPage(driver);
+			objDaftarTrx.introNextIsDisplay();
+			objDaftarTrx.introCloseIsDisplay();
+			objDaftarTrx.logoIsDisplay();
+			objDaftarTrx.downloadAppIsDisplay();
+			objDaftarTrx.facebookIsDisplay();
+			objDaftarTrx.instagramIsDisplay();
+			objDaftarTrx.layananIsDisplay();
+			objDaftarTrx.daftarTrxIsDisplay();
+			objDaftarTrx.itemSaldoIsDisplay();
+			objDaftarTrx.profileIsDisplay();
+			objDaftarTrx.iconRetailIsDisplay();
+			objDaftarTrx.iconVirtualIsDisplay();
+			objDaftarTrx.iconVirtualIsDisplay();
+			objDaftarTrx.iconTiketIsDisplay();
+			objDaftarTrx.btnDaftarTrxVirtualIsDisplay();
+			objDaftarTrx.btnDaftarTrxRetailIsDisplay();
+			objDaftarTrx.bbtnDaftarTrxTravelIsDisplay();
+			objDaftarTrx.btnDaftarTrxFoodIsDisplay();
+			objDaftarTrx.btnDaftarTrxTiketIsDisplay();
+			objDaftarTrx.filterDaftarTrxIsDisplay();
+			objDaftarTrx.detailSOdaftarTrxIsDisplay();
+			objDaftarTrx.popUpDaftarTrxIsDisplay();
+			Thread.sleep(10);
+			
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 	
 	
 }

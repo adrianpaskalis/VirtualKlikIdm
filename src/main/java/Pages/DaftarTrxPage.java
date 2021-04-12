@@ -10,6 +10,13 @@ import org.testng.Assert;
 import PageFactory.LoginWithPageFactory;
 
 public class DaftarTrxPage extends LoginWithPageFactory {
+	
+	@FindBy (xpath="/html/body/div[23]/div/div[5]/a[3]")
+	public WebElement introNext; 
+	
+	
+	@FindBy (xpath="/html/body/div[23]/div/div[5]/a[1]")
+	public WebElement introClose;
 
 	@FindBy(xpath="//*[@id=\"siteHeader\"]/div[1]/div/div[2]/div[1]/div/a[1]")
 	public WebElement logoIdm; 
@@ -66,8 +73,9 @@ public class DaftarTrxPage extends LoginWithPageFactory {
 	 @FindBy (xpath="//*[@id=\"site-content\"]/div[1]/div[2]/div/div[1]/div[1]/a[4]/button")
 	 public WebElement btnDaftarTrxTiket; 
 	 
-	 @FindBy (xpath="//*[@id=\"site-content\"]/div[1]/div[2]/div/div[1]/div[2]/div/select")
+	 @FindBy (xpath="//*[@id=\"site-content\"]/div[1]/div[2]/div/div[1]/div[2]/div/div")
 	 public WebElement filterDaftarTrx; 
+	
 	 
 	 @FindBy (xpath="//*[@id=\"site-content\"]/div[1]/div[2]/div/div[2]")
 	 public WebElement listSODaftarTrx; 
@@ -83,6 +91,25 @@ public class DaftarTrxPage extends LoginWithPageFactory {
 		// TODO Auto-generated constructor stub
 	} 
 	
+	public void introNextIsDisplay() {
+		try {
+			waitElement();
+			introNext.click();
+			Thread.sleep(10);
+		} catch (InterruptedException e){
+			e.printStackTrace();
+		}
+	}
+	
+	public void introCloseIsDisplay() {
+		try {
+			waitElement();
+			introClose.click();
+			Thread.sleep(10);
+		} catch (InterruptedException e){
+			e.printStackTrace();
+		}
+	}
 	public  void  logoIsDisplay() throws NoSuchElementException{
 		try { 
 			

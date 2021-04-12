@@ -4,9 +4,11 @@ import org.testng.annotations.Test;
 
 import PageFactory.driverTest;
 import Pages.CheckoutPage;
+import Pages.DaftarTrxPage;
 import Pages.LoginPage;
 import Pages.PaymentCenterPage;
-import Pages.PlnPage; 
+import Pages.PlnPage;
+import Pages.ThankYouPage; 
 
 
 
@@ -15,6 +17,8 @@ public class plnTest extends driverTest {
 	PlnPage objPlnPage; 
 	CheckoutPage objCheckOutPage;
 	PaymentCenterPage objPCFrame;
+	ThankYouPage objTQPage;
+	DaftarTrxPage objDaftarTrx;
 	public	String testUrl; 
 	
   	@Test (priority=1)
@@ -25,7 +29,7 @@ public class plnTest extends driverTest {
 			Thread.sleep(20);
 			} catch (InterruptedException e) {
 			
-			// TODO: handle exception
+				e.printStackTrace();
 			}
 		}
   	
@@ -39,7 +43,7 @@ public class plnTest extends driverTest {
 			Thread.sleep(20);
 			
 			} catch (InterruptedException e) {
-			// TODO: handle exception
+				e.printStackTrace();
 			}
 	}
 	
@@ -50,7 +54,7 @@ public class plnTest extends driverTest {
 			objPlnPage.goToPLN();
 			Thread.sleep(10);
 			} catch (InterruptedException e) {
-			// TODO: handle exception
+				e.printStackTrace();
 			}	
 	}  
 	@Test (priority=4)
@@ -70,7 +74,7 @@ public class plnTest extends driverTest {
 			objPlnPage.setInquiryPLN("10000000100");
 			Thread.sleep(10);
 			} catch (InterruptedException e) {
-			// TODO: handle exception
+				e.printStackTrace();
 			}
 	}  
 	
@@ -82,7 +86,7 @@ public class plnTest extends driverTest {
 			Thread.sleep(10);
 			
 			} catch (InterruptedException e) {
-			// TODO: handle exception
+				e.printStackTrace();
 			}
 		
 		
@@ -95,7 +99,7 @@ public class plnTest extends driverTest {
 			Thread.sleep(10);
 			
 			} catch (InterruptedException e) {
-			// TODO: handle exception
+				e.printStackTrace();
 			}
 
 	} 
@@ -107,12 +111,13 @@ public class plnTest extends driverTest {
 			objPlnPage.clickButtonBayar();
 			Thread.sleep(10);
 			} catch (InterruptedException e) {
-			// TODO: handle exception
+				e.printStackTrace();
+				
 			}
 	
 	} 
 	
-	@Test (priority=9, groups= "PLN Virtual")
+	@Test (priority=9)
 	public void checkOutPLN() throws InterruptedException{
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
@@ -128,11 +133,11 @@ public class plnTest extends driverTest {
 			Thread.sleep(10);
 			
 			} catch (InterruptedException e) {
-			// TODO: handle exception
+				e.printStackTrace();
 			}
 		
 	} 
-	@Test (priority=10, groups= "PLN Virtual")
+	@Test (priority=10)
 	public void goToPaymentCenter() throws InterruptedException{
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
@@ -140,12 +145,12 @@ public class plnTest extends driverTest {
 			Thread.sleep(10);
 			
 			} catch (InterruptedException e) {
-			// TODO: handle exception
+				e.printStackTrace();
 			}
 	
 	} 
 	
-	@Test (priority=11, groups= "PLN Virtual")
+	@Test (priority=11)
 	public void PilihAlatBayar() throws InterruptedException{
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
@@ -153,13 +158,12 @@ public class plnTest extends driverTest {
 			Thread.sleep(10);
 			
 			} catch (InterruptedException e) {
-		
-			// TODO: handle exception
+				e.printStackTrace();
 			}
 		
 	} 
 	
-	@Test (priority=12, groups= "PLN Virtual")
+	@Test (priority=12)
 	public void clickBayar() throws InterruptedException{
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
@@ -167,11 +171,73 @@ public class plnTest extends driverTest {
 			Thread.sleep(10);
 			
 			} catch (InterruptedException e) {
-		
-			// TODO: handle exception
+				e.printStackTrace();
 			}
 	
 	} 
+	
+	@Test (priority=13)
+	public void TQPageTest() throws InterruptedException{
+		try {
+			objTQPage = new ThankYouPage(driver);
+			objTQPage.headerTQPIsDisplayed();
+			objTQPage.keteranganStatusIsDisplayed();
+			objTQPage.petunjukBayarIsDisplayed();
+			objTQPage.lihatDaftarTrxIsDisplayed();
+			objTQPage.backToHomeIsDisplayed();
+			objTQPage.rincianPembayaranIsDisplayed();
+			objTQPage.kodeBayarIsDisplayed();
+			objTQPage.metodeBayarIsDisplayed();
+			objTQPage.TanggalPesanIsDisplayed();
+			objTQPage.batasWaktuIsDisplayed();
+			objTQPage.totalBayarIsDisplayed();
+			objTQPage.bottomListIsDisplayed();
+			objTQPage.moreInfoIsDisplayed();
+			objTQPage.goToDaftarTrx();
+
+			Thread.sleep(10);
+			
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} 
+		
+		
+		
+	}
+	
+	@Test (priority=14)
+	public void DaftarTrxTest() throws InterruptedException{
+		try {
+			objDaftarTrx = new DaftarTrxPage(driver);
+			objDaftarTrx.introNextIsDisplay();
+			objDaftarTrx.introCloseIsDisplay();
+			objDaftarTrx.logoIsDisplay();
+			objDaftarTrx.downloadAppIsDisplay();
+			objDaftarTrx.facebookIsDisplay();
+			objDaftarTrx.instagramIsDisplay();
+			objDaftarTrx.layananIsDisplay();
+			objDaftarTrx.daftarTrxIsDisplay();
+			objDaftarTrx.itemSaldoIsDisplay();
+			objDaftarTrx.profileIsDisplay();
+			objDaftarTrx.iconRetailIsDisplay();
+			objDaftarTrx.iconVirtualIsDisplay();
+			objDaftarTrx.iconVirtualIsDisplay();
+			objDaftarTrx.iconTiketIsDisplay();
+			objDaftarTrx.btnDaftarTrxVirtualIsDisplay();
+			objDaftarTrx.btnDaftarTrxRetailIsDisplay();
+			objDaftarTrx.bbtnDaftarTrxTravelIsDisplay();
+			objDaftarTrx.btnDaftarTrxFoodIsDisplay();
+			objDaftarTrx.btnDaftarTrxTiketIsDisplay();
+			objDaftarTrx.filterDaftarTrxIsDisplay();
+			objDaftarTrx.detailSOdaftarTrxIsDisplay();
+			objDaftarTrx.popUpDaftarTrxIsDisplay();
+			Thread.sleep(10);
+			
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+		
 	
 	
 }

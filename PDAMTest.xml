@@ -32,6 +32,11 @@
       						</include>
       						<include name="clickBayar"> 
       						</include>
+      						<include name="TQPageTest"> 
+      						</include>
+      						<include name="DaftarTrxTest"> 
+      						</include>
+      						
       						
       			</methods>
       </class>

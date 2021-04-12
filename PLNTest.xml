@@ -28,7 +28,12 @@
       		<include name="PilihAlatBayar"> 
       			</include>
       		<include name="clickBayar"> 
-      			</include>
+      			</include> 
+      			<include name="TQPageTest"> 
+      			</include> 
+      			<include name="DaftarTrxTest"> 
+      			</include> 
+      			
       		
       		
       		    		

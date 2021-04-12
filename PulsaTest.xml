@@ -11,8 +11,11 @@
       						</include> 
       					<include name="goToPulsaTest"> 
       						</include> 
+      						<include name="goToCategoryPaketData"> 
+      						</include> 
       					<include name="goToCategoryPulsa"> 
       						</include> 
+      						
       					<include name="inputNomorPulsa"> 
       						</include> 
       					<include name="setDenomPulsa"> 
@@ -28,6 +31,10 @@
       					<include name="PilihAlatBayar"> 
       						</include>
       					<include name="clickBayar"> 
+      						</include>
+      						<include name="TQPageTest"> 
+      						</include>
+      						<include name="DaftarTrxTest"> 
       						</include>
       			</methods>
       

@@ -18,6 +18,9 @@ public class PulsaPage extends LoginWithPageFactory {
 	@FindBy (xpath="//*[@id=\"fde94763-8c56-45a3-abc9-6efe422f321c\"]")
 	public WebElement CategoryPulsa; 
 	
+	@FindBy (xpath="//*[@id=\"9ad980e6-8b8d-432f-bcf9-c75c200a7c82\"]")
+	public WebElement CategoryPaketData;
+	
 	@FindBy (xpath="//*[@id=\"nomor_pulsa\"]")
 	public WebElement inputNomorPulsa;
 	
@@ -43,65 +46,80 @@ public class PulsaPage extends LoginWithPageFactory {
 		
 			waitElement();
 			IconPulsa.click();
-		
-		} catch (NoSuchElementException e) {
+			Thread.sleep(10);
+		} catch (InterruptedException e) {
 		// TODO: handle exception
+			e.printStackTrace();
 		} 
 	
 	} 
-	
-	public void goToCategoryPulsa() throws NoSuchElementException{
+	public void goToCategoryPaketData() {
 		try {
 			waitElement();
-			CategoryPulsa.click();
-		} catch (NoSuchElementException e) {
-			
+			CategoryPaketData.click();
+			Thread.sleep(10);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
 	}
 	
-	public void inputNomorPulsa(String strInquiryPulsa) throws NoSuchElementException{
+	
+	public void goToCategoryPulsa() {
+		try {
+			waitElement();
+			CategoryPulsa.click();
+			Thread.sleep(10);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void inputNomorPulsa(String strInquiryPulsa) {
 		try {
 			waitElement(); 
 			inputNomorPulsa.sendKeys(strInquiryPulsa);
 			inputNomorPulsa.sendKeys(Keys.ENTER);
 			waitElementLong();	
-			} catch (NoSuchElementException e) {
-			
+			Thread.sleep(10);
+			} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
 	}
 	
 	
 	
-	public void pilihDenomPulsa() throws NoSuchElementException{
+	public void pilihDenomPulsa() {
 		try {
 			waitElementLong();
 			pilihDenomPulsa.click(); 
-			pilih25k.click();
+			waitElementLong();
 			System.out.println("pilih denom BISA");
-			
+			Thread.sleep(10);
 
-		}catch (NoSuchElementException e) {
+		}catch (InterruptedException e) {
 			e.printStackTrace();
 			System.out.println("pilih denom gak bisa");
 
 		}
 	}
-	public void pilihPulsa25() throws NoSuchElementException{
+	public void pilihPulsa25() {
 		try {
-			waitElement();
+			waitElementLong();
 			pilih25k.click();
-		}catch (NoSuchElementException e) {
-		
+			Thread.sleep(10);
+		}catch (InterruptedException e) {
+		e.printStackTrace();
 			
 		}
 	}
 	
-	public void clickButtonBayarPulsa() throws NoSuchElementException {
+	public void clickButtonBayarPulsa()  {
 		try {
 			waitElement();
 			buttonBayarPulsa.click();
-		} catch (NoSuchElementException e) {
-			
+			Thread.sleep(10);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
 	}
 	

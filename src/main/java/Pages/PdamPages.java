@@ -19,7 +19,7 @@ public class PdamPages extends LoginWithPageFactory {
 	@FindBy (xpath="//*[@id=\"site-content\"]/div[3]/div[3]/div/div/div[2]/div[1]/div[1]/div/div/input")
 	public WebElement InputTextPDAM; 
 	
-	@FindBy (xpath="//*[@id=\"site-content\"]/div[3]/div[3]/div/div/div[2]/div[1]/div[1]/div/ul/li[217]/a")
+	@FindBy (xpath="//*[@id=\"site-content\"]/div[3]/div[3]/div/div/div[2]/div[1]/div[1]/div/ul/li[224]/a")
 	public WebElement selectInputTextPDAM;
 	
 	@FindBy (xpath="//*[@id=\"CustomerNo\"]")

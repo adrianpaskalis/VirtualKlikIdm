@@ -17,7 +17,8 @@ public class ThankYouPage extends LoginWithPageFactory {
 	@FindBy (xpath="//*[@id=\"site-content\"]/div/div/div/div[1]")
 	public WebElement ketStatus; 
 	
-	@FindBy (xpath="//*[@id=\"site-content\"]/div/div/div/div[1]/div[2]/p[2]/text()")
+	@FindBy (xpath="//*[@id=\"site-content\"]/div/div/div/div[1]/div[2]/p[2]/a") 
+
 	public WebElement petunjukBayar;
 	
 	@FindBy (xpath="//*[@id=\"site-content\"]/div/div/div/div[2]/a[1]")
@@ -30,6 +31,9 @@ public class ThankYouPage extends LoginWithPageFactory {
 	public WebElement rincianPembayaran; 
 	
 	@FindBy (xpath="//*[@id=\"kodevirtual-731010895634338579\"]")
+	public WebElement  kodeBayarBCA;
+	
+	@FindBy (xpath="//*[@id=\"site-content\"]/div/div/div/div[3]/div[2]/div[1]/div[1]/div")
 	public WebElement  kodeBayar;
 	
 	@FindBy (xpath="//*[@id=\"site-content\"]/div/div/div/div[3]/div[2]/div[1]/div[2]")
@@ -108,6 +112,20 @@ public class ThankYouPage extends LoginWithPageFactory {
 			waitElement();
 			Boolean status = lihatDaftarTrx.isDisplayed();
 			Assert.assertTrue(status);
+			Thread.sleep(10);
+			
+		} catch (InterruptedException e) {
+			// TODO: handle exception 
+			e.printStackTrace();
+		} 
+		
+	} 
+	
+	public  void  goToDaftarTrx() {
+		try { 
+			
+			waitElement();
+			lihatDaftarTrx.click();
 			Thread.sleep(10);
 			
 		} catch (InterruptedException e) {
