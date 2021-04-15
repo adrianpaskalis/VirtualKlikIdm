@@ -1,7 +1,9 @@
 package Tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import PageFactory.VirtualTestReports;
 import PageFactory.driverTest;
 import Pages.CheckoutPage;
 import Pages.DaftarTrxPage;
@@ -10,6 +12,7 @@ import Pages.PaymentCenterPage;
 import Pages.PulsaPage;
 import Pages.SamsatPage;
 import Pages.ThankYouPage;
+import com.aventstack.extentreports.Status;
 
 public class SamsatTest extends driverTest {
 	LoginPage objLogin; 
@@ -19,9 +22,10 @@ public class SamsatTest extends driverTest {
 	ThankYouPage objTQPage;
 	DaftarTrxPage objDaftarTrx;
 	public	String testUrl; 
-
+	 
 	@Test (priority=1)
 	public void goToLoginPage() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"safasfa");
 		try {
 			objLogin  = new LoginPage(driver);
 			
@@ -37,6 +41,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test (priority=2)
 	public void testLogin() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "Login Test Started");
 		try { 
 			objLogin  = new LoginPage(driver);
 			objLogin.setUserName("0895634338579");
@@ -51,6 +56,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test (priority=3)
 	public void goToSamsatTest() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "Go To Category Samsat");
 		try { 
 			objSamsatPage  = new SamsatPage(driver);
 			objSamsatPage.goToSamsat();
@@ -63,7 +69,8 @@ public class SamsatTest extends driverTest {
 	} 
 	
 	@Test (priority=4)
-	public void goToSamsatJatim() throws InterruptedException{ 
+	public void goToSamsatJatim() throws InterruptedException{  
+		VirtualTestReports.getTest().log(Status.INFO, "Go To Samsat Jatim");
 
 		try { 
 			objSamsatPage  = new SamsatPage(driver);
@@ -79,7 +86,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test (priority=4)
 	public void goToSamsatBanten() throws InterruptedException{ 
-
+		VirtualTestReports.getTest().log(Status.INFO, "Go To Samsat Banten");
 		try { 
 			objSamsatPage  = new SamsatPage(driver);
 			objSamsatPage.pilihSamsatBanten();
@@ -94,6 +101,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test (priority=5)
 	public void setKodePembayaran() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "Set Kode Bayar");
 		try { 
 			objSamsatPage  = new SamsatPage(driver);
 			objSamsatPage.setKodePembayaran("DEV00000");	
@@ -109,6 +117,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test (priority=5)
 	public void setNomorPolisi() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "Set Nomor Polisi");
 		try { 
 			objSamsatPage  = new SamsatPage(driver);
 			objSamsatPage.setNomorPolisi("DEV00000");	
@@ -124,6 +133,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test (priority=6)
 	public void setNomorMesin() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "Set Nomor Mesin");
 		try { 
 			objSamsatPage  = new SamsatPage(driver);
 			objSamsatPage.setNomorMesin("DEV00000");
@@ -139,6 +149,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test (priority=7)
 	public void setNomorKTP() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "Set Nomor KTP");
 		try {
 			objSamsatPage = new SamsatPage(driver);
 			objSamsatPage.setNomorKTP("3603281311980003");
@@ -150,6 +161,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test(priority=8)
 	public void goToCheckOutSamsatJatim() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "Go To CheckOut Page");
 		try {
 			objSamsatPage = new SamsatPage(driver);
 			objSamsatPage.clickButtonBayarJatim();
@@ -161,6 +173,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test(priority=8)
 	public void goToCheckOutSamsatBanten() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "Go To Checkout");
 		try {
 			objSamsatPage = new SamsatPage(driver);
 			objSamsatPage.clickButtonBayarBanten();
@@ -172,6 +185,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test (priority=9)
 	public void checkOutSamsat() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "Testing On Checkout");
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
 			objCheckOutPage.logoCheckoutIsDisplay();
@@ -194,6 +208,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test (priority=10)
 	public void goToPaymentCenter() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "Go To Payment Center");
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
 			objCheckOutPage.goToPaymentCenter();
@@ -208,6 +223,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test (priority=11)
 	public void PilihAlatBayar() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "Pilih Metode Bayar");
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
 			objPCFrame.pickPayment();
@@ -222,6 +238,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test (priority=12)
 	public void clickBayar() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "Click Button Bayar");
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
 			objPCFrame.clickBayar();
@@ -237,6 +254,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test (priority=13)
 	public void TQPageTest() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "Testing on TQ Page");
 		try {
 			objTQPage = new ThankYouPage(driver);
 			objTQPage.headerTQPIsDisplayed();
@@ -263,6 +281,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test (priority=14)
 	public void DaftarTrxTest() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "Testing on Daftar Transaksi");
 		try {
 			objDaftarTrx = new DaftarTrxPage(driver);
 			objDaftarTrx.introNextIsDisplay();
@@ -286,7 +305,12 @@ public class SamsatTest extends driverTest {
 			objDaftarTrx.btnDaftarTrxTiketIsDisplay();
 			objDaftarTrx.filterDaftarTrxIsDisplay();
 			objDaftarTrx.detailSOdaftarTrxIsDisplay();
-			objDaftarTrx.popUpDaftarTrxIsDisplay();
+			String actualText = objDaftarTrx.popUpDaftarTrxIsDisplay();
+			String expectedText = "Ringkasan Pembayaran";
+			Assert.assertEquals(actualText, expectedText);
+			System.out.println(actualText);
+			System.out.println(expectedText);
+		
 			Thread.sleep(10);
 			
 		} catch (InterruptedException e) {

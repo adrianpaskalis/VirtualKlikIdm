@@ -83,7 +83,12 @@ public class DaftarTrxPage extends LoginWithPageFactory {
 	 @FindBy (xpath="//*[@id=\"site-content\"]/div[1]/div[2]/div/div[2]/div[1]/div[1]/div[2]")
 	 public WebElement detailSOdaftarTrx; 
 	 
-	 @FindBy (xpath="//*[@id=\"myTransactionModal-AEP383PCA\"]/div")
+	// @FindBy (xpath="//*[@id=\"myTransactionModal-AEF48W7WT\"]/div/div/div[1]/div[1]/div[2]/div[1]") 
+	 //
+
+
+	 
+	 @FindBy(xpath = "//span[@class='top'][text()='Ringkasan Pembayaran']")
 	 public WebElement popUpDaftarTrx; 
 	 
 	public DaftarTrxPage(WebDriver driver) {
@@ -364,19 +369,21 @@ public class DaftarTrxPage extends LoginWithPageFactory {
 		} 
 	} 
 	
-	public void popUpDaftarTrxIsDisplay() {
+	public String  popUpDaftarTrxIsDisplay() {
 
 		try { 
 			waitElement();
-			Boolean status = popUpDaftarTrx.isDisplayed();
-			Assert.assertTrue(status);
+			
+		//	Boolean status = popUpDaftarTrx.isDisplayed();
+		//	Assert.assertTrue(status);
 			System.out.println("pop up ketemu");
 			Thread.sleep(5);
 		} catch (InterruptedException e) {
 			// TODO: handle exception
 			e.printStackTrace(); 
 			System.out.println("pop up ga ketemu");
-		} 
+		}
+			return popUpDaftarTrx.getAttribute("text");
 	} 
 
 }

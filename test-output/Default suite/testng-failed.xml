@@ -3,14 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.plnTest">
+      <class name="Tests.SamsatTest">
         <methods>
-          <include name="goToLoginPage"/>
-          <include name="paymentCenterFrame"/>
+          <include name="checkOutSamsat"/>
+          <include name="TQPageTest"/>
+          <include name="setNomorPolisi"/>
+          <include name="goToCheckOutSamsatJatim"/>
+          <include name="DaftarTrxTest"/>
+          <include name="clickBayar"/>
+          <include name="goToPaymentCenter"/>
           <include name="startApps"/>
           <include name="closeApp"/>
+          <include name="PilihAlatBayar"/>
+          <include name="setKodePembayaran"/>
         </methods>
-      </class> <!-- Tests.plnTest -->
+      </class> <!-- Tests.SamsatTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
