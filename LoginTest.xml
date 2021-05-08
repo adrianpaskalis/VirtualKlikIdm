@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="PageFactory.VirtualListener" />
+	</listeners>
+  		<test thread-count="5" name="Tests">
+    		<classes>
+     			 <class name="Tests.LoginTest"> 
+      				<methods> 
+      					<include name="goToLoginPage"> </include> 
+      					<include name="LoginInvalidUsernameMin"> </include> 
+      					<include name="LoginInvalidUsernameMax"> </include> 
+      					<include name="LoginInvalidPasswordMin"> </include> 
+      					<include name="LoginInvalidPasswordMax"> </include> 
+      					<include name="LoginValidUsernamePassword"> </include> 	
+      				</methods>
+     			 </class>
+     		</classes>
+  	</test> <!-- Tests -->
+</suite> <!-- Suite -->

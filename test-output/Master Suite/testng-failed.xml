@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Master Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="PageFactory.VirtualListener"/>
+  </listeners>
+  <test thread-count="5" name="Test PBB(failed)">
+    <classes>
+      <class name="Tests.SamsatTest">
+        <methods>
+          <include name="goToSamsatJatim"/>
+          <include name="startApps"/>
+          <include name="closeApp"/>
+          <include name="goToSamsatTest"/>
+        </methods>
+      </class> <!-- Tests.SamsatTest -->
+    </classes>
+  </test> <!-- Test PBB(failed) -->
+</suite> <!-- Failed suite [Master Suite] -->

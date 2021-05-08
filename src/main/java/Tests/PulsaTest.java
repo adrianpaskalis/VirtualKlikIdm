@@ -3,6 +3,9 @@ package Tests;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
+import PageFactory.VirtualTestReports;
 import PageFactory.driverTest;
 import Pages.CheckoutPage;
 import Pages.DaftarTrxPage;
@@ -24,6 +27,7 @@ public class PulsaTest extends driverTest {
 	
 	@Test (priority=1)
 	public void goToLoginPage() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Go To Website");
 		try {
 			objLogin  = new LoginPage(driver);
 			
@@ -39,9 +43,10 @@ public class PulsaTest extends driverTest {
 		}
 	@Test (priority=2)
 	public void testLogin() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Login Test");
 		try { 
 			objLogin  = new LoginPage(driver);
-			objLogin.setUserName("0895634338579");
+			objLogin.setUserName("087881744704");
 			objLogin.setPassword("indomaret");
 			objLogin.clikcLogin(); 
 			Thread.sleep(20);
@@ -54,6 +59,7 @@ public class PulsaTest extends driverTest {
 	
 	@Test (priority=3)
 	public void goToPulsaTest() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Go To Pulsa");
 		try { 
 			objPulsaPage  = new PulsaPage(driver);
 			objPulsaPage.goToPulsa();
@@ -68,6 +74,7 @@ public class PulsaTest extends driverTest {
 	
 	@Test (priority=4)
 	public void goToCategoryPulsa() throws InterruptedException{ 
+		VirtualTestReports.getTest().log(Status.INFO,"Go To Category");
 
 		try { 
 			objPulsaPage  = new PulsaPage(driver);
@@ -82,7 +89,25 @@ public class PulsaTest extends driverTest {
 	} 
 	
 	@Test (priority=5)
+	public void inputInvalidMinNomorPulsa() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP06 Input Invalid Customer Number on Pulsa");
+		try { 
+			objPulsaPage  = new PulsaPage(driver);
+			objPulsaPage.inputNomorPulsa("08888");	
+		
+			Thread.sleep(60);
+			
+		} catch (InterruptedException e) {		
+			e.printStackTrace();
+
+			// TODO: handle exception
+		}
+	
+	}  
+	
+	@Test (priority=5)
 	public void inputNomorPulsa() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Input Customer Number");
 		try { 
 			objPulsaPage  = new PulsaPage(driver);
 			objPulsaPage.inputNomorPulsa("081500100100");	
@@ -99,6 +124,7 @@ public class PulsaTest extends driverTest {
 	
 	@Test (priority=6)
 	public void setDenomPulsa() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Select Denominal for Pulsa");
 		try { 
 			objPulsaPage  = new PulsaPage(driver);
 			objPulsaPage.pilihDenomPulsa();
@@ -113,6 +139,7 @@ public class PulsaTest extends driverTest {
 	
 	@Test (priority=7)
 	public void pilihPulsa25() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Select Denominal for Pulsa");
 		try {
 			objPulsaPage = new PulsaPage(driver);
 			objPulsaPage.pilihPulsa25();
@@ -124,6 +151,7 @@ public class PulsaTest extends driverTest {
 	
 	@Test (priority=8)
 	public void goToCheckOutPulsa() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Go To Checkout Page");
 		try {
 			objPulsaPage = new PulsaPage(driver);
 			objPulsaPage.clickButtonBayarPulsa();
@@ -135,6 +163,7 @@ public class PulsaTest extends driverTest {
 	
 	@Test (priority=9)
 	public void checkOutPulsa() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Checkout Test");
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
 			objCheckOutPage.logoCheckoutIsDisplay();
@@ -157,6 +186,7 @@ public class PulsaTest extends driverTest {
 	
 	@Test (priority=10)
 	public void goToPaymentCenter() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Go To Payment Center");
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
 			objCheckOutPage.goToPaymentCenter();
@@ -171,6 +201,7 @@ public class PulsaTest extends driverTest {
 	
 	@Test (priority=11)
 	public void PilihAlatBayar() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Choose available payment Methods");
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
 			objPCFrame.pickPayment();
@@ -185,6 +216,7 @@ public class PulsaTest extends driverTest {
 	
 	@Test (priority=12)
 	public void clickBayar() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Choose available Payment Methods");
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
 			objPCFrame.clickBayar();
@@ -200,6 +232,7 @@ public class PulsaTest extends driverTest {
 	
 	@Test (priority=13)
 	public void TQPageTest() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Thank You Page Test");
 		try {
 			objTQPage = new ThankYouPage(driver);
 			objTQPage.headerTQPIsDisplayed();
@@ -229,6 +262,7 @@ public class PulsaTest extends driverTest {
 	
 	@Test (priority=14)
 	public void DaftarTrxTest() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Order History Test");
 		try {
 			objDaftarTrx = new DaftarTrxPage(driver);
 			objDaftarTrx.introNextIsDisplay();

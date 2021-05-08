@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>13/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 12 20:27:23 WIB 2021</td>
+<td>Started on:</td><td>Fri Apr 30 14:47:31 WIB 2021</td>
 </tr>
-<tr><td>Total time:</td><td>193 seconds (193165 ms)</td>
+<tr><td>Total time:</td><td>157 seconds (157121 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,41 +76,34 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Tests.PdamTest.DaftarTrxTest()'><b>DaftarTrxTest</b><br>Test class: Tests.PdamTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;myTransactionModal-AEP383PCA&quot;]/div&quot;}
-  (Session info: chrome=89.0.4389.114)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;transactionList-detail clearfix&quot;&gt;...&lt;/div&gt; is not clickable at point (776, 297). Other element would receive the click: &lt;div class=&quot;introjs-overlay&quot; style=&quot;inset: 0px; position: fixed; opacity: 0.8;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=90.0.4430.93)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-TAVTASOM&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+System info: host: &apos;LAPTOP-TAVTASOM&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56115}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f8c309198f4c6ce3f1726927f451d77e
-*** Element info: {Using=xpath, value=//*[@id=&quot;myTransactionModal-AEP383PCA&quot;]/div}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60179}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 56bf197482a723e2e87fe10ca6a6637e
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-	at Pages.DaftarTrxPage.popUpDaftarTrxIsDisplay(DaftarTrxPage.java:371)
-	at Tests.PdamTest.DaftarTrxTest(PdamTest.java:248)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at Pages.DaftarTrxPage.detailSOdaftarTrxIsDisplay(DaftarTrxPage.java:364)
+	at Tests.PdamTest.DaftarTrxTest(PdamTest.java:264)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace468033320", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace468033320'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;myTransactionModal-AEP383PCA&quot;]/div&quot;}
-  (Session info: chrome=89.0.4389.114)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1005331061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1005331061'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;transactionList-detail clearfix&quot;&gt;...&lt;/div&gt; is not clickable at point (776, 297). Other element would receive the click: &lt;div class=&quot;introjs-overlay&quot; style=&quot;inset: 0px; position: fixed; opacity: 0.8;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=90.0.4430.93)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-TAVTASOM&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+System info: host: &apos;LAPTOP-TAVTASOM&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56115}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f8c309198f4c6ce3f1726927f451d77e
-*** Element info: {Using=xpath, value=//*[@id=&quot;myTransactionModal-AEP383PCA&quot;]/div}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60179}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 56bf197482a723e2e87fe10ca6a6637e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -122,15 +115,16 @@ Session ID: f8c309198f4c6ce3f1726927f451d77e
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-	at Pages.DaftarTrxPage.popUpDaftarTrxIsDisplay(DaftarTrxPage.java:371)
-	at Tests.PdamTest.DaftarTrxTest(PdamTest.java:248)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at Pages.DaftarTrxPage.detailSOdaftarTrxIsDisplay(DaftarTrxPage.java:364)
+	at Tests.PdamTest.DaftarTrxTest(PdamTest.java:264)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,22 +154,22 @@ Session ID: f8c309198f4c6ce3f1726927f451d77e
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>31</td>
-<td>Tests.PdamTest@4b0b0854</td></tr>
+<td>3</td>
+<td>Tests.PdamTest@50a638b5</td></tr>
 <tr>
 <td title='Tests.PdamTest.btnCancelIsDisplay()'><b>btnCancelIsDisplay</b><br>Test class: Tests.PdamTest</td>
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at Pages.PdamPages.btnCancelIsDisplay(PdamPages.java:87)
-	at Tests.PdamTest.btnCancelIsDisplay(PdamTest.java:104)
+	at Pages.PdamPages.btnCancelIsDisplay(PdamPages.java:88)
+	at Tests.PdamTest.btnCancelIsDisplay(PdamTest.java:114)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace827035437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace827035437'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace540092563", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace540092563'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertTrue(Assert.java:45)
 	at org.testng.Assert.assertTrue(Assert.java:55)
-	at Pages.PdamPages.btnCancelIsDisplay(PdamPages.java:87)
-	at Tests.PdamTest.btnCancelIsDisplay(PdamTest.java:104)
+	at Pages.PdamPages.btnCancelIsDisplay(PdamPages.java:88)
+	at Tests.PdamTest.btnCancelIsDisplay(PdamTest.java:114)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -206,7 +200,7 @@ Session ID: f8c309198f4c6ce3f1726927f451d77e
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>Tests.PdamTest@4b0b0854</td></tr>
+<td>Tests.PdamTest@50a638b5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -218,68 +212,68 @@ Session ID: f8c309198f4c6ce3f1726927f451d77e
 <tr>
 <td title='Tests.PdamTest.PilihAlatBayar()'><b>PilihAlatBayar</b><br>Test class: Tests.PdamTest</td>
 <td></td>
-<td>120</td>
-<td>Tests.PdamTest@4b0b0854</td></tr>
+<td>121</td>
+<td>Tests.PdamTest@50a638b5</td></tr>
 <tr>
 <td title='Tests.PdamTest.TQPageTest()'><b>TQPageTest</b><br>Test class: Tests.PdamTest</td>
 <td></td>
-<td>16</td>
-<td>Tests.PdamTest@4b0b0854</td></tr>
+<td>10</td>
+<td>Tests.PdamTest@50a638b5</td></tr>
 <tr>
 <td title='Tests.PdamTest.checkOutPDAM()'><b>checkOutPDAM</b><br>Test class: Tests.PdamTest</td>
 <td></td>
 <td>4</td>
-<td>Tests.PdamTest@4b0b0854</td></tr>
+<td>Tests.PdamTest@50a638b5</td></tr>
 <tr>
 <td title='Tests.PdamTest.clickBayar()'><b>clickBayar</b><br>Test class: Tests.PdamTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.PdamTest@4b0b0854</td></tr>
+<td>Tests.PdamTest@50a638b5</td></tr>
 <tr>
 <td title='Tests.PdamTest.goToCheckoutPDAM()'><b>goToCheckoutPDAM</b><br>Test class: Tests.PdamTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.PdamTest@4b0b0854</td></tr>
+<td>Tests.PdamTest@50a638b5</td></tr>
 <tr>
 <td title='Tests.PdamTest.goToLoginPage()'><b>goToLoginPage</b><br>Test class: Tests.PdamTest</td>
 <td></td>
-<td>2</td>
-<td>Tests.PdamTest@4b0b0854</td></tr>
+<td>3</td>
+<td>Tests.PdamTest@50a638b5</td></tr>
 <tr>
 <td title='Tests.PdamTest.goToPaymentCenter()'><b>goToPaymentCenter</b><br>Test class: Tests.PdamTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.PdamTest@4b0b0854</td></tr>
+<td>Tests.PdamTest@50a638b5</td></tr>
 <tr>
 <td title='Tests.PdamTest.goToPdamTest()'><b>goToPdamTest</b><br>Test class: Tests.PdamTest</td>
 <td></td>
-<td>15</td>
-<td>Tests.PdamTest@4b0b0854</td></tr>
+<td>9</td>
+<td>Tests.PdamTest@50a638b5</td></tr>
 <tr>
 <td title='Tests.PdamTest.inputCustomerNoPDAM()'><b>inputCustomerNoPDAM</b><br>Test class: Tests.PdamTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.PdamTest@4b0b0854</td></tr>
+<td>Tests.PdamTest@50a638b5</td></tr>
 <tr>
 <td title='Tests.PdamTest.inputTextPDAM()'><b>inputTextPDAM</b><br>Test class: Tests.PdamTest</td>
 <td></td>
-<td>0</td>
-<td>Tests.PdamTest@4b0b0854</td></tr>
+<td>2</td>
+<td>Tests.PdamTest@50a638b5</td></tr>
 <tr>
 <td title='Tests.PdamTest.pilihNamaPDAM()'><b>pilihNamaPDAM</b><br>Test class: Tests.PdamTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.PdamTest@4b0b0854</td></tr>
+<td>Tests.PdamTest@50a638b5</td></tr>
 <tr>
 <td title='Tests.PdamTest.selectInputTextPDAM()'><b>selectInputTextPDAM</b><br>Test class: Tests.PdamTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.PdamTest@4b0b0854</td></tr>
+<td>Tests.PdamTest@50a638b5</td></tr>
 <tr>
 <td title='Tests.PdamTest.testLogin()'><b>testLogin</b><br>Test class: Tests.PdamTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.PdamTest@4b0b0854</td></tr>
+<td>Tests.PdamTest@50a638b5</td></tr>
 </table><p>
 </body>
 </html>

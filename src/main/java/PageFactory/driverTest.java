@@ -15,7 +15,7 @@ public class driverTest {
 	
 	@BeforeSuite
 	public void startApps() {
-		System.setProperty("webdriver.chrome.driver", "D:\\browserdrivers\\chromedriver88.exe");	
+		System.setProperty("webdriver.chrome.driver", "D:\\browserdrivers\\chromedriver90.exe");	
 		testUrl = "https://virtual.klikindomaret.com/";
 		driver = new ChromeDriver(); 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -29,7 +29,7 @@ public class driverTest {
 	
 	@AfterSuite
 	public void closeApp() {
-		//driver.quit();
+		driver.quit();
 	}
 
 

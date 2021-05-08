@@ -2,6 +2,9 @@ package Tests;
 
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
+import PageFactory.VirtualTestReports;
 import PageFactory.driverTest;
 import Pages.CheckoutPage;
 import Pages.DaftarTrxPage;
@@ -23,6 +26,7 @@ public class plnTest extends driverTest {
 	
   	@Test (priority=1)
   	public void goToLoginPage() throws InterruptedException{
+  		VirtualTestReports.getTest().log(Status.INFO,"Go To Website");
 		try {
 			objLogin  = new LoginPage(driver);
 			objLogin.clickButtonLoginHome();
@@ -35,9 +39,10 @@ public class plnTest extends driverTest {
   	
 	@Test (priority=2)
 	public void testLogin() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Login Test");
 		try { 
 			objLogin  = new LoginPage(driver);
-			objLogin.setUserName("0895634338579");
+			objLogin.setUserName("087881744704");
 			objLogin.setPassword("indomaret");
 			objLogin.clikcLogin(); 
 			Thread.sleep(20);
@@ -49,6 +54,7 @@ public class plnTest extends driverTest {
 	
 	@Test (priority=3)
 	public void goToPLNTest() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Go To Category PLN");
 		try { 
 			objPlnPage  = new PlnPage(driver);
 			objPlnPage.goToPLN();
@@ -59,6 +65,7 @@ public class plnTest extends driverTest {
 	}  
 	@Test (priority=4)
 	public void goTokenListrikPLN() throws InterruptedException{ 
+		VirtualTestReports.getTest().log(Status.INFO,"Go To Sub Category PLN");
 		try { 
 			objPlnPage  = new PlnPage(driver);
 			objPlnPage.gotToTokenListrikPLN();
@@ -69,6 +76,7 @@ public class plnTest extends driverTest {
 	} 
 	@Test (priority=5)
 	public void inputTokenPLN() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Input Customer Number");
 		try { 
 			objPlnPage  = new PlnPage(driver);
 			objPlnPage.setInquiryPLN("10000000100");
@@ -80,6 +88,7 @@ public class plnTest extends driverTest {
 	
 	@Test (priority=6)
 	public void setDenomPLN() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Choose Denominal for PLN");
 		try { 
 			objPlnPage  = new PlnPage(driver);
 			objPlnPage.setDenomPLN();
@@ -93,6 +102,7 @@ public class plnTest extends driverTest {
 	} 
 	@Test (priority=7)
 	public void setNominalPLN() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Choose Denominal for PLN");
 		try { 
 			objPlnPage  = new PlnPage(driver);
 			objPlnPage.chooseDenomPLN();
@@ -106,6 +116,7 @@ public class plnTest extends driverTest {
 	
 	@Test (priority=8)
 	public void goToCheckOut() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Go To Checkout Page");
 		try { 
 			objPlnPage  = new PlnPage(driver);
 			objPlnPage.clickButtonBayar();
@@ -119,6 +130,7 @@ public class plnTest extends driverTest {
 	
 	@Test (priority=9)
 	public void checkOutPLN() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"CheckOut Test");
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
 			objCheckOutPage.logoCheckoutIsDisplay();
@@ -139,6 +151,7 @@ public class plnTest extends driverTest {
 	} 
 	@Test (priority=10)
 	public void goToPaymentCenter() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Go TO Payment Center");
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
 			objCheckOutPage.goToPaymentCenter();
@@ -152,6 +165,7 @@ public class plnTest extends driverTest {
 	
 	@Test (priority=11)
 	public void PilihAlatBayar() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Choose Available Methods");
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
 			objPCFrame.pickPayment();
@@ -165,6 +179,7 @@ public class plnTest extends driverTest {
 	
 	@Test (priority=12)
 	public void clickBayar() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Choose Available payment methods ");
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
 			objPCFrame.clickBayar();
@@ -178,6 +193,7 @@ public class plnTest extends driverTest {
 	
 	@Test (priority=13)
 	public void TQPageTest() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Thank You Page Test");
 		try {
 			objTQPage = new ThankYouPage(driver);
 			objTQPage.headerTQPIsDisplayed();
@@ -207,6 +223,7 @@ public class plnTest extends driverTest {
 	
 	@Test (priority=14)
 	public void DaftarTrxTest() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Order History Test");
 		try {
 			objDaftarTrx = new DaftarTrxPage(driver);
 			objDaftarTrx.introNextIsDisplay();

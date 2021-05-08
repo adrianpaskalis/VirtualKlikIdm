@@ -81,6 +81,18 @@ public  WebElement passwordVirtual;
 		}
 		
 	}
+	
+	public void AlertOnLogin() throws NoSuchElementException{
+		try {
+			waitElementLong();
+			alertLogin();
+			Thread.sleep(10);
+			
+		}catch (InterruptedException e) {
+		
+			e.printStackTrace();
+		}
+	}
 	 /**
 
      * This POM method will be exposed in test case to login in the application

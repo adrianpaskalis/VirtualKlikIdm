@@ -46,10 +46,11 @@ public class PaymentCenterPage extends LoginWithPageFactory {
 			waitElementLong();
 			PaymentCenterFrame();
 			BcaVA.click();
-			System.out.println("BCA VA BISA");
+			//System.out.println("BCA VA BISA");
 			
 		}catch (NoSuchElementException e ) {
-			System.out.println("ATM BISA");
+			//System.out.println("ATM BISA");
+			e.printStackTrace();
 			ATM.click();
 		} 
 		
@@ -60,10 +61,12 @@ public class PaymentCenterPage extends LoginWithPageFactory {
 			waitElementLong();
 			PaymentCenterFrame();
 			IsakuID.click();
-			System.out.println("ISaku BISA");
+			//System.out.println("ISaku BISA");
 			
 		}catch (NoSuchElementException e ) {
-			System.out.println("Isaku BISA");
+			e.printStackTrace();
+			//System.out.println("Isaku BISA");
+			
 			IsakuXpath.click();
 		} 
 		
@@ -72,30 +75,25 @@ public class PaymentCenterPage extends LoginWithPageFactory {
 	
 		public void clickBayar() throws NoSuchElementException{
 			try {
-				
 				waitElementLong();
 				btnBayar.click();
 				defaultContent();
-			
-				
 			}catch (NoSuchElementException e) {
-				System.out.println(e);
+				e.printStackTrace();
+				//System.out.println(e);
 			} 
 	} 
 		
 		public void clickBayarIsaku() throws NoSuchElementException{
 			try {
-				
 				waitElementLong();
 				btnBayar.click();
 				waitElement(); 
 				CloseIsaku.click();
-				
 				defaultContent();
-			
-				
 			}catch (NoSuchElementException e) {
-				System.out.println(e);
+				//System.out.println(e);
+				e.printStackTrace();
 			} 
 	}
 } 

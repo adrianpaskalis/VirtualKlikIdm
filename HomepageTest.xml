@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="PageFactory.VirtualListener" />
+	</listeners>
+  		<test thread-count="5" name="Tests" group-by-instances="true">
+    		<classes>
+     			 <class name="Tests.HomePageTest"> 
+      				<methods> 
+      					<include name="goToLoginPage"> </include> 
+      					<include name="testLogin"> </include> 
+      					<include name="UITestLogo"> </include> 
+      					<include name="verifyPageTitle"> </include> 
+      					<include name="UITestFacebook"> </include> 
+      					<include name="UITestInstagram"> </include> 
+      					<include name="UITestDownload"> </include> 
+      					<include name="UITestLayananPelanggan"> </include> 
+      					<include name="UITestDaftarTrx"> </include> 
+      					<include name="UITestItemSaldo"> </include> 
+      					<include name="UITestUserProfile"> </include> 
+      					<include name="UITestSearch"> </include> 
+      					<include name="UITestBanner"> </include> 
+      					<include name="validateCategoryPulsa"> </include> 
+      					<include name="validateCategoryEmoney"> </include> 
+      					<include name="validateCategoryESasmat"> </include> 
+      					<include name="validateCategoryPLN"> </include> 
+      					<include name="validateCategoryBPJS"> </include> 
+      					<include name="validateCategoryInternet"> </include> 
+      					<include name="validateCategoryGame"> </include> 
+      					<include name="validateCategoryStreaming"> </include> 
+      					<include name="validateCategoryGas"> </include> 
+      					<include name="validateCategoryPBB"> </include> 
+      					<include name="validateCategoryPDAM"> </include> 
+      					<include name="validateCategoryTelomPascaBayar"> </include> 
+      					<include name="validateCategoryIPL"> </include> 
+      					<include name="validateCategoryAsuransi"> </include> 
+      					<include name="validateCategoryMultiFinance"> </include> 
+      					<include name="validateCategoryPendidikan"> </include> 
+      					</methods>
+     			 </class>
+     		</classes>
+  	</test> <!-- Tests -->
+</suite> <!-- Suite -->

@@ -2,6 +2,9 @@ package Tests;
 
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
+import PageFactory.VirtualTestReports;
 import PageFactory.driverTest;
 import Pages.CheckoutPage;
 import Pages.DaftarTrxPage;
@@ -23,6 +26,7 @@ public class PdamTest extends driverTest {
 	
 	@Test (priority=1)
 	public void goToLoginPage() {
+		VirtualTestReports.getTest().log(Status.INFO,"Go To Website");
 		try {
 			objLogin  = new LoginPage(driver);
 			
@@ -38,9 +42,10 @@ public class PdamTest extends driverTest {
 	
 	@Test (priority=2)
 	public void testLogin() {
+		VirtualTestReports.getTest().log(Status.INFO,"Login Tests");
 		try { 
 			objLogin  = new LoginPage(driver);
-			objLogin.setUserName("0895634338579");
+			objLogin.setUserName("087881744704");
 			objLogin.setPassword("indomaret");
 			objLogin.clikcLogin(); 
 			Thread.sleep(20);
@@ -52,6 +57,7 @@ public class PdamTest extends driverTest {
 	
 	@Test (priority=3)
 	public void goToPdamTest() {
+		VirtualTestReports.getTest().log(Status.INFO,"Go To PDAM Test");
 		try { 
 			objPdamPage  = new PdamPages(driver);
 			objPdamPage.goToPDAM();
@@ -65,6 +71,7 @@ public class PdamTest extends driverTest {
 	
 	@Test (priority=4)
 	public void pilihNamaPDAM() {
+		VirtualTestReports.getTest().log(Status.INFO,"Go To PDAM Yogyakarta");
 		try {
 			objPdamPage = new PdamPages(driver);
 			objPdamPage.pilihNamaPDAM();
@@ -76,6 +83,7 @@ public class PdamTest extends driverTest {
 	
 	@Test (priority=5)
 	public void inputTextPDAM() {
+		VirtualTestReports.getTest().log(Status.INFO,"search Kota PDAM");
 		try {
 			objPdamPage = new PdamPages(driver);
 			objPdamPage.inputTextPDAM("yogyakarta");
@@ -87,6 +95,7 @@ public class PdamTest extends driverTest {
 	
 	@Test (priority=6)
 	public void selectInputTextPDAM() {
+		VirtualTestReports.getTest().log(Status.INFO,"Choose Input Text PDAM");
 		try {
 			objPdamPage = new PdamPages(driver);
 			objPdamPage.selectInputTextPDAM();
@@ -99,6 +108,7 @@ public class PdamTest extends driverTest {
 	
 	@Test (priority=7)
 	public void btnCancelIsDisplay() { 
+		VirtualTestReports.getTest().log(Status.INFO,"btn Cancel Book Test PDAM");
 		try { 
 			objPdamPage = new PdamPages(driver); 
 			objPdamPage.btnCancelIsDisplay();
@@ -110,6 +120,7 @@ public class PdamTest extends driverTest {
 	
 	@Test (priority=8)
 	public void inputCustomerNoPDAM() { 
+		VirtualTestReports.getTest().log(Status.INFO,"Input Customer Number PDAM");
 		try {
 			objPdamPage = new PdamPages(driver); 
 			objPdamPage.inputCustomerNo("DEV00000");
@@ -121,6 +132,7 @@ public class PdamTest extends driverTest {
 	
 	@Test (priority=9)
 	public void goToCheckoutPDAM() { 
+		VirtualTestReports.getTest().log(Status.INFO,"Go To Checkout PDAM");
 		try {
 			objPdamPage = new PdamPages(driver); 
 			objPdamPage.clickButtonBayarPDAM();
@@ -132,6 +144,7 @@ public class PdamTest extends driverTest {
 	
 	@Test (priority=10)
 	public void checkOutPDAM() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Checkout Test");
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
 			objCheckOutPage.logoCheckoutIsDisplay();
@@ -154,6 +167,7 @@ public class PdamTest extends driverTest {
 	
 	@Test (priority=11)
 	public void goToPaymentCenter() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Go To Payment Center");
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
 			objCheckOutPage.goToPaymentCenter();
@@ -167,6 +181,7 @@ public class PdamTest extends driverTest {
 	} 
 	@Test (priority=12)
 	public void PilihAlatBayar() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Choose Available Payment Methods");
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
 			objPCFrame.pickPayment();
@@ -196,6 +211,7 @@ public class PdamTest extends driverTest {
 	
 	@Test (priority=14)
 	public void TQPageTest() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"ThankYou Page Test");
 		try {
 			objTQPage = new ThankYouPage(driver);
 			objTQPage.headerTQPIsDisplayed();
@@ -222,6 +238,7 @@ public class PdamTest extends driverTest {
 	
 	@Test (priority=15)
 	public void DaftarTrxTest() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Order History Test");
 		try {
 			objDaftarTrx = new DaftarTrxPage(driver);
 			objDaftarTrx.introNextIsDisplay();

@@ -6,6 +6,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import PageFactory.LoginWithPageFactory;
 
@@ -27,7 +29,9 @@ public class PulsaPage extends LoginWithPageFactory {
 	@FindBy (xpath="//*[@id=\"square_fde94763-8c56-45a3-abc9-6efe422f321c\"]/div[2]/div/div/div/div[3]/div[1]/div[1]")
 	public WebElement iconProviderPulsa;
 	
-	@FindBy (xpath="//*[@id=\"ddl_nomor_pulsa\"]")
+	@FindBy (xpath="//*[@id=\"square_fde94763-8c56-45a3-abc9-6efe422f321c\"]/div[2]/div/div/div/div[3]/div[2]")
+	//(xpath="//*[@id=\"ddl_nomor_pulsa\"]") 
+	
 	public WebElement pilihDenomPulsa; 
 	
 	@FindBy (xpath="//*[@id=\"square_fde94763-8c56-45a3-abc9-6efe422f321c\"]/div[2]/div/div/div/div[3]/div[2]/div/ul/li[4]")
@@ -89,17 +93,18 @@ public class PulsaPage extends LoginWithPageFactory {
 	
 	
 	public void pilihDenomPulsa() {
-		try {
-			waitElementLong();
+		try { 
+			new WebDriverWait(driver, 60)
+
+            .until(ExpectedConditions.elementToBeClickable(pilihDenomPulsa));
+			
+			//waitElementClickable(pilihDenomPulsa);
 			pilihDenomPulsa.click(); 
 			waitElementLong();
-			System.out.println("pilih denom BISA");
 			Thread.sleep(10);
 
 		}catch (InterruptedException e) {
 			e.printStackTrace();
-			System.out.println("pilih denom gak bisa");
-
 		}
 	}
 	public void pilihPulsa25() {

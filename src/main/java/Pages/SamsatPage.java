@@ -2,9 +2,13 @@ package Pages;
 
 import java.util.NoSuchElementException;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
+
+import com.sun.jdi.Value;
 
 import PageFactory.LoginWithPageFactory;
 
@@ -20,8 +24,8 @@ public class SamsatPage extends LoginWithPageFactory {
 	public WebElement pilihSamsatBanten;
 	
 	@FindBy (xpath="//*[@id=\"CustomerNo\"]")
-	public WebElement CustomerNo;
-	
+	public WebElement CustomerNo; 
+
 	@FindBy (xpath="//*[@id=\"CustomerNo2\"]")
 	public WebElement NomorMesin;
 	
@@ -32,6 +36,11 @@ public class SamsatPage extends LoginWithPageFactory {
 	public WebElement buttonBayarJatim;
 	@FindBy (xpath="//*[@id=\"square_e-samsat-banten\"]/div[2]/div/div/div/div[4]/div[2]/div/button")
 	public WebElement buttonBayarBanten;
+	
+	@FindBy (xpath="//*[@id=\"square_e-samsat-banten\"]/div[2]/div/div/div/div[3]/div")
+	public WebElement ErorMessageSamsat;
+	
+	
 	public SamsatPage(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
@@ -39,56 +48,59 @@ public class SamsatPage extends LoginWithPageFactory {
 	
 	public void goToSamsat() throws NoSuchElementException{
 		try {
-			waitElement();
-			IconSamsat.click();
+				//waitElement();
+				waitElementClickable(IconSamsat);
+				IconSamsat.click();
 			
 			}catch (NoSuchElementException e) {
-			e.printStackTrace();
+				e.printStackTrace();
 			}
 		}
 	
 	public void pilihSamsatJatim() throws NoSuchElementException{
 		try {
-			waitElement();
-			pilihSamsatJatim.click();
+				//waitElement();
+				waitElementClickable(pilihSamsatJatim);
+				pilihSamsatJatim.click();
 			} catch (NoSuchElementException e) {
-			e.printStackTrace();
+				e.printStackTrace();
 			}
 		} 
 	
 	public void pilihSamsatBanten() throws NoSuchElementException{
 		try {
-			waitElement();
-			pilihSamsatBanten.click();
+				//waitElement();
+				waitElementClickable(pilihSamsatBanten);
+				pilihSamsatBanten.click();
 			} catch (NoSuchElementException e) {
-			e.printStackTrace();
+				e.printStackTrace();
 			}
 		} 
 	
 	public void setKodePembayaran(String setKodePembayaran) throws NoSuchElementException{
 		try {
-				waitElement();
+				waitElementClickable(CustomerNo);
+				CustomerNo.clear();
 				CustomerNo.sendKeys(setKodePembayaran);
-				System.out.println("set kode pembayaran bisa");
+				CustomerNo.sendKeys(Keys.ENTER);
 			} catch (NoSuchElementException e) {
-			e.printStackTrace();
-			System.out.println("set kode pembayaran gabisa");
+				e.printStackTrace();
 			}
 		}
 	public void setNomorPolisi(String strNomorPolisi) throws NoSuchElementException{
 		try {
 				waitElement();
+				//waitElementClickable(CustomerNo);
 				CustomerNo.sendKeys(strNomorPolisi);
-				System.out.println("bisa masukin no polisi");
 			} catch (NoSuchElementException e) {
-			e.printStackTrace();
-			System.out.println("gabisa masukin no polisi");
+				e.printStackTrace();
 			}
 		}
 	
 	public void setNomorMesin(String strNomorMesin) throws NoSuchElementException{
 		try {
-				waitElement();
+				//waitElement();
+				waitElementClickable(NomorMesin);
 				NomorMesin.sendKeys(strNomorMesin);
 			} catch (NoSuchElementException e) {
 				e.printStackTrace();
@@ -97,7 +109,8 @@ public class SamsatPage extends LoginWithPageFactory {
 	
 	public void setNomorKTP (String strNomorKTP) throws NoSuchElementException{
 		try {
-				waitElement();
+				//waitElement();
+				waitElementClickable(NomorKTP);
 				NomorKTP.sendKeys(strNomorKTP);
 			
 			} catch (NoSuchElementException e) {
@@ -107,7 +120,8 @@ public class SamsatPage extends LoginWithPageFactory {
 	
 	public void clickButtonBayarJatim() throws NoSuchElementException{
 		try {
-				waitElement();
+				waitElementClickable(buttonBayarJatim);
+				//waitElement();
 				buttonBayarJatim.click();
 			} catch (NoSuchElementException e) { 
 				e.printStackTrace();
@@ -116,10 +130,38 @@ public class SamsatPage extends LoginWithPageFactory {
 	
 	public void clickButtonBayarBanten() throws NoSuchElementException{
 		try {
-				waitElement();
+				waitElementClickable(buttonBayarBanten);
 				buttonBayarBanten.click();
 			} catch (NoSuchElementException e) { 
 				e.printStackTrace();
 			}
 		}	
-}
+	
+	public String ErorMessageMinSamsatIsDisplay() {
+		try {
+			waitElementClickable(ErorMessageSamsat);
+			String actualText = ErorMessageSamsat.getText();
+			String expectedText = "Kode pembayaran tidak ditemukan";
+			Assert.assertEquals(actualText, expectedText);
+		} catch (NoSuchElementException e) {
+			e.printStackTrace();
+		}
+		return ErorMessageSamsat.getText();
+	}
+	
+	public String ErorMessageMaxSamsatIsDisplay() {
+		try {
+			waitElementClickable(ErorMessageSamsat);
+			String actualText = ErorMessageSamsat.getText();
+			String expectedText = "Kode Pembayaran tidak sesuai, Mohon periksa kembali!";
+			Assert.assertEquals(actualText, expectedText);
+		} catch (NoSuchElementException e) {
+			e.printStackTrace();
+		}
+		return ErorMessageSamsat.getText();
+	}
+	
+
+} 
+
+

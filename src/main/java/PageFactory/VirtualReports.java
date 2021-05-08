@@ -26,7 +26,7 @@ public class VirtualReports {
 	        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
 	        htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
 	        htmlReporter.config().setChartVisibilityOnOpen(true);
-	        htmlReporter.config().setTheme(Theme.DARK);
+	        htmlReporter.config().setTheme(Theme.STANDARD);
 	        htmlReporter.config().setDocumentTitle(reportFileName);
 	        htmlReporter.config().setEncoding("utf-8");
 	        htmlReporter.config().setReportName(reportFileName);
@@ -36,7 +36,7 @@ public class VirtualReports {
 	        extent.attachReporter(htmlReporter);
 	        //Set environment details
 			extent.setSystemInfo("OS", "Windows");
-			extent.setSystemInfo("AUT", "QA");
+			extent.setSystemInfo("AUT", "Adrian");
 	 
 	        return extent;
 	    }

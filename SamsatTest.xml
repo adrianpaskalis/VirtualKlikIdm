@@ -8,30 +8,23 @@
     <classes>
       <class name="Tests.SamsatTest">
       		<methods> 
-      					<include name="goToLoginPage"> 
-      						</include> 
-      					<include name="testLogin"> 
-      						</include> 
-      					<include name="goToSamsatTest"> 
-      						</include> 
-      					<include name="goToSamsatBanten"> 
-      						</include> 
-      					<include name="setKodePembayaran"> 
-      						</include> 
-      					<include name="goToCheckOutSamsatBanten"> 
-      						</include> 
-      					<include name="checkOutSamsat"> 
-      						</include> 
-      					<include name="goToPaymentCenter"> 
-      						</include> 
-      					<include name="PilihAlatBayar"> 
-      						</include>
-      					<include name="clickBayar"> 
-      						</include>
-      						<include name="TQPageTest"> 
-      						</include>
-      						<include name="DaftarTrxTest"> 
-      						</include>
+      					<include name="goToLoginPage"> </include> 
+      					<include name="testLogin"> </include> 
+      					<include name="goToSamsatTest"> </include> 
+      					<include name="searchSamsatKeyword"> </include> 
+      					<include name="goToSamsatBanten"> </include> 
+      					<include name="InvalidMinSetKodePembayaran"> </include> 
+      					<include name="ValidateInvalidMinKodePembayaran"> </include> 
+      					<include name="InvalidMaxSetKodePembayaran"> </include>
+      					<include name="ValidateInvalidMaxKodePembayaran"> </include> 
+      					<include name="InputValidSetKodePembayaran"> </include> 
+      					<include name="ValidateValidKodePembayaran"> </include> 	
+      					<include name="checkOutSamsat"> </include> 
+      					<include name="goToPaymentCenteronSamsat"> </include> 
+      					<include name="PilihAlatBayaronSamsat"> </include>
+      					<include name="clickBayaronSamsat"> </include>
+      					<include name="TQPageTestonSamsat"> </include>
+      					<include name="DaftarTrxTestonSamsat"> </include>
       			</methods>
       
       </class> 

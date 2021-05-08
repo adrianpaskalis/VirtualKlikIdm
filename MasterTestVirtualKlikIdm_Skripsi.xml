@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Master Suite"> 
+<listeners>
+			<listener class-name="PageFactory.VirtualListener" />
+	</listeners>
+	
+ <suite-files> 
+	<suite-file path="./LoginTest.xml">  </suite-file>
+	<suite-file path="./HomepageTest.xml">  </suite-file>
+	<suite-file path="./PLNTest.xml"> </suite-file>
+	<suite-file path="./PbbTest.xml"> </suite-file>
+	<suite-file path="./PDAMTest.xml"> </suite-file>
+	<suite-file path="./BpjsTest.xml"> </suite-file>
+	<suite-file path="./SamsatTest.xml"> </suite-file>
+ </suite-files>
+  
+  
+
+</suite>

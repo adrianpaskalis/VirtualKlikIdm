@@ -7,6 +7,7 @@ import PageFactory.VirtualTestReports;
 import PageFactory.driverTest;
 import Pages.CheckoutPage;
 import Pages.DaftarTrxPage;
+import Pages.HomePageVirtual;
 import Pages.LoginPage;
 import Pages.PaymentCenterPage;
 import Pages.PulsaPage;
@@ -16,6 +17,7 @@ import com.aventstack.extentreports.Status;
 
 public class SamsatTest extends driverTest {
 	LoginPage objLogin; 
+	HomePageVirtual objHomePage;
 	SamsatPage objSamsatPage; 
 	CheckoutPage objCheckOutPage;
 	PaymentCenterPage objPCFrame;
@@ -23,9 +25,9 @@ public class SamsatTest extends driverTest {
 	DaftarTrxPage objDaftarTrx;
 	public	String testUrl; 
 	 
-	@Test (priority=1)
+	@Test 
 	public void goToLoginPage() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"safasfa");
+		VirtualTestReports.getTest().log(Status.INFO,"Go To Login Page For Samsat Test");
 		try {
 			objLogin  = new LoginPage(driver);
 			
@@ -39,12 +41,12 @@ public class SamsatTest extends driverTest {
 			}
 		}
 	
-	@Test (priority=2)
+	@Test 
 	public void testLogin() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO, "Login Test Started");
+		VirtualTestReports.getTest().log(Status.INFO, "Login Test For Samsat Test");
 		try { 
 			objLogin  = new LoginPage(driver);
-			objLogin.setUserName("0895634338579");
+			objLogin.setUserName("087881744704");
 			objLogin.setPassword("indomaret");
 			objLogin.clikcLogin(); 
 			Thread.sleep(20);
@@ -54,7 +56,8 @@ public class SamsatTest extends driverTest {
 			}
 	}
 	
-	@Test (priority=3)
+	
+	@Test 
 	public void goToSamsatTest() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO, "Go To Category Samsat");
 		try { 
@@ -68,7 +71,22 @@ public class SamsatTest extends driverTest {
 		
 	} 
 	
-	@Test (priority=4)
+	@Test 
+	public void searchSamsatKeyword() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "TS03-TC15 Validate search with Keyword 'Samsat Banten' ");
+		try { 
+			objHomePage  = new HomePageVirtual(driver);
+			objHomePage.searchSamsatKeyword("Samsat Banten");
+			objHomePage.clickSearchSamsatKeyword();
+			Thread.sleep(100);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+		
+			}
+		
+	} 
+	
+	@Test 
 	public void goToSamsatJatim() throws InterruptedException{  
 		VirtualTestReports.getTest().log(Status.INFO, "Go To Samsat Jatim");
 
@@ -84,7 +102,7 @@ public class SamsatTest extends driverTest {
 			
 	} 
 	
-	@Test (priority=4)
+	@Test 
 	public void goToSamsatBanten() throws InterruptedException{ 
 		VirtualTestReports.getTest().log(Status.INFO, "Go To Samsat Banten");
 		try { 
@@ -99,28 +117,92 @@ public class SamsatTest extends driverTest {
 			
 	} 
 	
-	@Test (priority=5)
-	public void setKodePembayaran() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO, "Set Kode Bayar");
+	@Test 
+	public void InvalidMinSetKodePembayaran() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP09 Input Invalid Min Customer Number on Samsat");
 		try { 
 			objSamsatPage  = new SamsatPage(driver);
-			objSamsatPage.setKodePembayaran("DEV00000");	
-		
-			Thread.sleep(20);
+			objSamsatPage.setKodePembayaran("9");	
+			Thread.sleep(100);
 			
 		} catch (InterruptedException e) {		
 			e.printStackTrace();
-			// TODO: handle exception
 		}
 	
 	}  
 	
-	@Test (priority=5)
+	@Test 
+	public void ValidateInvalidMinKodePembayaran() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP09 Input Invalid Min Customer Number on Samsat");
+		try {
+			objSamsatPage = new SamsatPage(driver);
+			objSamsatPage.clickButtonBayarBanten();
+			objSamsatPage.ErorMessageMinSamsatIsDisplay();
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test 
+	public void InvalidMaxSetKodePembayaran() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP10 Input Invalid Max Customer Number on Samsat");
+		try { 
+			objSamsatPage  = new SamsatPage(driver);
+			objSamsatPage.setKodePembayaran("99999999999999900000000");	
+			Thread.sleep(100);
+			
+		} catch (InterruptedException e) {		
+			e.printStackTrace();
+		}
+	
+	}  
+	
+	@Test 
+	public void ValidateInvalidMaxKodePembayaran() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP10 Input Invalid Min Customer Number on Samsat");
+		try {
+			objSamsatPage = new SamsatPage(driver);
+			objSamsatPage.clickButtonBayarBanten();
+			objSamsatPage.ErorMessageMaxSamsatIsDisplay();
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test 
+	public void InputValidSetKodePembayaran() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP11 Input Valid Customer Number on Samsat");
+		try { 
+			objSamsatPage  = new SamsatPage(driver);
+			objSamsatPage.setKodePembayaran("DEV00000");	
+			Thread.sleep(100);
+			
+		} catch (InterruptedException e) {		
+			e.printStackTrace();
+		}
+	
+	}  
+	
+	@Test 
+	public void ValidateValidKodePembayaran() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP11 Input Input Valid Customer Number on Samsat");
+		try {
+			objSamsatPage = new SamsatPage(driver);
+			objSamsatPage.clickButtonBayarBanten();
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test 
 	public void setNomorPolisi() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO, "Set Nomor Polisi");
 		try { 
 			objSamsatPage  = new SamsatPage(driver);
-			objSamsatPage.setNomorPolisi("DEV00000");	
+			objSamsatPage.setNomorPolisi("L 1234 IDM");	
 		
 			Thread.sleep(20);
 			
@@ -131,7 +213,7 @@ public class SamsatTest extends driverTest {
 	
 	}  
 	
-	@Test (priority=6)
+	@Test
 	public void setNomorMesin() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO, "Set Nomor Mesin");
 		try { 
@@ -147,7 +229,7 @@ public class SamsatTest extends driverTest {
 	
 	} 
 	
-	@Test (priority=7)
+	@Test 
 	public void setNomorKTP() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO, "Set Nomor KTP");
 		try {
@@ -159,7 +241,7 @@ public class SamsatTest extends driverTest {
 		}
 	}
 	
-	@Test(priority=8)
+	@Test 
 	public void goToCheckOutSamsatJatim() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO, "Go To CheckOut Page");
 		try {
@@ -171,7 +253,7 @@ public class SamsatTest extends driverTest {
 		}
 	} 
 	
-	@Test(priority=8)
+	@Test
 	public void goToCheckOutSamsatBanten() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO, "Go To Checkout");
 		try {
@@ -183,7 +265,7 @@ public class SamsatTest extends driverTest {
 		}
 	}
 	
-	@Test (priority=9)
+	@Test 
 	public void checkOutSamsat() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO, "Testing On Checkout");
 		try { 
@@ -206,8 +288,8 @@ public class SamsatTest extends driverTest {
 		
 	} 
 	
-	@Test (priority=10)
-	public void goToPaymentCenter() throws InterruptedException{
+	@Test 
+	public void goToPaymentCenteronSamsat() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO, "Go To Payment Center");
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
@@ -221,8 +303,8 @@ public class SamsatTest extends driverTest {
 		
 	} 
 	
-	@Test (priority=11)
-	public void PilihAlatBayar() throws InterruptedException{
+	@Test 
+	public void PilihAlatBayaronSamsat() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO, "Pilih Metode Bayar");
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
@@ -236,8 +318,8 @@ public class SamsatTest extends driverTest {
 	
 	} 
 	
-	@Test (priority=12)
-	public void clickBayar() throws InterruptedException{
+	@Test 
+	public void clickBayaronSamsat() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO, "Click Button Bayar");
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
@@ -252,8 +334,8 @@ public class SamsatTest extends driverTest {
 		
 	} 
 	
-	@Test (priority=13)
-	public void TQPageTest() throws InterruptedException{
+	@Test 
+	public void TQPageTestonSamsat() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO, "Testing on TQ Page");
 		try {
 			objTQPage = new ThankYouPage(driver);
@@ -279,8 +361,8 @@ public class SamsatTest extends driverTest {
 		} 
 	}
 	
-	@Test (priority=14)
-	public void DaftarTrxTest() throws InterruptedException{
+	@Test 
+	public void DaftarTrxTestonSamsat() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO, "Testing on Daftar Transaksi");
 		try {
 			objDaftarTrx = new DaftarTrxPage(driver);
@@ -305,12 +387,8 @@ public class SamsatTest extends driverTest {
 			objDaftarTrx.btnDaftarTrxTiketIsDisplay();
 			objDaftarTrx.filterDaftarTrxIsDisplay();
 			objDaftarTrx.detailSOdaftarTrxIsDisplay();
-			String actualText = objDaftarTrx.popUpDaftarTrxIsDisplay();
-			String expectedText = "Ringkasan Pembayaran";
-			Assert.assertEquals(actualText, expectedText);
-			System.out.println(actualText);
-			System.out.println(expectedText);
-		
+			objDaftarTrx.popUpDaftarTrxIsDisplay();
+			
 			Thread.sleep(10);
 			
 		} catch (InterruptedException e) {

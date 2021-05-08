@@ -9,7 +9,7 @@
       <class name="Tests.SamsatTest">
         <methods>
           <include name="checkOutSamsat"/>
-          <include name="DaftarTrxTest"/>
+          <include name="DaftarTrxTestonSamsat"/>
           <include name="startApps"/>
           <include name="closeApp"/>
         </methods>

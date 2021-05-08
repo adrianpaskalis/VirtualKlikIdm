@@ -19,8 +19,9 @@ public class PdamPages extends LoginWithPageFactory {
 	@FindBy (xpath="//*[@id=\"site-content\"]/div[3]/div[3]/div/div/div[2]/div[1]/div[1]/div/div/input")
 	public WebElement InputTextPDAM; 
 	
-	@FindBy (xpath="//*[@id=\"site-content\"]/div[3]/div[3]/div/div/div[2]/div[1]/div[1]/div/ul/li[224]/a")
+	@FindBy (xpath="//*[@id=\"site-content\"]/div[3]/div[3]/div/div/div[2]/div[1]/div[1]/div/ul/li[229]/a")
 	public WebElement selectInputTextPDAM;
+
 	
 	@FindBy (xpath="//*[@id=\"CustomerNo\"]")
 	public WebElement CustomerNo; 
@@ -31,6 +32,8 @@ public class PdamPages extends LoginWithPageFactory {
 	@FindBy (xpath="//*[@id=\"site-content\"]/div[3]/div[3]/div/div/div[3]/div/div/button")
 	public WebElement btnBayarPDAM; 
 	
+	@FindBy (xpath="//*[@id=\"site-content\"]/div[3]/div[3]/div/div/div[2]/div[1]/div[3]")
+	public WebElement ErorMessagePDAM;
 	
 	
 	public PdamPages(WebDriver driver) {
