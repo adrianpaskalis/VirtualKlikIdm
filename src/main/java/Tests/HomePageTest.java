@@ -18,9 +18,9 @@ public class HomePageTest extends driverTest {
 	public	String testUrl; 
 
 
-	@Test (priority=1)
+	@Test 
 	public void goToLoginPage() { 
-		VirtualTestReports.getTest().log(Status.INFO,"Go To Website");
+		VirtualTestReports.getTest().log(Status.INFO,"TS01-Go To Website");
 		try {
 			objLogin  = new LoginPage(driver);
 			
@@ -33,9 +33,9 @@ public class HomePageTest extends driverTest {
 			}
 		}
 	
-	@Test (priority=2)
+	@Test 
 	public void testLogin() {
-		VirtualTestReports.getTest().log(Status.INFO,"Login Test");
+		VirtualTestReports.getTest().log(Status.INFO,"TS01-EP05 - Login Valid Username and Valid Password for HomePageTest");
 		try { 
 			objLogin  = new LoginPage(driver);
 			objLogin.setUserName("087881744704");
@@ -48,7 +48,7 @@ public class HomePageTest extends driverTest {
 			}
 	}
 	
-	@Test (priority=3)
+	@Test 
 	public void UITestLogo() {
 		VirtualTestReports.getTest().log(Status.INFO,"TS02-TC01 Validate Logo Is Display");
 		try { 
@@ -60,7 +60,7 @@ public class HomePageTest extends driverTest {
 		}
 	} 
 	
-	@Test (priority=4)
+	@Test 
 	public void verifyPageTitle() {
 		try { 
 			VirtualTestReports.getTest().log(Status.INFO,"TS02-TC01 Validate Title Virtual KlikIndomaret");
@@ -74,7 +74,7 @@ public class HomePageTest extends driverTest {
 		
 	} 
 	
-	@Test (priority=5)
+	@Test 
 	public void UITestFacebook() throws InterruptedException{ 
 		VirtualTestReports.getTest().log(Status.INFO,"TS02-TC02 Validate Icon Facebook is Display");
 		try { 
@@ -86,7 +86,7 @@ public class HomePageTest extends driverTest {
 		}
 	} 
 	
-	@Test (priority=6)
+	@Test
 	public void UITestInstagram() throws InterruptedException{ 
 		VirtualTestReports.getTest().log(Status.INFO,"TS02-TC03 Validate Icon Instagram is Display");
 		try { 
@@ -99,7 +99,7 @@ public class HomePageTest extends driverTest {
 		}
 	} 
 
-	@Test (priority=7)
+	@Test 
 	public void UITestDownload() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO,"TS02-TC04 Validate Download Apps Is Display");
 		try { 
@@ -111,7 +111,7 @@ public class HomePageTest extends driverTest {
 		}
 	}
 
-	@Test (priority=8)
+	@Test 
 	public void UITestLayananPelanggan() throws InterruptedException{ 
 		VirtualTestReports.getTest().log(Status.INFO,"TS02-TC05 Validate Customer Care Is Display");
 		try { 
@@ -123,7 +123,7 @@ public class HomePageTest extends driverTest {
 		}	
 	} 
 	
-	@Test (priority=9)
+	@Test 
 	public void UITestDaftarTrx() throws InterruptedException{ 
 		VirtualTestReports.getTest().log(Status.INFO,"TS02-TC06 Validate Order History Is Display");
 		try { 
@@ -136,7 +136,7 @@ public class HomePageTest extends driverTest {
 		}
 	} 
 	
-	@Test (priority=10)
+	@Test 
 	public void UITestItemSaldo() throws InterruptedException{ 
 		VirtualTestReports.getTest().log(Status.INFO,"TS02-TC07 Validate Item Saldo Is Display");
 		try { 
@@ -149,7 +149,7 @@ public class HomePageTest extends driverTest {
 		}
 	} 
 
-	@Test (priority=11)
+	@Test 
 	public void UITestUserProfile() throws InterruptedException{ 
 		VirtualTestReports.getTest().log(Status.INFO,"TS02-TC08 Validate Profile Is Display");
 		try { 
@@ -161,7 +161,7 @@ public class HomePageTest extends driverTest {
 		}		
 	} 
 	
-	@Test (priority=12)
+	@Test 
 	public void UITestSearch() throws InterruptedException{ 
 		VirtualTestReports.getTest().log(Status.INFO,"TS02-TC09 Validate Search Is Display");
 		try { 
@@ -175,7 +175,7 @@ public class HomePageTest extends driverTest {
 	} 
 	
 	
-	@Test (priority=13) 
+	@Test 
 	public void UITestBanner() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO,"TS02-TC10 Validate Banner Is Display");
 		try { 
@@ -188,7 +188,7 @@ public class HomePageTest extends driverTest {
 		} 
 	} 
 	
-	@Test (priority=14) 
+	@Test 
 	public void btnNextBannerVirtualValidate() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO,"TS02-TC11 Validate Next Button Banner Is Display");
 		try { 
@@ -201,7 +201,7 @@ public class HomePageTest extends driverTest {
 		} 
 	}
 	
-	@Test (priority=15) 
+	@Test 
 	public void btnPrevBannerVirtualValidate() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO,"TS02-TC12 Validate Prev Button Banner Is Display");
 		try { 
@@ -215,98 +215,98 @@ public class HomePageTest extends driverTest {
 	}
 	
 	
-//	@Test (priority=16)
-//	public void searchPulsa() throws InterruptedException{ 
-//		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC13 Validate Search With Keyword 'Pulsa' ");
-//		try { 
-//			objHomePage  = new HomePageVirtual(driver);	
-//			objHomePage.searchPulsaKeyword("Pulsa");
-//			objHomePage.clickSearchPulsaKeyword();
-//			Thread.sleep(10);
-//			
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-//	} 
-//	
-//	@Test (priority=17)
-//	public void searchPLN() throws InterruptedException{ 
-//		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC14 Validate Search With Keyword 'Token' ");
-//
-//		try { 
-//			objHomePage  = new HomePageVirtual(driver);	
-//			objHomePage.searchPLNKeyword("Token");
-//			objHomePage.clickSearchPLNKeyword();
-//			Thread.sleep(10);
-//			
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-//	}
-//	
-//	@Test (priority=18)
-//	public void searchSamsat() throws InterruptedException{ 
-//		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC15 Validate Search With keyword 'Samsat Jawa Timur' ");
-//
-//		try { 
-//			objHomePage  = new HomePageVirtual(driver);	
-//			objHomePage.searchSamsatKeyword("Samsat Jawa timur");
-//			objHomePage.clickSearchSamsatKeyword();
-//			Thread.sleep(10);
-//			
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-//	}
-//	
-//	
-//	@Test (priority=19)
-//	public void searchBPJS() throws InterruptedException{ 
-//		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC16 Validate Search With Keyword 'BPJS Sehat' ");
-//
-//		try { 
-//			objHomePage  = new HomePageVirtual(driver);	
-//			objHomePage.searchBPJSKeyword("BPJS sehat");
-//			objHomePage.clickSearchBPJSKeyword();
-//			Thread.sleep(10);
-//			
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-//	} 
-//	
-//	@Test (priority=19)
-//	public void searchPBB() throws InterruptedException{ 
-//		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC17 Validate Search With Keyword 'PBB Jakarta'");
-//
-//		try { 
-//			objHomePage  = new HomePageVirtual(driver);	
-//			objHomePage.searchPBBKeyword("PBB Jakarta");
-//			objHomePage.clickSearchPBBKeyword();
-//			Thread.sleep(10);
-//			
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-//	} 
-//	
-//	@Test (priority=20)
-//	public void searchPDAM() throws InterruptedException{ 
-//		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC18 Validate Search With Keyword 'PDAM Yogyakarta' ");
-//		try { 
-//			objHomePage  = new HomePageVirtual(driver);	
-//			objHomePage.searchPDAMKeyword("PDAM yogyakarta");
-//			objHomePage.clickSearchPDAMKeyword();
-//			Thread.sleep(10);
-//			
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-//	}  
-	//kurang validate category pulsa  test priority 21
-	@Test (priority=21)
+	@Test 
+	public void searchPulsa() throws InterruptedException{ 
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC11 Validate Search With Keyword 'Pulsa' ");
+		try { 
+			objHomePage  = new HomePageVirtual(driver);	
+			objHomePage.searchPulsaKeyword("Pulsa");
+			objHomePage.clickSearchPulsaKeyword();
+			Thread.sleep(10);
+			
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	} 
+	
+	@Test 
+	public void searchPLN() throws InterruptedException{ 
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC12 Validate Search With Keyword 'Token' ");
+
+		try { 
+			objHomePage  = new HomePageVirtual(driver);	
+			objHomePage.searchPLNKeyword("Token");
+			objHomePage.clickSearchPLNKeyword();
+			Thread.sleep(10);
+			
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test 
+	public void searchSamsat() throws InterruptedException{ 
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC13 Validate Search With keyword 'Samsat Jawa Timur' ");
+
+		try { 
+			objHomePage  = new HomePageVirtual(driver);	
+			objHomePage.searchSamsatKeyword("Samsat Jawa timur");
+			objHomePage.clickSearchSamsatKeyword();
+			Thread.sleep(10);
+			
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	@Test 
+	public void searchBPJS() throws InterruptedException{ 
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC14 Validate Search With Keyword 'BPJS Sehat' ");
+
+		try { 
+			objHomePage  = new HomePageVirtual(driver);	
+			objHomePage.searchBPJSKeyword("BPJS sehat");
+			objHomePage.clickSearchBPJSKeyword();
+			Thread.sleep(10);
+			
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	} 
+	
+	@Test 
+	public void searchPBB() throws InterruptedException{ 
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC15 Validate Search With Keyword 'PBB Jakarta'");
+
+		try { 
+			objHomePage  = new HomePageVirtual(driver);	
+			objHomePage.searchPBBKeyword("PBB Jakarta");
+			objHomePage.clickSearchPBBKeyword();
+			Thread.sleep(10);
+			
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	} 
+	
+	@Test
+	public void searchPDAM() throws InterruptedException{ 
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC16 Validate Search With Keyword 'PDAM Yogyakarta' ");
+		try { 
+			objHomePage  = new HomePageVirtual(driver);	
+			objHomePage.searchPDAMKeyword("PDAM yogyakarta");
+			objHomePage.clickSearchPDAMKeyword();
+			Thread.sleep(10);
+			
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}  
+
+	@Test 
 	public void validateCategoryPulsa() throws InterruptedException { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC19 Validate Category Pulsa & Paket Data");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC17 Validate Category Pulsa & Paket Data");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 
@@ -318,9 +318,9 @@ public class HomePageTest extends driverTest {
 		}
 	}
 	
-	@Test (priority=22)
+	@Test 
 	public void validateCategoryEmoney() throws InterruptedException { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC20 Validate Category Uang Elektronik");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC18 Validate Category Uang Elektronik");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 
@@ -331,9 +331,9 @@ public class HomePageTest extends driverTest {
 			e.printStackTrace();
 		}
 	}
-	@Test (priority=23)
+	@Test 
 	public void validateCategoryESasmat() throws InterruptedException { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC21 Validate Category ESamsat");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC19 Validate Category ESamsat");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 
@@ -344,9 +344,9 @@ public class HomePageTest extends driverTest {
 			e.printStackTrace();
 		}
 	}
-	@Test (priority=24)
+	@Test 
 	public void validateCategoryPLN() throws InterruptedException { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC22 Validate Category PLN");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC20 Validate Category PLN");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 
@@ -357,9 +357,9 @@ public class HomePageTest extends driverTest {
 			e.printStackTrace();
 		}
 	}
-	@Test (priority=25)
+	@Test
 	public void validateCategoryBPJS() throws InterruptedException { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC23 Validate Category BPJS");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC21 Validate Category BPJS");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 
@@ -370,9 +370,9 @@ public class HomePageTest extends driverTest {
 			e.printStackTrace();
 		}
 	}
-	@Test (priority=26)
+	@Test 
 	public void validateCategoryInternet() throws InterruptedException { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC24 Validate Category Internet dan TV Kabel");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC22 Validate Category Internet dan TV Kabel");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 
@@ -383,9 +383,9 @@ public class HomePageTest extends driverTest {
 			e.printStackTrace();
 		}
 	}
-	@Test (priority=27)
+	@Test 
 	public void validateCategoryGame() throws InterruptedException { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC25 Validate Category Voucher Game");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC23 Validate Category Voucher Game");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 
@@ -396,9 +396,9 @@ public class HomePageTest extends driverTest {
 			e.printStackTrace();
 		}
 	}
-	@Test (priority=28)
+	@Test 
 	public void validateCategoryStreaming() throws InterruptedException { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC26 Validate Category Streaming");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC24 Validate Category Streaming");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 
@@ -409,9 +409,9 @@ public class HomePageTest extends driverTest {
 			e.printStackTrace();
 		}
 	}
-	@Test (priority=29)
+	@Test 
 	public void validateCategoryGas() throws InterruptedException { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC27 Validate Category Gas");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC25 Validate Category Gas");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 
@@ -422,9 +422,9 @@ public class HomePageTest extends driverTest {
 			e.printStackTrace();
 		}
 	}
-	@Test (priority=30)
+	@Test 
 	public void validateCategoryPBB() throws InterruptedException { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC28 Validate Category PBB");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC26 Validate Category PBB");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 
@@ -436,9 +436,9 @@ public class HomePageTest extends driverTest {
 		}
 	}
 	
-	@Test (priority=31)
+	@Test 
 	public void validateCategoryPDAM() throws InterruptedException { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC29 Validate Category PDAM");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC27 Validate Category PDAM");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 
@@ -451,9 +451,9 @@ public class HomePageTest extends driverTest {
 	}
 	
 	
-	@Test (priority=32)
+	@Test 
 	public void validateCategoryTelomPascaBayar() throws InterruptedException { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC30 Validate Category Telkom & Telpon (Pasca Bayar)");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC28 Validate Category Telkom & Telpon (Pasca Bayar)");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 
@@ -465,9 +465,9 @@ public class HomePageTest extends driverTest {
 		}
 	}
 	
-	@Test (priority=33)
+	@Test 
 	public void validateCategoryIPL() throws InterruptedException { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC31 Validate Category Iurang Pemeliharaan Lingkungan");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC29 Validate Category Iurang Pemeliharaan Lingkungan");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 
@@ -479,9 +479,9 @@ public class HomePageTest extends driverTest {
 		}
 	}
 	
-	@Test (priority=34)
+	@Test
 	public void validateCategoryAsuransi() throws InterruptedException { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC32 Validate Category Asuransi");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC30 Validate Category Asuransi");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 
@@ -492,9 +492,9 @@ public class HomePageTest extends driverTest {
 			e.printStackTrace();
 		}
 	}
-	@Test (priority=35)
+	@Test 
 	public void validateCategoryMultiFinance() throws InterruptedException {
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC33 Validate Category Multi Finance");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC31 Validate Category Multi Finance");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 
@@ -506,9 +506,9 @@ public class HomePageTest extends driverTest {
 		}
 	}
 	
-	@Test (priority=36)
+	@Test 
 	public void validateCategoryPendidikan() throws InterruptedException { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC34 Validate Category Pendidikan");
+		VirtualTestReports.getTest().log(Status.INFO,"TS03-TC32 Validate Category Pendidikan");
 
 		try { 
 			objHomePage = new HomePageVirtual(driver); 

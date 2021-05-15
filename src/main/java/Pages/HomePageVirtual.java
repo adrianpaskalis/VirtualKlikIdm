@@ -13,6 +13,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import PageFactory.LoginWithPageFactory;
@@ -230,8 +232,9 @@ public class HomePageVirtual extends LoginWithPageFactory {
 		try {
 			//waitElement(); 
 			waitElementClickable(search);
+			search.clear();
 			search.sendKeys(strKeywordPulsa);
-			Thread.sleep(10);
+			Thread.sleep(1000);
 			
 		} 	catch (InterruptedException e) {
 			e.printStackTrace();
@@ -241,9 +244,11 @@ public class HomePageVirtual extends LoginWithPageFactory {
 	public void searchPLNKeyword	(String strKeywordPLN) {
 		try {
 			//waitElement(); 
+			
 			waitElementClickable(search);
+			search.clear();
 			search.sendKeys(strKeywordPLN);
-			Thread.sleep(10);
+			Thread.sleep(1000);
 			
 			} 	catch (InterruptedException e) {
 			e.printStackTrace();
@@ -254,8 +259,9 @@ public class HomePageVirtual extends LoginWithPageFactory {
 		try {
 			//waitElement(); 
 			waitElementClickable(search);
+			search.clear();
 			search.sendKeys(strKeywordBPJS);
-			Thread.sleep(10);
+			Thread.sleep(1000);
 			
 			} 	catch (InterruptedException e) {
 			e.printStackTrace();
@@ -266,8 +272,9 @@ public class HomePageVirtual extends LoginWithPageFactory {
 		try {
 			//waitElement(); 
 			waitElementClickable(search);
+			search.clear();
 			search.sendKeys(strKeywordPBB);
-			Thread.sleep(10);
+			Thread.sleep(1000);
 			
 			} 	catch (InterruptedException e) {
 			e.printStackTrace();
@@ -278,8 +285,9 @@ public class HomePageVirtual extends LoginWithPageFactory {
 		try {
 			//waitElement(); 
 			waitElementClickable(search);
+			search.clear();
 			search.sendKeys(strKeywordPDAM);
-			Thread.sleep(10);
+			Thread.sleep(1000);
 			
 			} 	catch (InterruptedException e) {
 			e.printStackTrace();
@@ -291,7 +299,7 @@ public class HomePageVirtual extends LoginWithPageFactory {
 		try {
 			waitElementClickable(resultSearchSamsatBanten);
 			resultSearchSamsatBanten.click();
-			Thread.sleep(100);
+			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 			}
@@ -302,7 +310,7 @@ public class HomePageVirtual extends LoginWithPageFactory {
 			//waitElement(); 
 			waitElementClickable(resultSearchPulsa);
 			resultSearchPulsa.click();
-			Thread.sleep(100);
+			Thread.sleep(1000);
 		}catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -313,7 +321,7 @@ public class HomePageVirtual extends LoginWithPageFactory {
 			//waitElement(); 
 			waitElementClickable(resultSearchPLN);
 			resultSearchPLN.click();
-			Thread.sleep(10);
+			Thread.sleep(1000);
 		}catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -322,9 +330,12 @@ public class HomePageVirtual extends LoginWithPageFactory {
 	public void clickSearchBPJSKeyword() { 
 		try {
 			//waitElement(); 
-			waitElementClickable(resultSearchBPJS);
+			new WebDriverWait(driver, 60)
+
+            .until(ExpectedConditions.elementToBeClickable(resultSearchBPJS));
+			//waitElementClickable();
 			resultSearchBPJS.click();
-			Thread.sleep(10);
+			Thread.sleep(1000);
 		}catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -333,9 +344,12 @@ public class HomePageVirtual extends LoginWithPageFactory {
 	public void clickSearchPBBKeyword() { 
 		try {
 			//waitElement(); 
-			waitElementClickable(resultSearchPBB);
+			//waitElementClickable(resultSearchPBB);
+			new WebDriverWait(driver, 60)
+
+            .until(ExpectedConditions.elementToBeClickable(resultSearchPBB));
 			resultSearchPBB.click();
-			Thread.sleep(10);
+			Thread.sleep(1000);
 		}catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -346,7 +360,7 @@ public class HomePageVirtual extends LoginWithPageFactory {
 			//waitElement(); 
 			waitElementClickable(resultSearchPDAM);
 			resultSearchPDAM.click();
-			Thread.sleep(10);
+			Thread.sleep(1000);
 		}catch (InterruptedException e) {
 			e.printStackTrace();
 		}

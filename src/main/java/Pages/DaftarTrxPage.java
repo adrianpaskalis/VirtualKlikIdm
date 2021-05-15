@@ -83,6 +83,27 @@ public class DaftarTrxPage extends LoginWithPageFactory {
 	 @FindBy (xpath="//*[@id=\"site-content\"]/div[1]/div[2]/div/div[2]/div[1]/div[1]/div[2]")
 	 public WebElement detailSOdaftarTrx; 
 	 
+	 @FindBy (xpath="//*[@id=\"site-content\"]/div[1]/div[2]/div/div[1]/div[2]/div/ul/li[2]")
+	 public WebElement filterKonfirmasi; 
+
+	 @FindBy (xpath="//*[@id=\"site-content\"]/div[1]/div[2]/div/div[1]/div[2]/div/ul/li[3]")
+	 public WebElement filterProses; 
+	 
+	 @FindBy (xpath="//*[@id=\"site-content\"]/div[1]/div[2]/div/div[1]/div[2]/div/ul/li[4]")
+	 public WebElement filterBerhasil; 
+	 
+	 @FindBy (xpath ="//*[@id=\"site-content\"]/div[1]/div[2]/div/div[1]/div[2]/div/ul/li[5]")
+	 public WebElement filterGagal; 
+
+	 @FindBy (xpath="//*[@id=\"site-content\"]/div[1]/div[2]/div/div[1]/div[2]/div/ul/li[6]")
+	 public WebElement filterRefund; 
+	 
+	 @FindBy (xpath="//*[@id=\"site-content\"]/div[1]/div[2]/div/div[1]/div[2]/div/ul/li[1]")
+	 public WebElement filterSemuaTransaksi; 
+	 
+	 
+	 
+	 
 	// @FindBy (xpath="//*[@id=\"myTransactionModal-AEF48W7WT\"]/div/div/div[1]/div[1]/div[2]/div[1]") 
 	 //
 
@@ -357,10 +378,121 @@ public class DaftarTrxPage extends LoginWithPageFactory {
 		} 
 	} 
 	
+	public void validateFilterKonfirmasi() throws NoSuchElementException{
+
+		try { 
+			waitElementClickable(filterDaftarTrx);
+			filterDaftarTrx.click();
+			waitElementClickable(filterKonfirmasi);
+			filterKonfirmasi.click();
+			
+			String expectedUrl = "https://virtual.klikindomaret.com/Account/MyTransaction?orderstatus=pending";
+			String actualUrl = driver.getCurrentUrl();
+			Assert.assertEquals(actualUrl, expectedUrl); 
+			
+		} catch (NoSuchElementException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} 
+	} 
+	
+	public void validateFilterProses() throws NoSuchElementException{
+
+		try { 
+			waitElementClickable(filterDaftarTrx);
+			filterDaftarTrx.click();
+			waitElementClickable(filterProses);
+			filterProses.click();
+			
+			String expectedUrl = "https://virtual.klikindomaret.com/Account/MyTransaction?orderstatus=proses";
+			String actualUrl = driver.getCurrentUrl();
+			Assert.assertEquals(actualUrl, expectedUrl); 
+			
+		} catch (NoSuchElementException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} 
+	}  
+	
+	
+	public void validateFilterBerhasil() throws NoSuchElementException{
+
+		try { 
+			waitElementClickable(filterDaftarTrx);
+			filterDaftarTrx.click();
+			waitElementClickable(filterBerhasil);
+			filterBerhasil.click();
+			
+			String expectedUrl = "https://virtual.klikindomaret.com/Account/MyTransaction?orderstatus=selesai";
+			String actualUrl = driver.getCurrentUrl();
+			Assert.assertEquals(actualUrl, expectedUrl); 
+			
+		} catch (NoSuchElementException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} 
+	} 
+		
+	public void validateFilterGagal() throws NoSuchElementException{
+
+		try { 
+			waitElementClickable(filterDaftarTrx);
+			filterDaftarTrx.click();
+			waitElementClickable(filterGagal);
+			filterGagal.click();
+			
+			String expectedUrl = "https://virtual.klikindomaret.com/Account/MyTransaction?orderstatus=gagal";
+			String actualUrl = driver.getCurrentUrl();
+			Assert.assertEquals(actualUrl, expectedUrl); 
+			
+		} catch (NoSuchElementException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} 
+	}
+	
+	public void validateFilterRefund() throws NoSuchElementException{
+
+		try { 
+			waitElementClickable(filterDaftarTrx);
+			filterDaftarTrx.click();
+			waitElementClickable(filterRefund);
+			filterRefund.click();
+			
+			String expectedUrl = "https://virtual.klikindomaret.com/Account/MyTransaction?orderstatus=refund";
+			String actualUrl = driver.getCurrentUrl();
+			Assert.assertEquals(actualUrl, expectedUrl); 
+			
+		} catch (NoSuchElementException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} 
+	}
+	
+	public void validateFilterSemuaTrx() throws NoSuchElementException{
+
+		try { 
+			waitElementClickable(filterDaftarTrx);
+			filterDaftarTrx.click();
+			waitElementClickable(filterSemuaTransaksi);
+			filterSemuaTransaksi.click();
+			
+			String expectedUrl = "https://virtual.klikindomaret.com/Account/MyTransaction?orderstatus=all";
+			String actualUrl = driver.getCurrentUrl();
+			Assert.assertEquals(actualUrl, expectedUrl); 
+			
+		} catch (NoSuchElementException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} 
+	}
+	
+	
+	
 	public void detailSOdaftarTrxIsDisplay() throws NoSuchElementException{
 
 		try { 
-			waitElement();
+			waitElementClickable(detailSOdaftarTrx);
 			detailSOdaftarTrx.click();
 			
 		} catch (NoSuchElementException e) {

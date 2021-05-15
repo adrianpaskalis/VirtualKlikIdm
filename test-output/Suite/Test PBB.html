@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test PBB</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 12 20:44:18 WIB 2021</td>
+<td>Started on:</td><td>Sun May 09 18:50:39 WIB 2021</td>
 </tr>
-<tr><td>Total time:</td><td>208 seconds (208901 ms)</td>
+<tr><td>Total time:</td><td>86 seconds (86393 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.PbbTest.DaftarTrxTest()'><b>DaftarTrxTest</b><br>Test class: Tests.PbbTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;myTransactionModal-AEP383PCA&quot;]/div&quot;}
-  (Session info: chrome=89.0.4389.114)
+<td title='Tests.PbbTest.checkOutPbb()'><b>checkOutPbb</b><br>Test class: Tests.PbbTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;siteHeader&quot;]/div/div/div/img&quot;}
+  (Session info: chrome=90.0.4430.93)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-TAVTASOM&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+System info: host: &apos;LAPTOP-TAVTASOM&apos;, ip: &apos;192.168.43.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4c44ebedbc6792951a7164953503f4d4
-*** Element info: {Using=xpath, value=//*[@id=&quot;myTransactionModal-AEP383PCA&quot;]/div}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64562}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 01e6fae1a1080b135eed761575cfa76e
+*** Element info: {Using=xpath, value=//*[@id=&quot;siteHeader&quot;]/div/div/div/img}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -98,19 +98,19 @@ Session ID: 4c44ebedbc6792951a7164953503f4d4
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-	at Pages.DaftarTrxPage.popUpDaftarTrxIsDisplay(DaftarTrxPage.java:371)
-	at Tests.PbbTest.DaftarTrxTest(PbbTest.java:364)
+	at Pages.CheckoutPage.logoCheckoutIsDisplay(CheckoutPage.java:61)
+	at Tests.PbbTest.checkOutPbb(PbbTest.java:346)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace392403246", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace392403246'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;myTransactionModal-AEP383PCA&quot;]/div&quot;}
-  (Session info: chrome=89.0.4389.114)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1471800355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1471800355'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;siteHeader&quot;]/div/div/div/img&quot;}
+  (Session info: chrome=90.0.4430.93)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-TAVTASOM&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+System info: host: &apos;LAPTOP-TAVTASOM&apos;, ip: &apos;192.168.43.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4c44ebedbc6792951a7164953503f4d4
-*** Element info: {Using=xpath, value=//*[@id=&quot;myTransactionModal-AEP383PCA&quot;]/div}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64562}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 01e6fae1a1080b135eed761575cfa76e
+*** Element info: {Using=xpath, value=//*[@id=&quot;siteHeader&quot;]/div/div/div/img}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -129,8 +129,8 @@ Session ID: 4c44ebedbc6792951a7164953503f4d4
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-	at Pages.DaftarTrxPage.popUpDaftarTrxIsDisplay(DaftarTrxPage.java:371)
-	at Tests.PbbTest.DaftarTrxTest(PbbTest.java:364)
+	at Pages.CheckoutPage.logoCheckoutIsDisplay(CheckoutPage.java:61)
+	at Tests.PbbTest.checkOutPbb(PbbTest.java:346)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,8 +160,8 @@ Session ID: 4c44ebedbc6792951a7164953503f4d4
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>33</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
+<td>10</td>
+<td>Tests.PbbTest@15c43bd9</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -171,80 +171,85 @@ Session ID: 4c44ebedbc6792951a7164953503f4d4
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.PbbTest.PilihAlatBayar()'><b>PilihAlatBayar</b><br>Test class: Tests.PbbTest</td>
+<td title='Tests.PbbTest.DaftarTrxTestPBB()'><b>DaftarTrxTestPBB</b><br>Test class: Tests.PbbTest</td>
 <td></td>
-<td>120</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
+<td>4</td>
+<td>Tests.PbbTest@15c43bd9</td></tr>
 <tr>
-<td title='Tests.PbbTest.btnCancelIsDisplay()'><b>btnCancelIsDisplay</b><br>Test class: Tests.PbbTest</td>
+<td title='Tests.PbbTest.PilihAlatBayarPBB()'><b>PilihAlatBayarPBB</b><br>Test class: Tests.PbbTest</td>
 <td></td>
-<td>0</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
+<td>20</td>
+<td>Tests.PbbTest@15c43bd9</td></tr>
 <tr>
-<td title='Tests.PbbTest.checkOutPbb()'><b>checkOutPbb</b><br>Test class: Tests.PbbTest</td>
-<td></td>
-<td>22</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
-<tr>
-<td title='Tests.PbbTest.clickBayar()'><b>clickBayar</b><br>Test class: Tests.PbbTest</td>
+<td title='Tests.PbbTest.clickBayarPBB()'><b>clickBayarPBB</b><br>Test class: Tests.PbbTest</td>
 <td></td>
 <td>6</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
+<td>Tests.PbbTest@15c43bd9</td></tr>
 <tr>
-<td title='Tests.PbbTest.clickListPajak()'><b>clickListPajak</b><br>Test class: Tests.PbbTest</td>
+<td title='Tests.PbbTest.goToLoginPagePBB()'><b>goToLoginPagePBB</b><br>Test class: Tests.PbbTest</td>
 <td></td>
-<td>0</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
+<td>1</td>
+<td>Tests.PbbTest@15c43bd9</td></tr>
 <tr>
-<td title='Tests.PbbTest.goToCheckoutPbbJakarta()'><b>goToCheckoutPbbJakarta</b><br>Test class: Tests.PbbTest</td>
+<td title='Tests.PbbTest.goToPaymentCenterPBB()'><b>goToPaymentCenterPBB</b><br>Test class: Tests.PbbTest</td>
 <td></td>
-<td>0</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
-<tr>
-<td title='Tests.PbbTest.goToLoginPage()'><b>goToLoginPage</b><br>Test class: Tests.PbbTest</td>
-<td></td>
-<td>11</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
-<tr>
-<td title='Tests.PbbTest.goToPaymentCenter()'><b>goToPaymentCenter</b><br>Test class: Tests.PbbTest</td>
-<td></td>
-<td>0</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
+<td>7</td>
+<td>Tests.PbbTest@15c43bd9</td></tr>
 <tr>
 <td title='Tests.PbbTest.goToPbbJakarta()'><b>goToPbbJakarta</b><br>Test class: Tests.PbbTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
+<td>Tests.PbbTest@15c43bd9</td></tr>
 <tr>
 <td title='Tests.PbbTest.goToPbbTest()'><b>goToPbbTest</b><br>Test class: Tests.PbbTest</td>
 <td></td>
 <td>11</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
+<td>Tests.PbbTest@15c43bd9</td></tr>
 <tr>
-<td title='Tests.PbbTest.inputNomorPajak()'><b>inputNomorPajak</b><br>Test class: Tests.PbbTest</td>
+<td title='Tests.PbbTest.inputInvalidMaxNomorPajak()'><b>inputInvalidMaxNomorPajak</b><br>Test class: Tests.PbbTest</td>
 <td></td>
-<td>0</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
+<td>1</td>
+<td>Tests.PbbTest@15c43bd9</td></tr>
 <tr>
-<td title='Tests.PbbTest.logoPbbInputIsDisplay()'><b>logoPbbInputIsDisplay</b><br>Test class: Tests.PbbTest</td>
+<td title='Tests.PbbTest.inputInvalidMinNomorPajak()'><b>inputInvalidMinNomorPajak</b><br>Test class: Tests.PbbTest</td>
 <td></td>
-<td>0</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
+<td>1</td>
+<td>Tests.PbbTest@15c43bd9</td></tr>
+<tr>
+<td title='Tests.PbbTest.inputValidNomorPajak()'><b>inputValidNomorPajak</b><br>Test class: Tests.PbbTest</td>
+<td></td>
+<td>1</td>
+<td>Tests.PbbTest@15c43bd9</td></tr>
 <tr>
 <td title='Tests.PbbTest.pilihTahunPajak()'><b>pilihTahunPajak</b><br>Test class: Tests.PbbTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
+<td>Tests.PbbTest@15c43bd9</td></tr>
 <tr>
-<td title='Tests.PbbTest.testLogin()'><b>testLogin</b><br>Test class: Tests.PbbTest</td>
+<td title='Tests.PbbTest.searchPBBKeyword()'><b>searchPBBKeyword</b><br>Test class: Tests.PbbTest</td>
+<td></td>
+<td>6</td>
+<td>Tests.PbbTest@15c43bd9</td></tr>
+<tr>
+<td title='Tests.PbbTest.testLoginPBB()'><b>testLoginPBB</b><br>Test class: Tests.PbbTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
+<td>Tests.PbbTest@15c43bd9</td></tr>
 <tr>
-<td title='Tests.PbbTest.textInputTahunPajakIsDisplay()'><b>textInputTahunPajakIsDisplay</b><br>Test class: Tests.PbbTest</td>
+<td title='Tests.PbbTest.validateInputInvalidMaxNomorPajak()'><b>validateInputInvalidMaxNomorPajak</b><br>Test class: Tests.PbbTest</td>
 <td></td>
-<td>0</td>
-<td>Tests.PbbTest@13e39c73</td></tr>
+<td>3</td>
+<td>Tests.PbbTest@15c43bd9</td></tr>
+<tr>
+<td title='Tests.PbbTest.validateInputInvalidMinNomorPajak()'><b>validateInputInvalidMinNomorPajak</b><br>Test class: Tests.PbbTest</td>
+<td></td>
+<td>8</td>
+<td>Tests.PbbTest@15c43bd9</td></tr>
+<tr>
+<td title='Tests.PbbTest.validateInputValidNomorPajak()'><b>validateInputValidNomorPajak</b><br>Test class: Tests.PbbTest</td>
+<td></td>
+<td>1</td>
+<td>Tests.PbbTest@15c43bd9</td></tr>
 </table><p>
 </body>
 </html>

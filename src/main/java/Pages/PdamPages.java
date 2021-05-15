@@ -1,5 +1,7 @@
 package Pages;
 
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -97,8 +99,10 @@ public class PdamPages extends LoginWithPageFactory {
 	public void inputCustomerNo(String strCustomerNo) {
 		try {
 			waitElement();
+			CustomerNo.clear();
 			CustomerNo.sendKeys(strCustomerNo);
-			Thread.sleep(6);
+			CustomerNo.sendKeys(Keys.ENTER);
+			Thread.sleep(100);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -115,6 +119,18 @@ public class PdamPages extends LoginWithPageFactory {
 		}
 	}
 	
-	
+	public String ErorMessagePDAMIsDisplay() {
+		try {
+			waitElementClickable(ErorMessagePDAM);
+			String actualText = ErorMessagePDAM.getText();
+			String expectedText = "No Pelanggan tidak di temukan, mohon periksa kembali nomor pelanggan anda";
+			Assert.assertEquals(actualText, expectedText);
+		
+		
+		} catch (NoSuchElementException e) {
+			e.printStackTrace();
+		}
+		return ErorMessagePDAM.getText();
+	}
 
 }

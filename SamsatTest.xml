@@ -4,30 +4,28 @@
 <listeners>
 		<listener class-name="PageFactory.VirtualListener" />
 	</listeners>
-  <test thread-count="5" name="Samsat Test" group-by-instances="true">
-    <classes>
-      <class name="Tests.SamsatTest">
-      		<methods> 
-      					<include name="goToLoginPage"> </include> 
-      					<include name="testLogin"> </include> 
-      					<include name="goToSamsatTest"> </include> 
-      					<include name="searchSamsatKeyword"> </include> 
-      					<include name="goToSamsatBanten"> </include> 
-      					<include name="InvalidMinSetKodePembayaran"> </include> 
-      					<include name="ValidateInvalidMinKodePembayaran"> </include> 
-      					<include name="InvalidMaxSetKodePembayaran"> </include>
-      					<include name="ValidateInvalidMaxKodePembayaran"> </include> 
-      					<include name="InputValidSetKodePembayaran"> </include> 
-      					<include name="ValidateValidKodePembayaran"> </include> 	
-      					<include name="checkOutSamsat"> </include> 
-      					<include name="goToPaymentCenteronSamsat"> </include> 
-      					<include name="PilihAlatBayaronSamsat"> </include>
-      					<include name="clickBayaronSamsat"> </include>
-      					<include name="TQPageTestonSamsat"> </include>
-      					<include name="DaftarTrxTestonSamsat"> </include>
-      			</methods>
-      
-      </class> 
-    </classes>
-  </test> <!-- Samsat Test -->
+  		<test thread-count="5" name="Samsat Test" group-by-instances="true">
+   			 <classes>
+    			  <class name="Tests.SamsatTest">
+      					<methods> 
+      						<include name="goToLoginPage"> </include> 
+      						<include name="testLogin"> </include> 
+      						<include name="goToSamsatTest"> </include> 
+      						<include name="goToSamsatBanten"> </include> 
+      						<include name="InvalidMinSetKodePembayaran"> </include> 
+      						<include name="ValidateInvalidMinKodePembayaran"> </include> 
+      						<include name="InvalidMaxSetKodePembayaran"> </include>
+      						<include name="ValidateInvalidMaxKodePembayaran"> </include> 
+      						<include name="InputValidSetKodePembayaran"> </include> 
+      						<include name="ValidateValidKodePembayaran"> </include> 	
+      						<include name="checkOutSamsat"> </include> 
+      						<include name="goToPaymentCenteronSamsat"> </include> 
+      						<include name="PilihAlatBayaronSamsat"> </include>
+      						<include name="clickBayaronSamsat"> </include>
+      						<include name="TQPageTestonSamsat"> </include>
+      						<include name="DaftarTrxTestonSamsat"> </include>
+      					</methods>
+      		 	 </class> 
+  		  </classes>
+ 	 </test> <!-- Samsat Test -->
 </suite> <!-- Suite -->

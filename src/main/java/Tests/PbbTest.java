@@ -8,6 +8,7 @@ import PageFactory.VirtualTestReports;
 import PageFactory.driverTest;
 import Pages.CheckoutPage;
 import Pages.DaftarTrxPage;
+import Pages.HomePageVirtual;
 import Pages.LoginPage;
 import Pages.PaymentCenterPage;
 import Pages.PbbPages;
@@ -16,6 +17,7 @@ import Pages.ThankYouPage;
 
 public class PbbTest extends driverTest {
 	LoginPage objLogin; 
+	HomePageVirtual objHomePage;
 	PbbPages  objPbbPage; 
 	CheckoutPage objCheckOutPage;
 	PaymentCenterPage objPCFrame;
@@ -23,9 +25,9 @@ public class PbbTest extends driverTest {
 	DaftarTrxPage objDaftarTrx;
 	public	String testUrl;  
 	
-	@Test (priority=1)
-	public void goToLoginPage() { 
-		VirtualTestReports.getTest().log(Status.INFO,"Go To Website");
+	@Test 
+	public void goToLoginPagePBB() { 
+		VirtualTestReports.getTest().log(Status.INFO,"Go To Website for PBB Test");
 		try {
 			objLogin  = new LoginPage(driver);
 			
@@ -35,16 +37,15 @@ public class PbbTest extends driverTest {
 			
 			} catch (InterruptedException e) {
 			e.printStackTrace();
-			// TODO: handle exception
 			}
 		}
 	
-	@Test (priority=2)
-	public void testLogin() {
-		VirtualTestReports.getTest().log(Status.INFO,"Login Test");
+	@Test 
+	public void testLoginPBB() {
+		VirtualTestReports.getTest().log(Status.INFO,"Login Test for PBB Test");
 		try { 
 			objLogin  = new LoginPage(driver);
-			objLogin.setUserName("0895634338579");
+			objLogin.setUserName("087881744704");
 			objLogin.setPassword("indomaret");
 			objLogin.clikcLogin(); 
 			Thread.sleep(20);
@@ -54,7 +55,7 @@ public class PbbTest extends driverTest {
 			}
 	}
 	
-	@Test (priority=3)
+	@Test
 	public void goToPbbTest() {
 		VirtualTestReports.getTest().log(Status.INFO,"Go To PBB Test");
 		try { 
@@ -68,7 +69,7 @@ public class PbbTest extends driverTest {
 		
 	} 
 	
-	@Test (priority=4)
+	@Test 
 	public void goToPbbTangsel() { 
 		VirtualTestReports.getTest().log(Status.INFO,"Go To Pbb Tangsel");
 
@@ -84,7 +85,7 @@ public class PbbTest extends driverTest {
 			
 	 }
 	
-	@Test (priority=5)
+	@Test 
 	public void goToPbbJakarta() { 
 		VirtualTestReports.getTest().log(Status.INFO,"Go TO PBB Jakarta");
 
@@ -99,15 +100,28 @@ public class PbbTest extends driverTest {
 		}
 			
 	} 
+	@Test 
+	public void searchPBBKeyword() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"TS03 - TC16 Validate Search With Keyword 'PBB Jakarta'");
+		try { 
+			objHomePage  = new HomePageVirtual(driver);
+			objHomePage.searchPBBKeyword("PBB Jakarta");
+			objHomePage.clickSearchPBBKeyword();
+			Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();	
+			}
+		
+	} 
 	
 	
-	@Test (priority=6)
-	public void inputNomorPajak() { 
-		VirtualTestReports.getTest().log(Status.INFO,"Input Customer Number");
+	@Test
+	public void inputInvalidMinNomorPajak() { 
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP15 Input Invalid Min Nomor Pajak PBB");
 		try { 
 			objPbbPage  = new PbbPages(driver);
-			objPbbPage.inputNomorPajak("DEV00000");
-			Thread.sleep(10);
+			objPbbPage.inputNomorPajak("99");
+			Thread.sleep(1000);
 			
 		} catch (InterruptedException e) {	
 			e.printStackTrace();
@@ -116,7 +130,36 @@ public class PbbTest extends driverTest {
 			
 	} 
 	
-	@Test (priority=7)
+	@Test
+	public void inputInvalidMaxNomorPajak() { 
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP16 Input Invalid Max Nomor Pajak PBB");
+		try { 
+			objPbbPage  = new PbbPages(driver);
+			objPbbPage.inputNomorPajak("00000000000000000");
+			Thread.sleep(1000);
+			
+		} catch (InterruptedException e) {	
+			e.printStackTrace();
+			// TODO: handle exception
+		}
+			
+	} 
+	
+	@Test
+	public void inputValidNomorPajak() { 
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP17 Input Valid  Nomor Pajak PBB");
+		try { 
+			objPbbPage  = new PbbPages(driver);
+			objPbbPage.inputNomorPajak("DEV00000");
+			Thread.sleep(1000);
+			
+		} catch (InterruptedException e) {	
+			e.printStackTrace();
+			// TODO: handle exception
+		}
+			
+	} 
+	@Test 
 	public void logoPbbInputIsDisplay() {
 		VirtualTestReports.getTest().log(Status.INFO,"Logo PBB is Display");
 		try { 
@@ -128,7 +171,7 @@ public class PbbTest extends driverTest {
 		}
 	} 
 	
-	@Test (priority=8)
+	@Test 
 	public void logoPBBTangselInputIsDisplay() {
 		VirtualTestReports.getTest().log(Status.INFO,"Logo PBB is display");
 		try { 
@@ -140,7 +183,7 @@ public class PbbTest extends driverTest {
 		}
 	}
 	
-	@Test (priority=9)
+	@Test 
 	public void btnCancelIsDisplay() { 
 		VirtualTestReports.getTest().log(Status.INFO,"btn Cancel Is Display");
 		try { 
@@ -152,7 +195,7 @@ public class PbbTest extends driverTest {
 		}
 	} 
 	
-	@Test (priority=10)
+	@Test 
 	public void btnCancelTangselIsDisplay() { 
 		VirtualTestReports.getTest().log(Status.INFO,"btn Cancel is Display");
 		try { 
@@ -165,12 +208,13 @@ public class PbbTest extends driverTest {
 	}
 	
 	
-	@Test (priority=11)
-	public void clickListPajak() {
+	@Test 
+	public void pilihTahunPajak() {
 		VirtualTestReports.getTest().log(Status.INFO,"Choose list pajak");
 		try {
 			objPbbPage =  new PbbPages(driver);
 			objPbbPage.clickListPajak();
+			objPbbPage.pilihTahunPajak();
 			Thread.sleep(6);
 		} catch (InterruptedException e) {	
 			e.printStackTrace();
@@ -178,7 +222,7 @@ public class PbbTest extends driverTest {
 		}
 	}
 	
-	@Test (priority=12)
+	@Test 
 	public void clickListPajakTangsel() {
 		VirtualTestReports.getTest().log(Status.INFO,"choose list pajak");
 		try {
@@ -191,7 +235,7 @@ public class PbbTest extends driverTest {
 		}
 	}
 	
-	@Test (priority=13) 
+	@Test 
 	public void textInputTahunPajakIsDisplay() { 
 		VirtualTestReports.getTest().log(Status.INFO,"input tahun pajak");
 		try {
@@ -203,7 +247,7 @@ public class PbbTest extends driverTest {
 			// TODO: handle exception
 		}
 	}
-	@Test (priority=14) 
+	@Test
 	public void textInputTahunPajakTangselIsDisplay() { 
 		VirtualTestReports.getTest().log(Status.INFO,"input tahun pajak");
 		try {
@@ -216,44 +260,72 @@ public class PbbTest extends driverTest {
 		}
 	}
 	
-	@Test (priority=15)
-	public void pilihTahunPajak() {
-		VirtualTestReports.getTest().log(Status.INFO,"input tahun pajak");
-		try {
-			objPbbPage = new PbbPages(driver); 
-			objPbbPage.pilihTahunPajak();
-			Thread.sleep(6);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	} 
+//	@Test 
+//	public void pilihTahunPajak() {
+//		VirtualTestReports.getTest().log(Status.INFO,"input tahun pajak");
+//		try {
+//			objPbbPage = new PbbPages(driver); 
+//			objPbbPage.pilihTahunPajak();
+//			Thread.sleep(6);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
+//	} 
 	
-	@Test (priority=16)
-	public void pilihTahunPajakTangsel() {
-		VirtualTestReports.getTest().log(Status.INFO,"input tahun pajak");
-		try {
-			objPbbPage = new PbbPages(driver); 
-			objPbbPage.pilihTahunPajakTangsel();
-			Thread.sleep(6);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	} 
+//	@Test 
+//	public void pilihTahunPajakTangsel() {
+//		VirtualTestReports.getTest().log(Status.INFO,"input tahun pajak");
+//		try {
+//			objPbbPage = new PbbPages(driver); 
+//			objPbbPage.pilihTahunPajakTangsel();
+//			Thread.sleep(6);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
+//	} 
 	
-	@Test (priority=16)
-	public void goToCheckoutPbbJakarta() {
-		VirtualTestReports.getTest().log(Status.INFO,"Go To Checkout");
+	@Test 
+	public void validateInputInvalidMinNomorPajak() {
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP15 Input Invalid Min Nomor Pajak PBB");
 		try {
 			objPbbPage = new PbbPages(driver); 
 			objPbbPage.clickBtnBayarPBB();
-			Thread.sleep(5);
+			objPbbPage.ErorMessageBpjsIsDisplay();
+			Thread.sleep(1000);
+		} catch (InterruptedException e){
+			e.printStackTrace();
+			
+		}
+	} 
+	
+	@Test 
+	public void validateInputInvalidMaxNomorPajak() {
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP16 Input Invalid Max Nomor Pajak PBB");
+		try {
+			objPbbPage = new PbbPages(driver); 
+			objPbbPage.clickBtnBayarPBB();
+			objPbbPage.ErorMessageBpjsIsDisplay();
+			Thread.sleep(1000);
+		} catch (InterruptedException e){
+			e.printStackTrace();
+			
+		}
+	} 
+	
+	@Test 
+	public void validateInputValidNomorPajak() {
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP17 Input Valid  Nomor Pajak PBB");
+		try {
+			objPbbPage = new PbbPages(driver); 
+			objPbbPage.clickBtnBayarPBB();
+			Thread.sleep(1000);
 		} catch (InterruptedException e){
 			e.printStackTrace();
 			
 		}
 	}
 	
-	@Test (priority=17)
+	@Test 
 	public void goToCheckoutPbbTangsel() {
 		VirtualTestReports.getTest().log(Status.INFO,"Go To Checkout");
 		try {
@@ -266,7 +338,7 @@ public class PbbTest extends driverTest {
 		}
 	}
 	
-	@Test (priority=18)
+	@Test 
 	public void checkOutPbb() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO,"Checkout Test");
 		try { 
@@ -289,8 +361,8 @@ public class PbbTest extends driverTest {
 		
 	} 
 	
-	@Test (priority=19)
-	public void goToPaymentCenter() throws InterruptedException{
+	@Test 
+	public void goToPaymentCenterPBB() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO,"Go To Payment Center");
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
@@ -303,8 +375,8 @@ public class PbbTest extends driverTest {
 		}
 		
 	} 
-	@Test (priority=20)
-	public void PilihAlatBayar() throws InterruptedException{
+	@Test
+	public void PilihAlatBayarPBB() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO,"Choose Available Payment Methods");
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
@@ -318,8 +390,8 @@ public class PbbTest extends driverTest {
 	
 	} 
 	
-	@Test (priority=21)
-	public void clickBayar() throws InterruptedException{
+	@Test 
+	public void clickBayarPBB()  throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO,"Choose Available Payment Methods");
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
@@ -360,8 +432,8 @@ public class PbbTest extends driverTest {
 //		} 
 //	}
 	
-	@Test (priority=22)
-	public void DaftarTrxTest() throws InterruptedException{
+	@Test 
+	public void DaftarTrxTestPBB() throws InterruptedException{
 		VirtualTestReports.getTest().log(Status.INFO,"Order History Test");
 		try {
 			objDaftarTrx = new DaftarTrxPage(driver);

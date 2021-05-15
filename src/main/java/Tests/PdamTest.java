@@ -24,9 +24,9 @@ public class PdamTest extends driverTest {
 	public	String testUrl;  
 	
 	
-	@Test (priority=1)
-	public void goToLoginPage() {
-		VirtualTestReports.getTest().log(Status.INFO,"Go To Website");
+	@Test 
+	public void goToLoginPagePDAM() {
+		VirtualTestReports.getTest().log(Status.INFO,"Go To Website for PDAM Test");
 		try {
 			objLogin  = new LoginPage(driver);
 			
@@ -40,9 +40,9 @@ public class PdamTest extends driverTest {
 			}
 		}
 	
-	@Test (priority=2)
-	public void testLogin() {
-		VirtualTestReports.getTest().log(Status.INFO,"Login Tests");
+	@Test 
+	public void testLoginPDAM() {
+		VirtualTestReports.getTest().log(Status.INFO,"Login Tests for PDAM Test");
 		try { 
 			objLogin  = new LoginPage(driver);
 			objLogin.setUserName("087881744704");
@@ -55,7 +55,7 @@ public class PdamTest extends driverTest {
 			}
 	}
 	
-	@Test (priority=3)
+	@Test 
 	public void goToPdamTest() {
 		VirtualTestReports.getTest().log(Status.INFO,"Go To PDAM Test");
 		try { 
@@ -69,7 +69,7 @@ public class PdamTest extends driverTest {
 		
 	} 
 	
-	@Test (priority=4)
+	@Test 
 	public void pilihNamaPDAM() {
 		VirtualTestReports.getTest().log(Status.INFO,"Go To PDAM Yogyakarta");
 		try {
@@ -81,7 +81,7 @@ public class PdamTest extends driverTest {
 		}
 	}
 	
-	@Test (priority=5)
+	@Test 
 	public void inputTextPDAM() {
 		VirtualTestReports.getTest().log(Status.INFO,"search Kota PDAM");
 		try {
@@ -93,7 +93,7 @@ public class PdamTest extends driverTest {
 		}
 	} 
 	
-	@Test (priority=6)
+	@Test 
 	public void selectInputTextPDAM() {
 		VirtualTestReports.getTest().log(Status.INFO,"Choose Input Text PDAM");
 		try {
@@ -106,7 +106,7 @@ public class PdamTest extends driverTest {
 	} 
 	
 	
-	@Test (priority=7)
+	@Test 
 	public void btnCancelIsDisplay() { 
 		VirtualTestReports.getTest().log(Status.INFO,"btn Cancel Book Test PDAM");
 		try { 
@@ -118,9 +118,60 @@ public class PdamTest extends driverTest {
 		}
 	} 
 	
-	@Test (priority=8)
-	public void inputCustomerNoPDAM() { 
-		VirtualTestReports.getTest().log(Status.INFO,"Input Customer Number PDAM");
+	@Test 
+	public void inputInvalidMinCustomerNoPDAM() { 
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP12 Input InValid Min Customer Number on PDAM");
+		try {
+			objPdamPage = new PdamPages(driver); 
+			objPdamPage.inputCustomerNo("9");
+			Thread.sleep(100);
+		} catch (InterruptedException e) { 
+			e.printStackTrace();
+		}
+	} 
+	
+	@Test 
+	public void ValidateInvalidMinCustomerNoPDAM() { 
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP12 Input InValid Min Customer Number on PDAM");
+		try {
+			objPdamPage = new PdamPages(driver); 
+			objPdamPage.clickButtonBayarPDAM();
+			objPdamPage.ErorMessagePDAMIsDisplay();
+			Thread.sleep(100);
+		} catch (InterruptedException e) { 
+			e.printStackTrace();
+		}
+	} 
+	
+	@Test 
+	public void inputInvalidMaxCustomerNoPDAM() { 
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP13 Input InValid Min Customer Number on PDAM");
+		try {
+			objPdamPage = new PdamPages(driver); 
+			objPdamPage.inputCustomerNo("99999999999999900000000");
+			Thread.sleep(100);
+		} catch (InterruptedException e) { 
+			e.printStackTrace();
+		}
+	} 
+	
+	@Test 
+	public void ValidateInvalidMaxCustomerNoPDAM() { 
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP13 Input InValid Min Customer Number on PDAM");
+		try {
+			objPdamPage = new PdamPages(driver); 
+			objPdamPage.clickButtonBayarPDAM();
+			objPdamPage.ErorMessagePDAMIsDisplay();
+			Thread.sleep(100);
+		} catch (InterruptedException e) { 
+			e.printStackTrace();
+		}
+	} 
+	
+	
+	@Test 
+	public void inputValidCustomerNoPDAM() { 
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP14 Input Valid Customer Number on PDAM");
 		try {
 			objPdamPage = new PdamPages(driver); 
 			objPdamPage.inputCustomerNo("DEV00000");
@@ -130,9 +181,9 @@ public class PdamTest extends driverTest {
 		}
 	} 
 	
-	@Test (priority=9)
-	public void goToCheckoutPDAM() { 
-		VirtualTestReports.getTest().log(Status.INFO,"Go To Checkout PDAM");
+	@Test 
+	public void ValidateValidCustomerNoPDAM() { 
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP14 Input Valid Customer Number on PDAM");
 		try {
 			objPdamPage = new PdamPages(driver); 
 			objPdamPage.clickButtonBayarPDAM();
@@ -142,9 +193,9 @@ public class PdamTest extends driverTest {
 		}
 	} 
 	
-	@Test (priority=10)
+	@Test 
 	public void checkOutPDAM() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"Checkout Test");
+		VirtualTestReports.getTest().log(Status.INFO,"Checkout Test for PDAM Test");
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
 			objCheckOutPage.logoCheckoutIsDisplay();
@@ -152,11 +203,11 @@ public class PdamTest extends driverTest {
 			objCheckOutPage.boxImagesIsDisplay();
 			objCheckOutPage.deleteProduIsDisplay();
 			objCheckOutPage.itemProdukVirtualIsDisplay();
-			objCheckOutPage.itemSubtotalIsDisplay();
-			objCheckOutPage.itemTotalIsDisplay();
+			objCheckOutPage.itemSubtotalSamsatIsDisplay();
+			objCheckOutPage.itemTotalSamsatIsDisplay();
 			objCheckOutPage.inputCouponIsDisplay();
 			objCheckOutPage.buttonAddCouponIsDisplay();
-			Thread.sleep(10);
+			Thread.sleep(100);
 			
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -165,9 +216,9 @@ public class PdamTest extends driverTest {
 		
 	} 
 	
-	@Test (priority=11)
-	public void goToPaymentCenter() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"Go To Payment Center");
+	@Test 
+	public void goToPaymentCenterPDAM() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Go To Payment Center for PDAM Test");
 		try { 
 			objCheckOutPage = new CheckoutPage(driver);
 			objCheckOutPage.goToPaymentCenter();
@@ -179,9 +230,9 @@ public class PdamTest extends driverTest {
 		}
 		
 	} 
-	@Test (priority=12)
-	public void PilihAlatBayar() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"Choose Available Payment Methods");
+	@Test 
+	public void PilihAlatBayarPDAM() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Choose Available Payment Methods for PDAM Test");
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
 			objPCFrame.pickPayment();
@@ -194,8 +245,10 @@ public class PdamTest extends driverTest {
 	
 	} 
 	
-	@Test (priority=13)
-	public void clickBayar() throws InterruptedException{
+	@Test 
+	public void clickBayarPDAM() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Choose Available Payment Methods for PDAM Test");
+
 		try { 
 			objPCFrame = new PaymentCenterPage(driver);
 			objPCFrame.clickBayar();
@@ -209,9 +262,9 @@ public class PdamTest extends driverTest {
 		
 	} 
 	
-	@Test (priority=14)
-	public void TQPageTest() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"ThankYou Page Test");
+	@Test 
+	public void TQPageTestPDAM() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"ThankYou Page Test for PDAM Test");
 		try {
 			objTQPage = new ThankYouPage(driver);
 			objTQPage.headerTQPIsDisplayed();
@@ -236,9 +289,9 @@ public class PdamTest extends driverTest {
 		} 
 	}
 	
-	@Test (priority=15)
-	public void DaftarTrxTest() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"Order History Test");
+	@Test 
+	public void DaftarTrxTestPDAM() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"Order History Test for PDAM Test");
 		try {
 			objDaftarTrx = new DaftarTrxPage(driver);
 			objDaftarTrx.introNextIsDisplay();

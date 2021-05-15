@@ -1,83 +1,409 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="23" passed="15" failed="2" skipped="0">
+<testng-results ignored="23" total="193" passed="168" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-08T20:12:55 WIB" name="Suite" finished-at="2021-05-08T20:14:00 WIB" duration-ms="64472">
+  <suite started-at="2021-05-14T17:43:38 WIB" name="Suite" finished-at="2021-05-14T17:44:00 WIB" duration-ms="21909">
     <groups>
     </groups>
-    <test started-at="2021-05-08T20:12:55 WIB" name="Samsat Test" finished-at="2021-05-08T20:14:00 WIB" duration-ms="64472">
-      <class name="Tests.SamsatTest">
-        <test-method is-config="true" signature="startApps()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:12:47 WIB" name="startApps" finished-at="2021-05-08T20:12:55 WIB" duration-ms="8248" status="PASS">
+    <test started-at="2021-05-14T17:43:38 WIB" name="Tests" finished-at="2021-05-14T17:44:00 WIB" duration-ms="21909">
+      <class name="Tests.LoginTest">
+        <test-method is-config="true" signature="startApps()[pri:0, instance:Tests.LoginTest@1725dc0f]" started-at="2021-05-14T17:42:54 WIB" name="startApps" finished-at="2021-05-14T17:43:38 WIB" duration-ms="44041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApps -->
-        <test-method signature="goToLoginPage()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:12:55 WIB" name="goToLoginPage" finished-at="2021-05-08T20:12:57 WIB" duration-ms="1305" status="PASS">
+        <test-method signature="goToLoginPage()[pri:0, instance:Tests.LoginTest@1725dc0f]" started-at="2021-05-14T17:43:40 WIB" name="goToLoginPage" finished-at="2021-05-14T17:43:47 WIB" duration-ms="7335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginPage -->
-        <test-method signature="testLogin()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:12:57 WIB" name="testLogin" finished-at="2021-05-08T20:12:57 WIB" duration-ms="317" status="PASS">
+        <test-method signature="LoginInvalidUsernameMin()[pri:0, instance:Tests.LoginTest@1725dc0f]" started-at="2021-05-14T17:43:48 WIB" name="LoginInvalidUsernameMin" finished-at="2021-05-14T17:43:51 WIB" duration-ms="3735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginInvalidUsernameMin -->
+        <test-method signature="LoginInvalidUsernameMax()[pri:0, instance:Tests.LoginTest@1725dc0f]" started-at="2021-05-14T17:43:51 WIB" name="LoginInvalidUsernameMax" finished-at="2021-05-14T17:43:53 WIB" duration-ms="1713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginInvalidUsernameMax -->
+        <test-method signature="LoginInvalidPasswordMin()[pri:0, instance:Tests.LoginTest@1725dc0f]" started-at="2021-05-14T17:43:53 WIB" name="LoginInvalidPasswordMin" finished-at="2021-05-14T17:43:58 WIB" duration-ms="4866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginInvalidPasswordMin -->
+        <test-method signature="LoginInvalidPasswordMax()[pri:0, instance:Tests.LoginTest@1725dc0f]" started-at="2021-05-14T17:43:58 WIB" name="LoginInvalidPasswordMax" finished-at="2021-05-14T17:43:59 WIB" duration-ms="1375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginInvalidPasswordMax -->
+        <test-method signature="LoginValidUsernamePassword()[pri:0, instance:Tests.LoginTest@1725dc0f]" started-at="2021-05-14T17:43:59 WIB" name="LoginValidUsernamePassword" finished-at="2021-05-14T17:44:00 WIB" duration-ms="941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginValidUsernamePassword -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:Tests.LoginTest@1725dc0f]" started-at="2021-05-14T17:44:02 WIB" name="closeApp" finished-at="2021-05-14T17:44:03 WIB" duration-ms="1046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- Tests.LoginTest -->
+    </test> <!-- Tests -->
+  </suite> <!-- Suite -->
+  <suite started-at="2021-05-14T17:47:02 WIB" name="Suite (1)" finished-at="2021-05-14T17:48:52 WIB" duration-ms="109355">
+    <groups>
+    </groups>
+    <test started-at="2021-05-14T17:47:02 WIB" name="Test PLN" finished-at="2021-05-14T17:48:52 WIB" duration-ms="109355">
+      <class name="Tests.plnTest">
+        <test-method is-config="true" signature="startApps()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:46:35 WIB" name="startApps" finished-at="2021-05-14T17:47:02 WIB" duration-ms="27094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApps -->
+        <test-method signature="goToLoginPagePLN()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:02 WIB" name="goToLoginPagePLN" finished-at="2021-05-14T17:47:04 WIB" duration-ms="1337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPagePLN -->
+        <test-method signature="testLoginPLN()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:04 WIB" name="testLoginPLN" finished-at="2021-05-14T17:47:04 WIB" duration-ms="654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPLN -->
+        <test-method signature="goToPLNTest()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:04 WIB" name="goToPLNTest" finished-at="2021-05-14T17:47:17 WIB" duration-ms="12738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToPLNTest -->
+        <test-method signature="goTokenListrikPLN()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:17 WIB" name="goTokenListrikPLN" finished-at="2021-05-14T17:47:17 WIB" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goTokenListrikPLN -->
+        <test-method signature="inputInvalidMinTokenPLN()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:17 WIB" name="inputInvalidMinTokenPLN" finished-at="2021-05-14T17:47:19 WIB" duration-ms="2108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputInvalidMinTokenPLN -->
+        <test-method signature="inputInvalidMaxTokenPLN()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:19 WIB" name="inputInvalidMaxTokenPLN" finished-at="2021-05-14T17:47:22 WIB" duration-ms="2048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputInvalidMaxTokenPLN -->
+        <test-method signature="inputValidTokenPLN()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:22 WIB" name="inputValidTokenPLN" finished-at="2021-05-14T17:47:23 WIB" duration-ms="1109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputValidTokenPLN -->
+        <test-method signature="setDenomPLN()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:23 WIB" name="setDenomPLN" finished-at="2021-05-14T17:47:23 WIB" duration-ms="510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDenomPLN -->
+        <test-method signature="setNominalPLN()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:23 WIB" name="setNominalPLN" finished-at="2021-05-14T17:47:23 WIB" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setNominalPLN -->
+        <test-method signature="goToCheckOut()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:23 WIB" name="goToCheckOut" finished-at="2021-05-14T17:47:24 WIB" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCheckOut -->
+        <test-method signature="ValidateLogoCO()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:24 WIB" name="ValidateLogoCO" finished-at="2021-05-14T17:47:26 WIB" duration-ms="2683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateLogoCO -->
+        <test-method signature="ValidateTabKonfirmasiPesananCO()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:26 WIB" name="ValidateTabKonfirmasiPesananCO" finished-at="2021-05-14T17:47:26 WIB" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateTabKonfirmasiPesananCO -->
+        <test-method signature="ValidateBoxImageCO()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:26 WIB" name="ValidateBoxImageCO" finished-at="2021-05-14T17:47:26 WIB" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateBoxImageCO -->
+        <test-method signature="ValidateDeleteProductCO()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:26 WIB" name="ValidateDeleteProductCO" finished-at="2021-05-14T17:47:27 WIB" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateDeleteProductCO -->
+        <test-method signature="ValidateItemProductCO()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:27 WIB" name="ValidateItemProductCO" finished-at="2021-05-14T17:47:27 WIB" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateItemProductCO -->
+        <test-method signature="ValidateItemSubTotalCO()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:27 WIB" name="ValidateItemSubTotalCO" finished-at="2021-05-14T17:47:27 WIB" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateItemSubTotalCO -->
+        <test-method signature="ValidateItemTotalCO()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:27 WIB" name="ValidateItemTotalCO" finished-at="2021-05-14T17:47:27 WIB" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateItemTotalCO -->
+        <test-method signature="ValidateItemCouponCO()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:27 WIB" name="ValidateItemCouponCO" finished-at="2021-05-14T17:47:27 WIB" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateItemCouponCO -->
+        <test-method signature="goToPaymentCenter()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:27 WIB" name="goToPaymentCenter" finished-at="2021-05-14T17:47:27 WIB" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToPaymentCenter -->
+        <test-method signature="validateSubTotalPC()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:27 WIB" name="validateSubTotalPC" finished-at="2021-05-14T17:47:38 WIB" duration-ms="10385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSubTotalPC -->
+        <test-method signature="validateIsaku()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:38 WIB" name="validateIsaku" finished-at="2021-05-14T17:47:39 WIB" duration-ms="742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIsaku -->
+        <test-method signature="validateATM()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:39 WIB" name="validateATM" finished-at="2021-05-14T17:47:39 WIB" duration-ms="639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateATM -->
+        <test-method signature="validateBCAVA()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:39 WIB" name="validateBCAVA" finished-at="2021-05-14T17:47:40 WIB" duration-ms="1087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBCAVA -->
+        <test-method signature="validateRekpon()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:40 WIB" name="validateRekpon" finished-at="2021-05-14T17:47:41 WIB" duration-ms="1108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRekpon -->
+        <test-method signature="PilihAlatBayar()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:47:41 WIB" name="PilihAlatBayar" finished-at="2021-05-14T17:48:02 WIB" duration-ms="20175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PilihAlatBayar -->
+        <test-method signature="clickBayar()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:02 WIB" name="clickBayar" finished-at="2021-05-14T17:48:03 WIB" duration-ms="955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickBayar -->
+        <test-method signature="validateHeaderTQPage()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:03 WIB" name="validateHeaderTQPage" finished-at="2021-05-14T17:48:05 WIB" duration-ms="2530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHeaderTQPage -->
+        <test-method signature="validateKetStatusTQPage()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:05 WIB" name="validateKetStatusTQPage" finished-at="2021-05-14T17:48:05 WIB" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateKetStatusTQPage -->
+        <test-method signature="validatePetunjukBayarTQPage()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:05 WIB" name="validatePetunjukBayarTQPage" finished-at="2021-05-14T17:48:05 WIB" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePetunjukBayarTQPage -->
+        <test-method signature="validateGoToOrderHistoryTQPage()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:05 WIB" name="validateGoToOrderHistoryTQPage" finished-at="2021-05-14T17:48:05 WIB" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGoToOrderHistoryTQPage -->
+        <test-method signature="validateGoToHomePageTQPage()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:05 WIB" name="validateGoToHomePageTQPage" finished-at="2021-05-14T17:48:05 WIB" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGoToHomePageTQPage -->
+        <test-method signature="validateRincianPembayaranTQPage()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:05 WIB" name="validateRincianPembayaranTQPage" finished-at="2021-05-14T17:48:05 WIB" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRincianPembayaranTQPage -->
+        <test-method signature="validateKodeBayarTQPage()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:05 WIB" name="validateKodeBayarTQPage" finished-at="2021-05-14T17:48:05 WIB" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateKodeBayarTQPage -->
+        <test-method signature="validateMetodeBayarTQPage()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:05 WIB" name="validateMetodeBayarTQPage" finished-at="2021-05-14T17:48:05 WIB" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMetodeBayarTQPage -->
+        <test-method signature="validateTanggalPesanTQPage()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:05 WIB" name="validateTanggalPesanTQPage" finished-at="2021-05-14T17:48:06 WIB" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTanggalPesanTQPage -->
+        <test-method signature="validateBatasPesanTQPage()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:06 WIB" name="validateBatasPesanTQPage" finished-at="2021-05-14T17:48:06 WIB" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBatasPesanTQPage -->
+        <test-method signature="validateTotalBayarTQPage()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:06 WIB" name="validateTotalBayarTQPage" finished-at="2021-05-14T17:48:06 WIB" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTotalBayarTQPage -->
+        <test-method signature="validateBottomTQPage()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:06 WIB" name="validateBottomTQPage" finished-at="2021-05-14T17:48:09 WIB" duration-ms="3000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBottomTQPage -->
+        <test-method signature="validateLogoOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:09 WIB" name="validateLogoOH" finished-at="2021-05-14T17:48:12 WIB" duration-ms="3290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogoOH -->
+        <test-method signature="validateDownloadAppOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:12 WIB" name="validateDownloadAppOH" finished-at="2021-05-14T17:48:12 WIB" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDownloadAppOH -->
+        <test-method signature="validateFacebookOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:12 WIB" name="validateFacebookOH" finished-at="2021-05-14T17:48:12 WIB" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFacebookOH -->
+        <test-method signature="validateInstagramOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:12 WIB" name="validateInstagramOH" finished-at="2021-05-14T17:48:12 WIB" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInstagramOH -->
+        <test-method signature="validateCustomerCareOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:12 WIB" name="validateCustomerCareOH" finished-at="2021-05-14T17:48:12 WIB" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCustomerCareOH -->
+        <test-method signature="validateDownloadAppCareOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:12 WIB" name="validateDownloadAppCareOH" finished-at="2021-05-14T17:48:12 WIB" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDownloadAppCareOH -->
+        <test-method signature="validateIconOrderHistoryOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:12 WIB" name="validateIconOrderHistoryOH" finished-at="2021-05-14T17:48:12 WIB" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIconOrderHistoryOH -->
+        <test-method signature="validateItemSaldoOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:12 WIB" name="validateItemSaldoOH" finished-at="2021-05-14T17:48:12 WIB" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateItemSaldoOH -->
+        <test-method signature="validateProfileOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:12 WIB" name="validateProfileOH" finished-at="2021-05-14T17:48:12 WIB" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProfileOH -->
+        <test-method signature="validateiconRetailOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:12 WIB" name="validateiconRetailOH" finished-at="2021-05-14T17:48:12 WIB" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateiconRetailOH -->
+        <test-method signature="validateiconVirtualOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:12 WIB" name="validateiconVirtualOH" finished-at="2021-05-14T17:48:12 WIB" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateiconVirtualOH -->
+        <test-method signature="validateiconTravelOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:12 WIB" name="validateiconTravelOH" finished-at="2021-05-14T17:48:13 WIB" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateiconTravelOH -->
+        <test-method signature="validateiconFoodOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:13 WIB" name="validateiconFoodOH" finished-at="2021-05-14T17:48:13 WIB" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateiconFoodOH -->
+        <test-method signature="validateiconTiketOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:13 WIB" name="validateiconTiketOH" finished-at="2021-05-14T17:48:13 WIB" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateiconTiketOH -->
+        <test-method signature="validateVirtualOrderHistoryOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:13 WIB" name="validateVirtualOrderHistoryOH" finished-at="2021-05-14T17:48:13 WIB" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateVirtualOrderHistoryOH -->
+        <test-method signature="validateRetailOrderHistoryOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:13 WIB" name="validateRetailOrderHistoryOH" finished-at="2021-05-14T17:48:13 WIB" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRetailOrderHistoryOH -->
+        <test-method signature="validateTravelOrderHistoryOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:13 WIB" name="validateTravelOrderHistoryOH" finished-at="2021-05-14T17:48:13 WIB" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTravelOrderHistoryOH -->
+        <test-method signature="validateFoodOrderHistoryOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:13 WIB" name="validateFoodOrderHistoryOH" finished-at="2021-05-14T17:48:13 WIB" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFoodOrderHistoryOH -->
+        <test-method signature="validateTiketOrderHistoryOH()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:13 WIB" name="validateTiketOrderHistoryOH" finished-at="2021-05-14T17:48:13 WIB" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTiketOrderHistoryOH -->
+        <test-method signature="validateFilterKonfirmasi()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:13 WIB" name="validateFilterKonfirmasi" finished-at="2021-05-14T17:48:16 WIB" duration-ms="3358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFilterKonfirmasi -->
+        <test-method signature="validateFilterProses()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:16 WIB" name="validateFilterProses" finished-at="2021-05-14T17:48:23 WIB" duration-ms="6438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFilterProses -->
+        <test-method signature="validateFilterBerhasil()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:23 WIB" name="validateFilterBerhasil" finished-at="2021-05-14T17:48:28 WIB" duration-ms="5543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFilterBerhasil -->
+        <test-method signature="validateFilterGagal()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:28 WIB" name="validateFilterGagal" finished-at="2021-05-14T17:48:35 WIB" duration-ms="6221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFilterGagal -->
+        <test-method signature="validateFilterRefund()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:35 WIB" name="validateFilterRefund" finished-at="2021-05-14T17:48:41 WIB" duration-ms="6374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFilterRefund -->
+        <test-method signature="validateFilterSemua()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:41 WIB" name="validateFilterSemua" finished-at="2021-05-14T17:48:47 WIB" duration-ms="5878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFilterSemua -->
+        <test-method signature="DaftarTrxTest()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:47 WIB" name="DaftarTrxTest" finished-at="2021-05-14T17:48:52 WIB" duration-ms="4948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DaftarTrxTest -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:Tests.plnTest@74fe5c40]" started-at="2021-05-14T17:48:53 WIB" name="closeApp" finished-at="2021-05-14T17:48:59 WIB" duration-ms="5177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- Tests.plnTest -->
+    </test> <!-- Test PLN -->
+  </suite> <!-- Suite (1) -->
+  <suite started-at="2021-05-14T17:44:20 WIB" name="Suite (0)" finished-at="2021-05-14T17:46:27 WIB" duration-ms="126950">
+    <groups>
+    </groups>
+    <test started-at="2021-05-14T17:44:20 WIB" name="Tests" finished-at="2021-05-14T17:46:27 WIB" duration-ms="126950">
+      <class name="Tests.HomePageTest">
+        <test-method is-config="true" signature="startApps()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:04 WIB" name="startApps" finished-at="2021-05-14T17:44:20 WIB" duration-ms="16250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApps -->
+        <test-method signature="goToLoginPage()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:20 WIB" name="goToLoginPage" finished-at="2021-05-14T17:44:24 WIB" duration-ms="4332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="testLogin()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:24 WIB" name="testLogin" finished-at="2021-05-14T17:44:25 WIB" duration-ms="613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method signature="goToSamsatTest()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:12:57 WIB" name="goToSamsatTest" finished-at="2021-05-08T20:13:04 WIB" duration-ms="6983" status="PASS">
+        <test-method signature="UITestLogo()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:25 WIB" name="UITestLogo" finished-at="2021-05-14T17:44:34 WIB" duration-ms="8889" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToSamsatTest -->
-        <test-method signature="searchSamsatKeyword()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:13:04 WIB" name="searchSamsatKeyword" finished-at="2021-05-08T20:13:06 WIB" duration-ms="2315" status="PASS">
+        </test-method> <!-- UITestLogo -->
+        <test-method signature="verifyPageTitle()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:34 WIB" name="verifyPageTitle" finished-at="2021-05-14T17:44:34 WIB" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchSamsatKeyword -->
-        <test-method signature="goToSamsatBanten()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:13:06 WIB" name="goToSamsatBanten" finished-at="2021-05-08T20:13:06 WIB" duration-ms="104" status="PASS">
+        </test-method> <!-- verifyPageTitle -->
+        <test-method signature="UITestFacebook()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:34 WIB" name="UITestFacebook" finished-at="2021-05-14T17:44:34 WIB" duration-ms="289" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToSamsatBanten -->
-        <test-method signature="InvalidMinSetKodePembayaran()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:13:06 WIB" name="InvalidMinSetKodePembayaran" finished-at="2021-05-08T20:13:07 WIB" duration-ms="415" status="PASS">
+        </test-method> <!-- UITestFacebook -->
+        <test-method signature="UITestInstagram()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:34 WIB" name="UITestInstagram" finished-at="2021-05-14T17:44:34 WIB" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InvalidMinSetKodePembayaran -->
-        <test-method signature="ValidateInvalidMinKodePembayaran()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:13:07 WIB" name="ValidateInvalidMinKodePembayaran" finished-at="2021-05-08T20:13:13 WIB" duration-ms="5973" status="PASS">
+        </test-method> <!-- UITestInstagram -->
+        <test-method signature="UITestDownload()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:34 WIB" name="UITestDownload" finished-at="2021-05-14T17:44:34 WIB" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateInvalidMinKodePembayaran -->
-        <test-method signature="InvalidMaxSetKodePembayaran()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:13:13 WIB" name="InvalidMaxSetKodePembayaran" finished-at="2021-05-08T20:13:13 WIB" duration-ms="265" status="PASS">
+        </test-method> <!-- UITestDownload -->
+        <test-method signature="UITestLayananPelanggan()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:34 WIB" name="UITestLayananPelanggan" finished-at="2021-05-14T17:44:35 WIB" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InvalidMaxSetKodePembayaran -->
-        <test-method signature="ValidateInvalidMaxKodePembayaran()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:13:13 WIB" name="ValidateInvalidMaxKodePembayaran" finished-at="2021-05-08T20:13:16 WIB" duration-ms="2680" status="PASS">
+        </test-method> <!-- UITestLayananPelanggan -->
+        <test-method signature="UITestDaftarTrx()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:35 WIB" name="UITestDaftarTrx" finished-at="2021-05-14T17:44:35 WIB" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateInvalidMaxKodePembayaran -->
-        <test-method signature="InputValidSetKodePembayaran()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:13:16 WIB" name="InputValidSetKodePembayaran" finished-at="2021-05-08T20:13:16 WIB" duration-ms="239" status="PASS">
+        </test-method> <!-- UITestDaftarTrx -->
+        <test-method signature="UITestItemSaldo()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:35 WIB" name="UITestItemSaldo" finished-at="2021-05-14T17:44:35 WIB" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InputValidSetKodePembayaran -->
-        <test-method signature="ValidateValidKodePembayaran()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:13:16 WIB" name="ValidateValidKodePembayaran" finished-at="2021-05-08T20:13:17 WIB" duration-ms="1066" status="PASS">
+        </test-method> <!-- UITestItemSaldo -->
+        <test-method signature="UITestUserProfile()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:35 WIB" name="UITestUserProfile" finished-at="2021-05-14T17:44:35 WIB" duration-ms="91" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateValidKodePembayaran -->
-        <test-method signature="checkOutSamsat()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:13:17 WIB" name="checkOutSamsat" finished-at="2021-05-08T20:13:29 WIB" duration-ms="11778" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- UITestUserProfile -->
+        <test-method signature="UITestSearch()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:35 WIB" name="UITestSearch" finished-at="2021-05-14T17:44:35 WIB" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UITestSearch -->
+        <test-method signature="UITestBanner()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:35 WIB" name="UITestBanner" finished-at="2021-05-14T17:44:35 WIB" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UITestBanner -->
+        <test-method signature="searchPulsa()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:35 WIB" name="searchPulsa" finished-at="2021-05-14T17:44:41 WIB" duration-ms="6243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPulsa -->
+        <test-method signature="searchPLN()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:41 WIB" name="searchPLN" finished-at="2021-05-14T17:44:48 WIB" duration-ms="6554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPLN -->
+        <test-method signature="searchSamsat()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:48 WIB" name="searchSamsat" finished-at="2021-05-14T17:44:49 WIB" duration-ms="1416" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="section-summary"]/div/div/div[1]/div[5]"}
-  (Session info: chrome=90.0.4430.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-TAVTASOM', ip: '192.168.0.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: host: 'LAPTOP-TAVTASOM', ip: '192.168.0.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51078}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6876ff4b8fd02a49935197b5ad198b36
-*** Element info: {Using=xpath, value=//*[@id="section-summary"]/div/div/div[1]/div[5]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51142}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ff722b37ef62bd60aea6405a379ce07]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="section-summary"]/div/div/div[1]/div[5]"}
-  (Session info: chrome=90.0.4430.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-TAVTASOM', ip: '192.168.0.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: host: 'LAPTOP-TAVTASOM', ip: '192.168.0.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51078}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6876ff4b8fd02a49935197b5ad198b36
-*** Element info: {Using=xpath, value=//*[@id="section-summary"]/div/div/div[1]/div[5]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51142}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ff722b37ef62bd60aea6405a379ce07
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -89,15 +415,23 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-at Pages.CheckoutPage.itemTotalIsDisplay(CheckoutPage.java:139)
-at Tests.SamsatTest.checkOutSamsat(SamsatTest.java:279)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at PageFactory.LoginWithPageFactory.waitElementClickable(LoginWithPageFactory.java:79)
+at Pages.HomePageVirtual.clickSearchSamsatKeyword(HomePageVirtual.java:300)
+at Tests.HomePageTest.searchSamsat(HomePageTest.java:254)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -120,6 +454,7 @@ at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
 at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1213)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
 at org.testng.TestNG.runSuites(TestNG.java:1069)
 at org.testng.TestNG.run(TestNG.java:1037)
@@ -128,79 +463,492 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSamsat -->
+        <test-method signature="searchBPJS()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:44:49 WIB" name="searchBPJS" finished-at="2021-05-14T17:45:01 WIB" duration-ms="11871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBPJS -->
+        <test-method signature="searchPBB()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:45:01 WIB" name="searchPBB" finished-at="2021-05-14T17:45:03 WIB" duration-ms="1390" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-TAVTASOM', ip: '192.168.0.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51142}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ff722b37ef62bd60aea6405a379ce07]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-TAVTASOM', ip: '192.168.0.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51142}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ff722b37ef62bd60aea6405a379ce07
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at Pages.HomePageVirtual.clickSearchPBBKeyword(HomePageVirtual.java:351)
+at Tests.HomePageTest.searchPBB(HomePageTest.java:285)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1213)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPBB -->
+        <test-method signature="searchPDAM()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:45:03 WIB" name="searchPDAM" finished-at="2021-05-14T17:45:11 WIB" duration-ms="8259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPDAM -->
+        <test-method signature="validateCategoryPulsa()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:45:11 WIB" name="validateCategoryPulsa" finished-at="2021-05-14T17:45:15 WIB" duration-ms="3930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryPulsa -->
+        <test-method signature="validateCategoryEmoney()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:45:15 WIB" name="validateCategoryEmoney" finished-at="2021-05-14T17:45:18 WIB" duration-ms="2773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryEmoney -->
+        <test-method signature="validateCategoryESasmat()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:45:18 WIB" name="validateCategoryESasmat" finished-at="2021-05-14T17:45:23 WIB" duration-ms="5281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryESasmat -->
+        <test-method signature="validateCategoryPLN()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:45:23 WIB" name="validateCategoryPLN" finished-at="2021-05-14T17:45:25 WIB" duration-ms="2361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryPLN -->
+        <test-method signature="validateCategoryBPJS()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:45:25 WIB" name="validateCategoryBPJS" finished-at="2021-05-14T17:45:28 WIB" duration-ms="2529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryBPJS -->
+        <test-method signature="validateCategoryInternet()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:45:28 WIB" name="validateCategoryInternet" finished-at="2021-05-14T17:45:32 WIB" duration-ms="3694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryInternet -->
+        <test-method signature="validateCategoryGame()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:45:32 WIB" name="validateCategoryGame" finished-at="2021-05-14T17:45:34 WIB" duration-ms="2564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryGame -->
+        <test-method signature="validateCategoryStreaming()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:45:34 WIB" name="validateCategoryStreaming" finished-at="2021-05-14T17:45:36 WIB" duration-ms="2168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryStreaming -->
+        <test-method signature="validateCategoryGas()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:45:36 WIB" name="validateCategoryGas" finished-at="2021-05-14T17:45:43 WIB" duration-ms="7106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryGas -->
+        <test-method signature="validateCategoryPBB()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:45:43 WIB" name="validateCategoryPBB" finished-at="2021-05-14T17:45:55 WIB" duration-ms="11483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryPBB -->
+        <test-method signature="validateCategoryPDAM()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:45:55 WIB" name="validateCategoryPDAM" finished-at="2021-05-14T17:45:57 WIB" duration-ms="1606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryPDAM -->
+        <test-method signature="validateCategoryTelomPascaBayar()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:45:57 WIB" name="validateCategoryTelomPascaBayar" finished-at="2021-05-14T17:45:59 WIB" duration-ms="2915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryTelomPascaBayar -->
+        <test-method signature="validateCategoryIPL()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:45:59 WIB" name="validateCategoryIPL" finished-at="2021-05-14T17:46:02 WIB" duration-ms="2192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryIPL -->
+        <test-method signature="validateCategoryAsuransi()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:46:02 WIB" name="validateCategoryAsuransi" finished-at="2021-05-14T17:46:04 WIB" duration-ms="2575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryAsuransi -->
+        <test-method signature="validateCategoryMultiFinance()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:46:04 WIB" name="validateCategoryMultiFinance" finished-at="2021-05-14T17:46:08 WIB" duration-ms="3673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryMultiFinance -->
+        <test-method signature="validateCategoryPendidikan()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:46:08 WIB" name="validateCategoryPendidikan" finished-at="2021-05-14T17:46:27 WIB" duration-ms="18837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryPendidikan -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:Tests.HomePageTest@6aba2b86]" started-at="2021-05-14T17:46:29 WIB" name="closeApp" finished-at="2021-05-14T17:46:35 WIB" duration-ms="5593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- Tests.HomePageTest -->
+    </test> <!-- Tests -->
+  </suite> <!-- Suite (0) -->
+  <suite started-at="2021-05-14T17:54:57 WIB" name="Suite (5)" finished-at="2021-05-14T17:56:02 WIB" duration-ms="65362">
+    <groups>
+    </groups>
+    <test started-at="2021-05-14T17:54:57 WIB" name="Samsat Test" finished-at="2021-05-14T17:56:02 WIB" duration-ms="65362">
+      <class name="Tests.SamsatTest">
+        <test-method is-config="true" signature="startApps()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:54:47 WIB" name="startApps" finished-at="2021-05-14T17:54:57 WIB" duration-ms="10398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApps -->
+        <test-method signature="goToLoginPage()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:54:57 WIB" name="goToLoginPage" finished-at="2021-05-14T17:54:58 WIB" duration-ms="1157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="testLogin()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:54:58 WIB" name="testLogin" finished-at="2021-05-14T17:54:59 WIB" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="goToSamsatTest()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:54:59 WIB" name="goToSamsatTest" finished-at="2021-05-14T17:55:18 WIB" duration-ms="19539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSamsatTest -->
+        <test-method signature="goToSamsatBanten()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:55:18 WIB" name="goToSamsatBanten" finished-at="2021-05-14T17:55:18 WIB" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSamsatBanten -->
+        <test-method signature="InvalidMinSetKodePembayaran()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:55:18 WIB" name="InvalidMinSetKodePembayaran" finished-at="2021-05-14T17:55:19 WIB" duration-ms="363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidMinSetKodePembayaran -->
+        <test-method signature="ValidateInvalidMinKodePembayaran()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:55:19 WIB" name="ValidateInvalidMinKodePembayaran" finished-at="2021-05-14T17:55:23 WIB" duration-ms="4751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateInvalidMinKodePembayaran -->
+        <test-method signature="InvalidMaxSetKodePembayaran()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:55:23 WIB" name="InvalidMaxSetKodePembayaran" finished-at="2021-05-14T17:55:24 WIB" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidMaxSetKodePembayaran -->
+        <test-method signature="ValidateInvalidMaxKodePembayaran()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:55:24 WIB" name="ValidateInvalidMaxKodePembayaran" finished-at="2021-05-14T17:55:26 WIB" duration-ms="2785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateInvalidMaxKodePembayaran -->
+        <test-method signature="InputValidSetKodePembayaran()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:55:26 WIB" name="InputValidSetKodePembayaran" finished-at="2021-05-14T17:55:27 WIB" duration-ms="297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InputValidSetKodePembayaran -->
+        <test-method signature="ValidateValidKodePembayaran()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:55:27 WIB" name="ValidateValidKodePembayaran" finished-at="2021-05-14T17:55:28 WIB" duration-ms="1184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateValidKodePembayaran -->
+        <test-method signature="checkOutSamsat()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:55:28 WIB" name="checkOutSamsat" finished-at="2021-05-14T17:55:30 WIB" duration-ms="2515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutSamsat -->
-        <test-method signature="goToPaymentCenteronSamsat()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:13:29 WIB" name="goToPaymentCenteronSamsat" finished-at="2021-05-08T20:13:29 WIB" duration-ms="133" status="PASS">
+        <test-method signature="goToPaymentCenteronSamsat()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:55:30 WIB" name="goToPaymentCenteronSamsat" finished-at="2021-05-14T17:55:31 WIB" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToPaymentCenteronSamsat -->
-        <test-method signature="PilihAlatBayaronSamsat()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:13:29 WIB" name="PilihAlatBayaronSamsat" finished-at="2021-05-08T20:13:49 WIB" duration-ms="20155" status="PASS">
+        <test-method signature="PilihAlatBayaronSamsat()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:55:31 WIB" name="PilihAlatBayaronSamsat" finished-at="2021-05-14T17:55:51 WIB" duration-ms="20363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PilihAlatBayaronSamsat -->
-        <test-method signature="clickBayaronSamsat()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:13:49 WIB" name="clickBayaronSamsat" finished-at="2021-05-08T20:13:50 WIB" duration-ms="977" status="PASS">
+        <test-method signature="clickBayaronSamsat()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:55:51 WIB" name="clickBayaronSamsat" finished-at="2021-05-14T17:55:52 WIB" duration-ms="982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickBayaronSamsat -->
-        <test-method signature="TQPageTestonSamsat()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:13:50 WIB" name="TQPageTestonSamsat" finished-at="2021-05-08T20:13:56 WIB" duration-ms="5927" status="PASS">
+        <test-method signature="TQPageTestonSamsat()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:55:52 WIB" name="TQPageTestonSamsat" finished-at="2021-05-14T17:55:58 WIB" duration-ms="6034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TQPageTestonSamsat -->
-        <test-method signature="DaftarTrxTestonSamsat()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:13:56 WIB" name="DaftarTrxTestonSamsat" finished-at="2021-05-08T20:14:00 WIB" duration-ms="3770" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Ringkasan Pembayaran] but found [null]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Ringkasan Pembayaran] but found [null]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at Tests.SamsatTest.DaftarTrxTestonSamsat(SamsatTest.java:392)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="DaftarTrxTestonSamsat()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:55:58 WIB" name="DaftarTrxTestonSamsat" finished-at="2021-05-14T17:56:02 WIB" duration-ms="4353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DaftarTrxTestonSamsat -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:Tests.SamsatTest@4facf68f]" started-at="2021-05-08T20:14:00 WIB" name="closeApp" finished-at="2021-05-08T20:14:01 WIB" duration-ms="1047" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:Tests.SamsatTest@30c15d8b]" started-at="2021-05-14T17:56:03 WIB" name="closeApp" finished-at="2021-05-14T17:56:04 WIB" duration-ms="880" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- Tests.SamsatTest -->
     </test> <!-- Samsat Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Suite (5) -->
+  <suite started-at="2021-05-14T17:56:09 WIB" name="Master Suite" finished-at="2021-05-14T17:56:09 WIB" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- Master Suite -->
+  <suite started-at="2021-05-14T17:53:29 WIB" name="Suite (4)" finished-at="2021-05-14T17:54:44 WIB" duration-ms="74750">
+    <groups>
+    </groups>
+    <test started-at="2021-05-14T17:53:29 WIB" name="BPJS Test" finished-at="2021-05-14T17:54:44 WIB" duration-ms="74750">
+      <class name="Tests.BpjsTest">
+        <test-method is-config="true" signature="startApps()[pri:0, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:52:59 WIB" name="startApps" finished-at="2021-05-14T17:53:29 WIB" duration-ms="29613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApps -->
+        <test-method signature="goToLoginPage()[pri:1, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:53:29 WIB" name="goToLoginPage" finished-at="2021-05-14T17:53:32 WIB" duration-ms="2489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="testLogin()[pri:2, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:53:32 WIB" name="testLogin" finished-at="2021-05-14T17:53:32 WIB" duration-ms="513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="goToBPJSTest()[pri:3, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:53:32 WIB" name="goToBPJSTest" finished-at="2021-05-14T17:53:42 WIB" duration-ms="10084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToBPJSTest -->
+        <test-method signature="goToBpjsKesehatan()[pri:5, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:53:42 WIB" name="goToBpjsKesehatan" finished-at="2021-05-14T17:53:43 WIB" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToBpjsKesehatan -->
+        <test-method signature="inputInvalidMinNomorBpjs()[pri:6, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:53:43 WIB" name="inputInvalidMinNomorBpjs" finished-at="2021-05-14T17:53:44 WIB" duration-ms="1373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputInvalidMinNomorBpjs -->
+        <test-method signature="validateInvalidMinNomorBpjs()[pri:7, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:53:44 WIB" name="validateInvalidMinNomorBpjs" finished-at="2021-05-14T17:53:47 WIB" duration-ms="2997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInvalidMinNomorBpjs -->
+        <test-method signature="inputInvalidMaxnNomorBpjs()[pri:8, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:53:47 WIB" name="inputInvalidMaxnNomorBpjs" finished-at="2021-05-14T17:53:48 WIB" duration-ms="1257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputInvalidMaxnNomorBpjs -->
+        <test-method signature="validateInvalidMaxNomorBpjs()[pri:9, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:53:48 WIB" name="validateInvalidMaxNomorBpjs" finished-at="2021-05-14T17:54:06 WIB" duration-ms="17065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInvalidMaxNomorBpjs -->
+        <test-method signature="inputValidnNomorBpjs()[pri:10, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:54:06 WIB" name="inputValidnNomorBpjs" finished-at="2021-05-14T17:54:08 WIB" duration-ms="2192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputValidnNomorBpjs -->
+        <test-method signature="validateValidNomorBpjs()[pri:11, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:54:08 WIB" name="validateValidNomorBpjs" finished-at="2021-05-14T17:54:09 WIB" duration-ms="1090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValidNomorBpjs -->
+        <test-method signature="goToPaymentCenter()[pri:13, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:54:09 WIB" name="goToPaymentCenter" finished-at="2021-05-14T17:54:11 WIB" duration-ms="1756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToPaymentCenter -->
+        <test-method signature="PilihAlatBayar()[pri:14, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:54:11 WIB" name="PilihAlatBayar" finished-at="2021-05-14T17:54:31 WIB" duration-ms="20617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PilihAlatBayar -->
+        <test-method signature="clickBayar()[pri:15, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:54:31 WIB" name="clickBayar" finished-at="2021-05-14T17:54:32 WIB" duration-ms="940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickBayar -->
+        <test-method signature="TQPageTest()[pri:16, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:54:32 WIB" name="TQPageTest" finished-at="2021-05-14T17:54:39 WIB" duration-ms="7265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TQPageTest -->
+        <test-method signature="DaftarTrxTest()[pri:17, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:54:39 WIB" name="DaftarTrxTest" finished-at="2021-05-14T17:54:44 WIB" duration-ms="4354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DaftarTrxTest -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:Tests.BpjsTest@55182842]" started-at="2021-05-14T17:54:45 WIB" name="closeApp" finished-at="2021-05-14T17:54:47 WIB" duration-ms="1026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- Tests.BpjsTest -->
+    </test> <!-- BPJS Test -->
+  </suite> <!-- Suite (4) -->
+  <suite started-at="2021-05-14T17:52:07 WIB" name="Suite (3)" finished-at="2021-05-14T17:52:58 WIB" duration-ms="51039">
+    <groups>
+    </groups>
+    <test started-at="2021-05-14T17:52:07 WIB" name="Test PDAM" finished-at="2021-05-14T17:52:58 WIB" duration-ms="51039">
+      <class name="Tests.PdamTest">
+        <test-method is-config="true" signature="startApps()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:51:54 WIB" name="startApps" finished-at="2021-05-14T17:52:07 WIB" duration-ms="12374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApps -->
+        <test-method signature="goToLoginPagePDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:07 WIB" name="goToLoginPagePDAM" finished-at="2021-05-14T17:52:08 WIB" duration-ms="1146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPagePDAM -->
+        <test-method signature="testLoginPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:08 WIB" name="testLoginPDAM" finished-at="2021-05-14T17:52:08 WIB" duration-ms="475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPDAM -->
+        <test-method signature="goToPdamTest()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:08 WIB" name="goToPdamTest" finished-at="2021-05-14T17:52:18 WIB" duration-ms="9158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToPdamTest -->
+        <test-method signature="pilihNamaPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:18 WIB" name="pilihNamaPDAM" finished-at="2021-05-14T17:52:18 WIB" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pilihNamaPDAM -->
+        <test-method signature="inputTextPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:18 WIB" name="inputTextPDAM" finished-at="2021-05-14T17:52:18 WIB" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputTextPDAM -->
+        <test-method signature="selectInputTextPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:18 WIB" name="selectInputTextPDAM" finished-at="2021-05-14T17:52:18 WIB" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectInputTextPDAM -->
+        <test-method signature="inputInvalidMinCustomerNoPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:18 WIB" name="inputInvalidMinCustomerNoPDAM" finished-at="2021-05-14T17:52:19 WIB" duration-ms="927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputInvalidMinCustomerNoPDAM -->
+        <test-method signature="ValidateInvalidMinCustomerNoPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:19 WIB" name="ValidateInvalidMinCustomerNoPDAM" finished-at="2021-05-14T17:52:21 WIB" duration-ms="2437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateInvalidMinCustomerNoPDAM -->
+        <test-method signature="inputInvalidMaxCustomerNoPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:21 WIB" name="inputInvalidMaxCustomerNoPDAM" finished-at="2021-05-14T17:52:22 WIB" duration-ms="318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputInvalidMaxCustomerNoPDAM -->
+        <test-method signature="ValidateInvalidMaxCustomerNoPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:22 WIB" name="ValidateInvalidMaxCustomerNoPDAM" finished-at="2021-05-14T17:52:22 WIB" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateInvalidMaxCustomerNoPDAM -->
+        <test-method signature="inputValidCustomerNoPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:22 WIB" name="inputValidCustomerNoPDAM" finished-at="2021-05-14T17:52:22 WIB" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputValidCustomerNoPDAM -->
+        <test-method signature="ValidateValidCustomerNoPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:22 WIB" name="ValidateValidCustomerNoPDAM" finished-at="2021-05-14T17:52:22 WIB" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateValidCustomerNoPDAM -->
+        <test-method signature="checkOutPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:22 WIB" name="checkOutPDAM" finished-at="2021-05-14T17:52:26 WIB" duration-ms="3749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutPDAM -->
+        <test-method signature="goToPaymentCenterPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:26 WIB" name="goToPaymentCenterPDAM" finished-at="2021-05-14T17:52:26 WIB" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToPaymentCenterPDAM -->
+        <test-method signature="PilihAlatBayarPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:26 WIB" name="PilihAlatBayarPDAM" finished-at="2021-05-14T17:52:47 WIB" duration-ms="20604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PilihAlatBayarPDAM -->
+        <test-method signature="clickBayarPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:47 WIB" name="clickBayarPDAM" finished-at="2021-05-14T17:52:48 WIB" duration-ms="997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickBayarPDAM -->
+        <test-method signature="TQPageTestPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:48 WIB" name="TQPageTestPDAM" finished-at="2021-05-14T17:52:53 WIB" duration-ms="5626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TQPageTestPDAM -->
+        <test-method signature="DaftarTrxTestPDAM()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:53 WIB" name="DaftarTrxTestPDAM" finished-at="2021-05-14T17:52:58 WIB" duration-ms="4486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DaftarTrxTestPDAM -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:Tests.PdamTest@6302bbb1]" started-at="2021-05-14T17:52:58 WIB" name="closeApp" finished-at="2021-05-14T17:52:59 WIB" duration-ms="902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- Tests.PdamTest -->
+    </test> <!-- Test PDAM -->
+  </suite> <!-- Suite (3) -->
+  <suite started-at="2021-05-14T17:50:17 WIB" name="Suite (2)" finished-at="2021-05-14T17:51:49 WIB" duration-ms="92097">
+    <groups>
+    </groups>
+    <test started-at="2021-05-14T17:50:17 WIB" name="Test PBB" finished-at="2021-05-14T17:51:49 WIB" duration-ms="92097">
+      <class name="Tests.PbbTest">
+        <test-method is-config="true" signature="startApps()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:48:59 WIB" name="startApps" finished-at="2021-05-14T17:50:17 WIB" duration-ms="78192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApps -->
+        <test-method signature="goToLoginPagePBB()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:50:17 WIB" name="goToLoginPagePBB" finished-at="2021-05-14T17:50:23 WIB" duration-ms="5570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPagePBB -->
+        <test-method signature="testLoginPBB()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:50:23 WIB" name="testLoginPBB" finished-at="2021-05-14T17:50:24 WIB" duration-ms="1287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPBB -->
+        <test-method signature="goToPbbTest()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:50:24 WIB" name="goToPbbTest" finished-at="2021-05-14T17:50:40 WIB" duration-ms="16036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToPbbTest -->
+        <test-method signature="goToPbbJakarta()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:50:40 WIB" name="goToPbbJakarta" finished-at="2021-05-14T17:50:40 WIB" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToPbbJakarta -->
+        <test-method signature="inputInvalidMinNomorPajak()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:50:40 WIB" name="inputInvalidMinNomorPajak" finished-at="2021-05-14T17:50:42 WIB" duration-ms="1488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputInvalidMinNomorPajak -->
+        <test-method signature="pilihTahunPajak()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:50:42 WIB" name="pilihTahunPajak" finished-at="2021-05-14T17:50:42 WIB" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pilihTahunPajak -->
+        <test-method signature="validateInputInvalidMinNomorPajak()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:50:42 WIB" name="validateInputInvalidMinNomorPajak" finished-at="2021-05-14T17:50:48 WIB" duration-ms="5608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInputInvalidMinNomorPajak -->
+        <test-method signature="inputInvalidMaxNomorPajak()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:50:48 WIB" name="inputInvalidMaxNomorPajak" finished-at="2021-05-14T17:50:49 WIB" duration-ms="1179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputInvalidMaxNomorPajak -->
+        <test-method signature="validateInputInvalidMaxNomorPajak()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:50:49 WIB" name="validateInputInvalidMaxNomorPajak" finished-at="2021-05-14T17:51:09 WIB" duration-ms="19829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInputInvalidMaxNomorPajak -->
+        <test-method signature="inputValidNomorPajak()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:51:09 WIB" name="inputValidNomorPajak" finished-at="2021-05-14T17:51:10 WIB" duration-ms="1232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputValidNomorPajak -->
+        <test-method signature="validateInputValidNomorPajak()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:51:10 WIB" name="validateInputValidNomorPajak" finished-at="2021-05-14T17:51:11 WIB" duration-ms="1074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInputValidNomorPajak -->
+        <test-method signature="checkOutPbb()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:51:11 WIB" name="checkOutPbb" finished-at="2021-05-14T17:51:15 WIB" duration-ms="3585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutPbb -->
+        <test-method signature="goToPaymentCenterPBB()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:51:15 WIB" name="goToPaymentCenterPBB" finished-at="2021-05-14T17:51:15 WIB" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToPaymentCenterPBB -->
+        <test-method signature="PilihAlatBayarPBB()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:51:15 WIB" name="PilihAlatBayarPBB" finished-at="2021-05-14T17:51:36 WIB" duration-ms="21238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PilihAlatBayarPBB -->
+        <test-method signature="clickBayarPBB()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:51:36 WIB" name="clickBayarPBB" finished-at="2021-05-14T17:51:45 WIB" duration-ms="8461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickBayarPBB -->
+        <test-method signature="DaftarTrxTestPBB()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:51:45 WIB" name="DaftarTrxTestPBB" finished-at="2021-05-14T17:51:49 WIB" duration-ms="4252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DaftarTrxTestPBB -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:Tests.PbbTest@7d8995e]" started-at="2021-05-14T17:51:51 WIB" name="closeApp" finished-at="2021-05-14T17:51:54 WIB" duration-ms="3217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- Tests.PbbTest -->
+    </test> <!-- Test PBB -->
+  </suite> <!-- Suite (2) -->
 </testng-results>

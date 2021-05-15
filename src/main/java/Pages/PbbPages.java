@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -60,6 +61,8 @@ public class PbbPages extends LoginWithPageFactory {
 	@FindBy (xpath="//*[@id=\"square_pbb-kab-asahan\"]/div[2]/div/div/div/div[5]/div/div[2]/button")
 	public WebElement buttonBayarPBBTangsel;
 	
+	@FindBy (xpath ="//*[@id=\"square_pbb-dki-jakarta\"]/div[2]/div/div/div/div[3]/div[1]/div[2]")
+	public WebElement ErorMessagePbb;
 	
 	
 	
@@ -102,7 +105,9 @@ public class PbbPages extends LoginWithPageFactory {
 	public void inputNomorPajak(String strNomorPajak) {
 		try {
 			waitElementLong();
+			inputNomorPajak.clear();
 			inputNomorPajak.sendKeys(strNomorPajak);
+			inputNomorPajak.sendKeys(Keys.ENTER);
 			Thread.sleep(5);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -237,5 +242,19 @@ public class PbbPages extends LoginWithPageFactory {
 		} catch (InterruptedException e) { 
 			e.printStackTrace();
 		}
+	}
+	
+	public String ErorMessageBpjsIsDisplay() {
+		try {
+			waitElementClickable(ErorMessagePbb);
+			String actualText = ErorMessagePbb.getText();
+			String expectedText = "Nomor Telpon, Billing Id, NOP tidak ditemukan";
+			Assert.assertEquals(actualText, expectedText);
+		
+		
+		} catch (NoSuchElementException e) {
+			e.printStackTrace();
+		}
+		return ErorMessagePbb.getText();
 	}
 }

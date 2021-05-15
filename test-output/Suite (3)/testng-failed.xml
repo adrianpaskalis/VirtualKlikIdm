@@ -8,8 +8,7 @@
     <classes>
       <class name="Tests.PdamTest">
         <methods>
-          <include name="DaftarTrxTest"/>
-          <include name="btnCancelIsDisplay"/>
+          <include name="checkOutPDAM"/>
           <include name="startApps"/>
           <include name="closeApp"/>
         </methods>

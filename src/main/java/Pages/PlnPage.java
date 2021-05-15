@@ -2,6 +2,7 @@ package Pages;
 
 import java.util.NoSuchElementException;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,7 +28,10 @@ public class PlnPage extends LoginWithPageFactory {
 	public WebElement pilih20k;
 	
 	@FindBy (xpath="//*[@id=\"3f74698b-6cc6-4f84-b507-bb02eb2f9567\"]/div[3]/div/div[2]/button")
-	public WebElement buttonBayar; 
+	public WebElement buttonBayar;  
+	
+	@FindBy (xpath ="//*[@id=\"3f74698b-6cc6-4f84-b507-bb02eb2f9567\"]/div[1]/div/div[2]")
+	public WebElement ErorMessagePLN; 
 
 	
  	public PlnPage(WebDriver driver) {
@@ -37,11 +41,11 @@ public class PlnPage extends LoginWithPageFactory {
 	public  void  goToPLN() throws NoSuchElementException{
 		try { 
 			
-			waitElement();
+			waitElementClickable(IconPLN);
 			IconPLN.click();
 			
 		} catch (NoSuchElementException e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		} 
 		
 	} 
@@ -50,11 +54,11 @@ public class PlnPage extends LoginWithPageFactory {
 	public  void  gotToTokenListrikPLN() throws NoSuchElementException{
 		try { 
 			
-			waitElement();
+			waitElementClickable(TokenListrikPLN);
 			TokenListrikPLN.click();
 			
 		} catch (NoSuchElementException e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		} 
 		
 	} 
@@ -62,11 +66,13 @@ public class PlnPage extends LoginWithPageFactory {
 	public  void  setInquiryPLN(String strInquiryPln) throws NoSuchElementException{
 		try { 
 			
-			waitElement();
+			waitElementClickable(InputToken);
+			InputToken.clear();
 			InputToken.sendKeys(strInquiryPln);
+		
 			
 		} catch (NoSuchElementException e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		} 
 		
 	} 
@@ -74,34 +80,48 @@ public class PlnPage extends LoginWithPageFactory {
 	
 	public void setDenomPLN() throws NoSuchElementException{
 		try {
-			waitElement(); 
+			waitElementClickable(pilihDenom); 
 			pilihDenom.click();
 			
 		} catch (NoSuchElementException e) {
-			
+			e.printStackTrace();
 		}
 	} 
 	
 	
 	public void chooseDenomPLN() throws NoSuchElementException{
 		try {
-			waitElement(); 
+			waitElementClickable(pilih20k); 
 			pilih20k.click();
 			
 		} catch (NoSuchElementException e) {
-			
+			e.printStackTrace();
 		}
 	} 
 	
 	
 	public void clickButtonBayar() throws NoSuchElementException{
 		try {
-			waitElementLong(); 
+			waitElementClickable(buttonBayar); 
 			buttonBayar.click();
 			waitElementLong(); 
 			
 		} catch (NoSuchElementException e) {
-			
+			e.printStackTrace();
 		}
-	}
+	} 
+	
+	public String ErorMessagePLNIsDisplay() {
+		try {
+			waitElementClickable(ErorMessagePLN);
+			String actualText = ErorMessagePLN.getText();
+			String expectedText = "NOMOR METER YANG ANDA MASUKKAN SALAH, MOHON TELITI KEMBALI";
+			Assert.assertEquals(actualText, expectedText);
+		
+		
+		} catch (NoSuchElementException e) {
+			e.printStackTrace();
+		}
+		return ErorMessagePLN.getText();
+	} 
 }

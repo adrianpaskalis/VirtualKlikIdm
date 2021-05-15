@@ -4,14 +4,13 @@
 <listeners>
 		<listener class-name="PageFactory.VirtualListener" />
 	</listeners>
-  <test thread-count="5" name="BPJS Test" group-by-instances="true">
-    <classes>
-      <class name="Tests.BpjsTest">
-      		<methods> 
+  		<test thread-count="5" name="BPJS Test" group-by-instances="true">
+   			 <classes>
+     			 <class name="Tests.BpjsTest">
+      				<methods> 
       					<include name="goToLoginPage"> </include> 
       					<include name="testLogin"> </include> 
       					<include name="goToBPJSTest"> </include>
-      					<include name="searchBPJSKeyword"> </include>	
       					<include name="goToBpjsKesehatan"> </include> 
       					<include name="inputInvalidMinNomorBpjs"> </include>
       					<include name="validateInvalidMinNomorBpjs"> </include>
@@ -24,9 +23,8 @@
       					<include name="clickBayar"> </include>
       					<include name="TQPageTest"> </include>
       					<include name="DaftarTrxTest"> </include>
-      		</methods>
-      
-      </class> 
-    </classes>
-  </test> <!-- Samsat Test -->
+      				</methods>
+            </class> 
+    	</classes>
+ 	 </test> <!-- Samsat Test -->
 </suite> <!-- Suite -->

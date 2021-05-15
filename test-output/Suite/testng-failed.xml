@@ -4,16 +4,15 @@
   <listeners>
     <listener class-name="PageFactory.VirtualListener"/>
   </listeners>
-  <test thread-count="5" name="Samsat Test(failed)">
+  <test thread-count="5" name="Test PLN(failed)">
     <classes>
-      <class name="Tests.SamsatTest">
+      <class name="Tests.plnTest">
         <methods>
-          <include name="checkOutSamsat"/>
-          <include name="DaftarTrxTestonSamsat"/>
+          <include name="inputInvalidMaxTokenPLN"/>
           <include name="startApps"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- Tests.SamsatTest -->
+      </class> <!-- Tests.plnTest -->
     </classes>
-  </test> <!-- Samsat Test(failed) -->
+  </test> <!-- Test PLN(failed) -->
 </suite> <!-- Failed suite [Suite] -->

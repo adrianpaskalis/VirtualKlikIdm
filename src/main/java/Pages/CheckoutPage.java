@@ -35,6 +35,16 @@ public class CheckoutPage extends LoginWithPageFactory {
 	@FindBy(xpath="//*[@id=\"section-summary\"]/div/div/div[1]/div[5]")
 	public WebElement itemTotal; 
 	
+	@FindBy (xpath="//*[@id=\"section-summary\"]/div/div/div[1]/div[2]")
+	public WebElement subTotalSamsat; 
+	
+	@FindBy (xpath="	//*[@id=\"section-summary\"]/div/div/div[1]/div[4]")
+	public WebElement TotalSamsat; 
+	
+	//*[@id="section-summary"]/div/div/div[1]/div[1] 
+	//*[@id="section-summary"]/div/div/div[1]/div[2]
+	//*[@id="section-summary"]/div/div/div[1]/div[3]
+	
 	@FindBy (xpath="//*[@id=\"couponInput\"]") 
 	public WebElement inputCoupon;
 	
@@ -132,6 +142,30 @@ public class CheckoutPage extends LoginWithPageFactory {
 		
 	}
 	
+	public void itemSubtotalSamsatIsDisplay() throws NoSuchElementException{
+		try {
+			
+			waitElement();
+			Boolean status = subTotalSamsat.isDisplayed();
+			Assert.assertTrue(status);
+			
+		}catch (NoSuchElementException e) {
+			// TODO: handle exception
+		} 
+		
+	}
+	public void itemTotalSamsatIsDisplay() throws NoSuchElementException{
+		try {
+			
+			waitElement();
+			Boolean status = TotalSamsat.isDisplayed();
+			Assert.assertTrue(status);
+			
+		}catch (NoSuchElementException e) {
+			// TODO: handle exception
+		} 
+		
+	}
 	public void itemTotalIsDisplay() throws NoSuchElementException{
 		try {
 			

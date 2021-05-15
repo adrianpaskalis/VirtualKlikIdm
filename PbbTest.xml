@@ -5,44 +5,28 @@
 		<listener class-name="PageFactory.VirtualListener" />
 	</listeners>
 	
-  <test thread-count="5" name="Test PBB">
+  <test thread-count="5" name="Test PBB" group-by-instances="true">
     <classes>
       <class name="Tests.PbbTest">
-      <methods> 
-      					<include name="goToLoginPage"> 
-      						</include> 
-      					<include name="testLogin"> 
-      						</include> 
-      					<include name="goToPbbTest"> 
-      						</include> 
-      					<include name="goToPbbJakarta"> 
-      						</include> 
-      					<include name="inputNomorPajak"> 
-      						</include> 
-      					<include name="logoPbbInputIsDisplay"> 
-      						</include> 
-      					<include name="btnCancelIsDisplay"> 
-      						</include> 
-      					<include name="clickListPajak"> 
-      						</include> 
-      					<include name="textInputTahunPajakIsDisplay"> 
-      						</include>
-      					<include name="pilihTahunPajak"> 
-      						</include>
-      						<include name="goToCheckoutPbbJakarta"> 
-      						</include>
-      						<include name="checkOutPbb"> 
-      						</include>
-      						<include name="goToPaymentCenter"> 
-      						</include>
-      						<include name="PilihAlatBayar"> 
-      						</include>
-      						<include name="clickBayar"> 
-      						</include>
-      						<include name="TQPageTest"> 
-      						</include>
-      						<include name="DaftarTrxTest"> 
-      						</include>
+      		<methods>
+      					<include name="goToLoginPagePBB"> </include>
+      					<include name="testLoginPBB"> </include> 
+      					<include name="goToPbbTest"> </include> 
+      					<include name="goToPbbJakarta"> </include> 
+      					<include name="inputInvalidMinNomorPajak"> </include> 
+      					<include name="pilihTahunPajak"> </include> 
+      					<include name="validateInputInvalidMinNomorPajak"> </include>
+      					<include name="inputInvalidMaxNomorPajak"> </include> 
+      					<include name="pilihTahunPajak"> </include> 
+      					<include name="validateInputInvalidMaxNomorPajak"> </include>
+      					<include name="inputValidNomorPajak"> </include> 
+      					<include name="pilihTahunPajak"> </include> 
+      					<include name="validateInputValidNomorPajak"> </include>
+      					<include name="checkOutPbb"> </include>
+      					<include name="goToPaymentCenterPBB"></include>
+      					<include name="PilihAlatBayarPBB"> </include>
+      					<include name="clickBayarPBB"></include>
+      					<include name="DaftarTrxTestPBB"> </include>
       			</methods>
       </class>
     </classes>

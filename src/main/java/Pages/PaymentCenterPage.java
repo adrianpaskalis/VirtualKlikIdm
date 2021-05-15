@@ -6,6 +6,8 @@ import java.util.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import PageFactory.LoginWithPageFactory;
@@ -30,17 +32,104 @@ public class PaymentCenterPage extends LoginWithPageFactory {
 	@FindBy (id="BPISAKU")
 	public WebElement IsakuID;
 	
+	@FindBy (id="RKPON")
+	public WebElement cimbRekpon;
+	
+	@FindBy (id="saldoKlikCheck")
+	public WebElement saldoKlik;
+	
+	@FindBy (xpath ="//*[@id=\"openSubTotal\"]")
+	public WebElement SubTotal; 
+	
 	@FindBy (xpath="//*[@id=\"popupSeamlessISaku\"]/div/div[1]/div/div/div[1]/a")
 	public WebElement CloseIsaku;
 	
 	@FindBy (id="payButton")
 	public WebElement btnBayar; 
+	
+	@FindBy (xpath = "//*[@id=\"pc-backChannel\"]/a")
+	public WebElement btnBack;
+	
+	
 
 	public PaymentCenterPage(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	} 
 	
+	public void validateIsaku() throws NoSuchElementException {
+		try {
+			
+		
+			IsakuXpath.click();
+			
+		
+			btnBack.click();
+		}catch (NoSuchElementException e) {
+			e.printStackTrace();
+		}	
+	}
+	
+	public void validateBCAVA() throws NoSuchElementException {
+		try {
+			
+			
+			BcaVA.click();
+			
+			btnBack.click();
+		}catch (NoSuchElementException e) {
+			e.printStackTrace();
+		}	
+	} 
+	
+	public void validateATM() throws NoSuchElementException {
+		try {
+		
+			ATM.click();
+			
+			btnBack.click();
+		}catch (NoSuchElementException e) {
+			e.printStackTrace();
+		}	
+	}
+	
+	public void validateRekpon() throws NoSuchElementException {
+		try {
+			
+		
+			cimbRekpon.click();
+			
+			btnBack.click();
+			defaultContent();
+		}catch (NoSuchElementException e) {
+			e.printStackTrace();
+		}	
+	}
+	
+	
+	public void validateSaldoKlik() throws NoSuchElementException {
+		try {
+			PaymentCenterFrame();
+			waitElementClickable(cimbRekpon);
+			cimbRekpon.click();
+		
+			btnBack.click();
+			
+		}catch (NoSuchElementException e) {
+			e.printStackTrace();
+		}	
+	}
+	
+	public void validateSubTotal() throws NoSuchElementException {
+		try {
+			PaymentCenterFrame();
+			SubTotal.click();
+			
+	
+		}catch (NoSuchElementException e) {
+			e.printStackTrace();
+		}	
+	}
 	public void pickPayment() throws NoSuchElementException{
 		try {
 			waitElementLong();

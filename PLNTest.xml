@@ -9,37 +9,73 @@
    <classes>
       <class name="Tests.plnTest"> 
       	<methods> 
-      		<include name="goToLoginPage"> 
-      			</include> 
-      		<include name="testLogin"> 
-      			</include> 
-      		<include name="goToPLNTest"> 
-      			</include> 
-      		<include name="goTokenListrikPLN"> 
-      			</include> 
-      		<include name="inputTokenPLN"> 
-      			</include> 
-      		<include name="setDenomPLN"> 
-      			</include> 
-      		<include name="setNominalPLN"> 
-      			</include> 
-      		<include name="goToCheckOut"> 
-      			</include> 
-      		<include name="checkOutPLN"> 
-      			</include> 
-      		<include name="goToPaymentCenter"> 
-      			</include> 
-      		<include name="PilihAlatBayar"> 
-      			</include>
-      		<include name="clickBayar"> 
-      			</include> 
-      			<include name="TQPageTest"> 
-      			</include> 
-      			<include name="DaftarTrxTest"> 
-      			</include> 
-      			
-      		
-      		
+      		<include name="goToLoginPagePLN"> </include> 
+      		<include name="testLoginPLN"> </include> 
+      		<include name="goToPLNTest"> </include> 
+      		<include name="goTokenListrikPLN"> </include> 
+      		<include name="inputInvalidMinTokenPLN"> </include> 
+      		<include name="inputInvalidMaxTokenPLN"> </include> 
+      		<include name="inputValidTokenPLN"> </include> 
+      		<include name="setDenomPLN"> </include> 
+      		<include name="setNominalPLN"> </include> 
+      		<include name="goToCheckOut"> </include> 
+      		<include name="ValidateLogoCO"> </include> 
+      		<include name="ValidateTabKonfirmasiPesananCO"> </include> 
+      		<include name="ValidateBoxImageCO"> </include> 
+      		<include name="ValidateDeleteProductCO"> </include> 
+      		<include name="ValidateItemProductCO"> </include> 
+      		<include name="ValidateItemSubTotalCO"> </include> 		
+      		<include name="ValidateItemTotalCO"> </include> 
+      		<include name="ValidateItemCouponCO"> </include> 
+      		<include name="goToPaymentCenter"> </include> 
+      		<include name="validateSubTotalPC"> </include> 
+      		<include name="validateIsaku"> </include> 
+      		<include name="validateATM"> </include> 
+      	    <include name="validateBCAVA"> </include> 
+      		<include name="validateRekpon"> </include> 
+     		<include name="PilihAlatBayar"> 	</include>
+      		<include name="clickBayar"> </include> 
+      		<include name="validateHeaderTQPage"> </include> 
+      		<include name="validateKetStatusTQPage"> </include> 
+      		<include name="validatePetunjukBayarTQPage"> </include> 
+      		<include name="validateGoToOrderHistoryTQPage"> </include> 
+      		<include name="validateGoToHomePageTQPage"> </include> 
+      		<include name="validateRincianPembayaranTQPage"> </include> 
+      		<include name="validateKodeBayarTQPage"> </include> 
+      		<include name="validateMetodeBayarTQPage"> </include> 
+      		<include name="validateTanggalPesanTQPage"> </include> 
+      		<include name="validateBatasPesanTQPage"> </include> 
+      		<include name="validateTotalBayarTQPage"> </include> 
+      		<include name="validateBottomTQPage"> </include> 
+      		<include name="validateLogoOH"> </include> 
+      		<include name="validateDownloadAppOH"> </include> 
+      		<include name="validateFacebookOH"> </include> 
+      		<include name="validateInstagramOH"> </include> 
+      		<include name="validateCustomerCareOH"> </include> 		
+     	 	<include name="validateDownloadAppCareOH"> </include> 
+      		<include name="validateIconOrderHistoryOH"> </include> 
+      		<include name="validateItemSaldoOH"> </include> 
+      		<include name="validateProfileOH"> </include> 		
+      		<include name="validateiconRetailOH"> </include> 
+      		<include name="validateiconVirtualOH"> </include> 
+      		<include name="validateiconTravelOH"> </include> 
+      		<include name="validateiconFoodOH"> </include> 		
+      		<include name="validateiconVirtualOH"> </include> 
+      		<include name="validateiconTravelOH"> </include> 
+      		<include name="validateiconFoodOH"> </include> 		
+      		<include name="validateiconTiketOH"> </include> 
+      		<include name="validateVirtualOrderHistoryOH"> </include> 
+      		<include name="validateRetailOrderHistoryOH"> </include> 		
+      		<include name="validateTravelOrderHistoryOH"> </include> 
+      		<include name="validateFoodOrderHistoryOH"> </include> 
+      		<include name="validateTiketOrderHistoryOH"> </include> 		
+      		<include name="validateFilterKonfirmasi"> </include> 
+      		<include name="validateFilterProses"> </include> 
+      		<include name="validateFilterBerhasil"> </include> 		
+      		<include name="validateFilterGagal"> </include> 
+      		<include name="validateFilterRefund"> </include> 
+      		<include name="validateFilterSemua"> </include> 
+      		<include name="DaftarTrxTest"> </include> 		
       		    		
       			</methods>
       	

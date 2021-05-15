@@ -8,8 +8,8 @@
     <classes>
       <class name="Tests.HomePageTest">
         <methods>
-          <include name="btnPrevBannerVirtualValidate"/>
-          <include name="btnNextBannerVirtualValidate"/>
+          <include name="searchPBB"/>
+          <include name="searchSamsat"/>
           <include name="startApps"/>
           <include name="closeApp"/>
         </methods>

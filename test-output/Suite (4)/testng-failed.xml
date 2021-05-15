@@ -4,18 +4,23 @@
   <listeners>
     <listener class-name="PageFactory.VirtualListener"/>
   </listeners>
-  <test thread-count="5" name="Test Pulsa(failed)">
+  <test thread-count="5" name="BPJS Test(failed)">
     <classes>
-      <class name="Tests.PulsaTest">
+      <class name="Tests.BpjsTest">
         <methods>
-          <include name="pilihPulsa25"/>
+          <include name="validateInvalidMaxNomorBpjs"/>
+          <include name="goToPaymentCenter"/>
+          <include name="searchBPJSKeyword"/>
+          <include name="clickBayar"/>
+          <include name="PilihAlatBayar"/>
+          <include name="TQPageTest"/>
+          <include name="validateInvalidMinNomorBpjs"/>
           <include name="DaftarTrxTest"/>
-          <include name="checkOutPulsa"/>
-          <include name="goToCheckOutPulsa"/>
+          <include name="validateValidNomorBpjs"/>
           <include name="startApps"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- Tests.PulsaTest -->
+      </class> <!-- Tests.BpjsTest -->
     </classes>
-  </test> <!-- Test Pulsa(failed) -->
+  </test> <!-- BPJS Test(failed) -->
 </suite> <!-- Failed suite [Suite (4)] -->

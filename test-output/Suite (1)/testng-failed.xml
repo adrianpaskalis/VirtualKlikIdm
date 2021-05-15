@@ -8,7 +8,10 @@
     <classes>
       <class name="Tests.plnTest">
         <methods>
-          <include name="DaftarTrxTest"/>
+          <include name="validateRekpon"/>
+          <include name="validateIsaku"/>
+          <include name="validateSubTotalPC"/>
+          <include name="validateATM"/>
           <include name="startApps"/>
           <include name="closeApp"/>
         </methods>

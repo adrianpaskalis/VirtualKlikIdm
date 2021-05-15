@@ -81,7 +81,7 @@ public class LoginTest extends driverTest {
 //	}
 		@Test 
 		public void LoginInvalidPasswordMin() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"TS01-EP04 - Login Valid Username Invalid Min Pass");
+		VirtualTestReports.getTest().log(Status.INFO,"TS01-EP03 - Login Valid Username Invalid Pass Min");
 		try { 
 			objLogin  = new LoginPage(driver);
 			objLogin.setUserName("0895634338579");
@@ -98,7 +98,7 @@ public class LoginTest extends driverTest {
 		
 		@Test 
 		public void LoginInvalidPasswordMax() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"TS01-EP05 - Login Valid Username Invalid Max Pass");
+		VirtualTestReports.getTest().log(Status.INFO,"TS01-EP04 - Login Valid Username Invalid Pass Max");
 		try { 
 			objLogin  = new LoginPage(driver);
 			objLogin.setUserName("0895634338579");
@@ -113,19 +113,19 @@ public class LoginTest extends driverTest {
 		
 		
 		@Test 
-			public void LoginValidUsernamePassword() throws InterruptedException{
-			VirtualTestReports.getTest().log(Status.INFO,"TS01-EP03 - Login Valid Username and Valid Password");
-			try { 
-				objLogin  = new LoginPage(driver);
-				objLogin.setUserName("087881744704");
-				objLogin.setPassword("indomaret");	
-				objLogin.clikcLogin(); 
-				Thread.sleep(20);
-				
-				} catch (InterruptedException e) {
-				e.printStackTrace();
-				}
-			}
+		public void LoginValidUsernamePassword() throws InterruptedException{
+		VirtualTestReports.getTest().log(Status.INFO,"TS01-EP05 - Login Valid Username and Valid Password");
+		try { 
+			objLogin  = new LoginPage(driver);
+			objLogin.setUserName("087881744704");
+			objLogin.setPassword("indomaret");	
+			objLogin.clikcLogin(); 
+			Thread.sleep(20);
+			
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 		
 } 
 

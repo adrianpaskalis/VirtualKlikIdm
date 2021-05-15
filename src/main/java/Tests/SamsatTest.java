@@ -275,8 +275,8 @@ public class SamsatTest extends driverTest {
 			objCheckOutPage.boxImagesIsDisplay();
 			objCheckOutPage.deleteProduIsDisplay();
 			objCheckOutPage.itemProdukVirtualIsDisplay();
-			objCheckOutPage.itemSubtotalIsDisplay();
-			objCheckOutPage.itemTotalIsDisplay();
+			objCheckOutPage.itemSubtotalSamsatIsDisplay();
+			objCheckOutPage.itemTotalSamsatIsDisplay();
 			objCheckOutPage.inputCouponIsDisplay();
 			objCheckOutPage.buttonAddCouponIsDisplay();
 			Thread.sleep(10);

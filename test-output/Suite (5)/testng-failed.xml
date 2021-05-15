@@ -9,18 +9,8 @@
       <class name="Tests.SamsatTest">
         <methods>
           <include name="checkOutSamsat"/>
-          <include name="TQPageTest"/>
-          <include name="verifyPageTitel"/>
-          <include name="goToSamsatBanten"/>
-          <include name="closeApp"/>
-          <include name="PilihAlatBayar"/>
-          <include name="goToSamsatTest"/>
-          <include name="goToCheckOutSamsatBanten"/>
-          <include name="DaftarTrxTest"/>
-          <include name="clickBayar"/>
-          <include name="goToPaymentCenter"/>
-          <include name="homepageTest"/>
           <include name="startApps"/>
+          <include name="closeApp"/>
         </methods>
       </class> <!-- Tests.SamsatTest -->
     </classes>

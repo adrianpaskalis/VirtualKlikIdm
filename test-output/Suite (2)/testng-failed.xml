@@ -8,9 +8,21 @@
     <classes>
       <class name="Tests.PbbTest">
         <methods>
-          <include name="DaftarTrxTest"/>
-          <include name="startApps"/>
+          <include name="clickBayarPBB"/>
+          <include name="validateInputValidNomorPajak"/>
+          <include name="DaftarTrxTestPBB"/>
+          <include name="validateInputInvalidMaxNomorPajak"/>
+          <include name="inputValidNomorPajak"/>
+          <include name="goToPbbJakarta"/>
+          <include name="checkOutPbb"/>
+          <include name="inputInvalidMinNomorPajak"/>
+          <include name="PilihAlatBayarPBB"/>
+          <include name="validateInputInvalidMinNomorPajak"/>
           <include name="closeApp"/>
+          <include name="inputInvalidMaxNomorPajak"/>
+          <include name="pilihTahunPajak"/>
+          <include name="goToPaymentCenterPBB"/>
+          <include name="startApps"/>
         </methods>
       </class> <!-- Tests.PbbTest -->
     </classes>
