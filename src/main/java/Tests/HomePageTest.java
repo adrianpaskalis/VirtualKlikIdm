@@ -63,7 +63,7 @@ public class HomePageTest extends driverTest {
 	@Test 
 	public void verifyPageTitle() {
 		try { 
-			VirtualTestReports.getTest().log(Status.INFO,"TS02-TC01 Validate Title Virtual KlikIndomaret");
+			VirtualTestReports.getTest().log(Status.INFO,"Validate Title Virtual KlikIndomaret");
 			String expectedTitle = "Beli Pulsa Online, Mudah & Aman | KlikIndomaret"; 
 	        String actualTitle = driver.getTitle();
 	        Assert.assertEquals(actualTitle, expectedTitle);

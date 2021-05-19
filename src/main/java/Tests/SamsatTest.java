@@ -119,7 +119,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test 
 	public void InvalidMinSetKodePembayaran() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP09 Input Invalid Min Customer Number on Samsat");
+		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP12 Input Invalid Min Customer Number on Samsat");
 		try { 
 			objSamsatPage  = new SamsatPage(driver);
 			objSamsatPage.setKodePembayaran("9");	
@@ -133,7 +133,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test 
 	public void ValidateInvalidMinKodePembayaran() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP09 Input Invalid Min Customer Number on Samsat");
+		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP13 Validate Input Invalid Min Customer Number on Samsat");
 		try {
 			objSamsatPage = new SamsatPage(driver);
 			objSamsatPage.clickButtonBayarBanten();
@@ -146,7 +146,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test 
 	public void InvalidMaxSetKodePembayaran() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP10 Input Invalid Max Customer Number on Samsat");
+		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP14 Input Invalid Max Customer Number on Samsat");
 		try { 
 			objSamsatPage  = new SamsatPage(driver);
 			objSamsatPage.setKodePembayaran("99999999999999900000000");	
@@ -160,7 +160,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test 
 	public void ValidateInvalidMaxKodePembayaran() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP10 Input Invalid Min Customer Number on Samsat");
+		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP15 Validate Input Invalid Min Customer Number on Samsat");
 		try {
 			objSamsatPage = new SamsatPage(driver);
 			objSamsatPage.clickButtonBayarBanten();
@@ -173,7 +173,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test 
 	public void InputValidSetKodePembayaran() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP11 Input Valid Customer Number on Samsat");
+		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP16 Input Valid Customer Number on Samsat");
 		try { 
 			objSamsatPage  = new SamsatPage(driver);
 			objSamsatPage.setKodePembayaran("DEV00000");	
@@ -187,7 +187,7 @@ public class SamsatTest extends driverTest {
 	
 	@Test 
 	public void ValidateValidKodePembayaran() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP11 Input Input Valid Customer Number on Samsat");
+		VirtualTestReports.getTest().log(Status.INFO, "TS05-EP17 Input Input Valid Customer Number on Samsat");
 		try {
 			objSamsatPage = new SamsatPage(driver);
 			objSamsatPage.clickButtonBayarBanten();

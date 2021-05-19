@@ -21,15 +21,12 @@
       					<include name="UITestUserProfile"> </include> 
       					<include name="UITestSearch"> </include> 
       					<include name="UITestBanner"> </include> 
-      					
       					<include name="searchPulsa"> </include> 
       					<include name="searchPLN"> </include> 
       					<include name="searchSamsat"> </include>
       					<include name="searchBPJS"> </include>
       					<include name="searchPBB"> </include>
       					<include name="searchPDAM"> </include>
-      									
-      					
       					<include name="validateCategoryPulsa"> </include> 
       					<include name="validateCategoryEmoney"> </include> 
       					<include name="validateCategoryESasmat"> </include> 

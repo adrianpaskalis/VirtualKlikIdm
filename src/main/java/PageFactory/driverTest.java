@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeTest;
 
 public class driverTest {  
 	public String testUrl ;
-	public WebDriver driver;
+	public static WebDriver driver;
 	
 	@BeforeSuite
 	public void startApps() {

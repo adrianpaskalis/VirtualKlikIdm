@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>33/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 14 17:44:20 WIB 2021</td>
+<td>Started on:</td><td>Wed May 19 16:56:05 WIB 2021</td>
 </tr>
-<tr><td>Total time:</td><td>126 seconds (126950 ms)</td>
+<tr><td>Total time:</td><td>74 seconds (74237 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,56 +76,19 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Tests.HomePageTest.searchPBB()'><b>searchPBB</b><br>Test class: Tests.HomePageTest</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=90.0.4430.212)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-TAVTASOM&apos;, ip: &apos;192.168.0.111&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51142}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0ff722b37ef62bd60aea6405a379ce07
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at Pages.HomePageVirtual.clickSearchPBBKeyword(HomePageVirtual.java:351)
+<td><div><pre>java.lang.AssertionError: expected [https://virtual.klikindomaret.com/category/pbb?permalink=pbb-kab-cianjur&amp;productid=7d0e066b-0ccd-4247-85e2-18f8c92e7946] but found [https://virtual.klikindomaret.com/category/pbb?permalink=pbb-dki-jakarta&amp;productid=9ab3cce3-22e1-4f73-a228-cd5ef58b92bd]
+	at Pages.HomePageVirtual.clickSearchPBBKeyword(HomePageVirtual.java:371)
 	at Tests.HomePageTest.searchPBB(HomePageTest.java:285)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1658578510", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1658578510'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=90.0.4430.212)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-TAVTASOM&apos;, ip: &apos;192.168.0.111&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51142}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0ff722b37ef62bd60aea6405a379ce07
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at Pages.HomePageVirtual.clickSearchPBBKeyword(HomePageVirtual.java:351)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace356519935", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace356519935'><pre>java.lang.AssertionError: expected [https://virtual.klikindomaret.com/category/pbb?permalink=pbb-kab-cianjur&amp;productid=7d0e066b-0ccd-4247-85e2-18f8c92e7946] but found [https://virtual.klikindomaret.com/category/pbb?permalink=pbb-dki-jakarta&amp;productid=9ab3cce3-22e1-4f73-a228-cd5ef58b92bd]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at Pages.HomePageVirtual.clickSearchPBBKeyword(HomePageVirtual.java:371)
 	at Tests.HomePageTest.searchPBB(HomePageTest.java:285)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
@@ -157,75 +120,23 @@ Session ID: 0ff722b37ef62bd60aea6405a379ce07
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>6</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.searchSamsat()'><b>searchSamsat</b><br>Test class: Tests.HomePageTest</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=90.0.4430.212)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-TAVTASOM&apos;, ip: &apos;192.168.0.111&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51142}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0ff722b37ef62bd60aea6405a379ce07
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at PageFactory.LoginWithPageFactory.waitElementClickable(LoginWithPageFactory.java:79)
-	at Pages.HomePageVirtual.clickSearchSamsatKeyword(HomePageVirtual.java:300)
+<td><div><pre>java.lang.AssertionError: expected [https://virtual.klikindomaret.com/category/ESamsat?permalink=e-samsat-banten&amp;productid=907af331-ce4b-43d4-a56a-0879c8e68f37] but found [https://virtual.klikindomaret.com/category/ESamsat?permalink=e-samsat-jawa-timur&amp;productid=0deb539c-928d-4198-ac57-36ca5e27e44e]
+	at Pages.HomePageVirtual.clickSearchSamsatKeyword(HomePageVirtual.java:305)
 	at Tests.HomePageTest.searchSamsat(HomePageTest.java:254)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace698437724", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace698437724'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=90.0.4430.212)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-TAVTASOM&apos;, ip: &apos;192.168.0.111&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51142}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0ff722b37ef62bd60aea6405a379ce07
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
-	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at PageFactory.LoginWithPageFactory.waitElementClickable(LoginWithPageFactory.java:79)
-	at Pages.HomePageVirtual.clickSearchSamsatKeyword(HomePageVirtual.java:300)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1240328647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1240328647'><pre>java.lang.AssertionError: expected [https://virtual.klikindomaret.com/category/ESamsat?permalink=e-samsat-banten&amp;productid=907af331-ce4b-43d4-a56a-0879c8e68f37] but found [https://virtual.klikindomaret.com/category/ESamsat?permalink=e-samsat-jawa-timur&amp;productid=0deb539c-928d-4198-ac57-36ca5e27e44e]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at Pages.HomePageVirtual.clickSearchSamsatKeyword(HomePageVirtual.java:305)
 	at Tests.HomePageTest.searchSamsat(HomePageTest.java:254)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
@@ -257,8 +168,8 @@ Session ID: 0ff722b37ef62bd60aea6405a379ce07
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>4</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -271,167 +182,167 @@ Session ID: 0ff722b37ef62bd60aea6405a379ce07
 <td title='Tests.HomePageTest.UITestBanner()'><b>UITestBanner</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.UITestDaftarTrx()'><b>UITestDaftarTrx</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.UITestDownload()'><b>UITestDownload</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.UITestFacebook()'><b>UITestFacebook</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.UITestInstagram()'><b>UITestInstagram</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.UITestItemSaldo()'><b>UITestItemSaldo</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.UITestLayananPelanggan()'><b>UITestLayananPelanggan</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.UITestLogo()'><b>UITestLogo</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>8</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>4</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.UITestSearch()'><b>UITestSearch</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.UITestUserProfile()'><b>UITestUserProfile</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.goToLoginPage()'><b>goToLoginPage</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>4</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>0</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.searchBPJS()'><b>searchBPJS</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>11</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>6</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.searchPDAM()'><b>searchPDAM</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
 <td>8</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.searchPLN()'><b>searchPLN</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>6</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>4</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.searchPulsa()'><b>searchPulsa</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>6</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>5</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.testLogin()'><b>testLogin</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryAsuransi()'><b>validateCategoryAsuransi</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
 <td>2</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryBPJS()'><b>validateCategoryBPJS</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>2</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>1</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryESasmat()'><b>validateCategoryESasmat</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>5</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>1</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryEmoney()'><b>validateCategoryEmoney</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>2</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>1</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryGame()'><b>validateCategoryGame</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>2</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>1</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryGas()'><b>validateCategoryGas</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>7</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>1</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryIPL()'><b>validateCategoryIPL</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>2</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>1</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryInternet()'><b>validateCategoryInternet</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>3</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>1</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryMultiFinance()'><b>validateCategoryMultiFinance</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>3</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>2</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryPBB()'><b>validateCategoryPBB</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>11</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>2</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryPDAM()'><b>validateCategoryPDAM</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
 <td>1</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryPLN()'><b>validateCategoryPLN</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>2</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>1</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryPendidikan()'><b>validateCategoryPendidikan</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>18</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>5</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryPulsa()'><b>validateCategoryPulsa</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>3</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>1</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryStreaming()'><b>validateCategoryStreaming</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>2</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>1</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.validateCategoryTelomPascaBayar()'><b>validateCategoryTelomPascaBayar</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
-<td>2</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>1</td>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 <tr>
 <td title='Tests.HomePageTest.verifyPageTitle()'><b>verifyPageTitle</b><br>Test class: Tests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>Tests.HomePageTest@6aba2b86</td></tr>
+<td>Tests.HomePageTest@5e0826e7</td></tr>
 </table><p>
 </body>
 </html>

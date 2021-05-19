@@ -8,15 +8,11 @@
     <classes>
       <class name="Tests.BpjsTest">
         <methods>
-          <include name="validateInvalidMaxNomorBpjs"/>
           <include name="goToPaymentCenter"/>
-          <include name="searchBPJSKeyword"/>
           <include name="clickBayar"/>
           <include name="PilihAlatBayar"/>
           <include name="TQPageTest"/>
-          <include name="validateInvalidMinNomorBpjs"/>
           <include name="DaftarTrxTest"/>
-          <include name="validateValidNomorBpjs"/>
           <include name="startApps"/>
           <include name="closeApp"/>
         </methods>

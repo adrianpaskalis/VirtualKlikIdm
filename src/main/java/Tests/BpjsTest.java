@@ -112,7 +112,7 @@ public class BpjsTest extends driverTest{
 	
 	@Test (priority=7)
 	public void validateInvalidMinNomorBpjs() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP06 Input Invalid Customer Number on BPJS");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP07 Validate Input Invalid Customer Number on BPJS");
 		try {
 			objBpjsPage = new BpjsPages(driver);
 			objBpjsPage.clickButtonBayarBpjsKesehatan();
@@ -126,7 +126,7 @@ public class BpjsTest extends driverTest{
 	
 	@Test (priority=8)
 	public void inputInvalidMaxnNomorBpjs() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP07 Input Invalid Max Customer Number on BPJS");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP08 Input Invalid Max Customer Number on BPJS");
 		try { 
 			objBpjsPage  = new BpjsPages(driver);
 			objBpjsPage.inputCustomerNumberBpjs("9999999999999");	
@@ -140,7 +140,7 @@ public class BpjsTest extends driverTest{
 	
 	@Test (priority=9)
 	public void validateInvalidMaxNomorBpjs() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP07 Input Invalid Max Customer Number on BPJS");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP09 Validate Input Invalid Max Customer Number on BPJS");
 		try {
 			objBpjsPage = new BpjsPages(driver);
 			objBpjsPage.clickButtonBayarBpjsKesehatan();
@@ -154,7 +154,7 @@ public class BpjsTest extends driverTest{
 	
 	@Test (priority=10)
 	public void inputValidnNomorBpjs() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP08 Input Valid  Customer Number on BPJS");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP10 Input Valid  Customer Number on BPJS");
 		try { 
 			objBpjsPage  = new BpjsPages(driver);
 			objBpjsPage.inputCustomerNumberBpjs("DEV00000");	
@@ -168,7 +168,7 @@ public class BpjsTest extends driverTest{
 	
 	@Test (priority=11)
 	public void validateValidNomorBpjs() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP08 Input Valid  Customer Number on BPJS");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP11 Validate Input Valid  Customer Number on BPJS");
 		try {
 			objBpjsPage = new BpjsPages(driver);
 			objBpjsPage.clickButtonBayarBpjsKesehatan();

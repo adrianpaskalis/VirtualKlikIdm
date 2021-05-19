@@ -120,7 +120,7 @@ public class PdamTest extends driverTest {
 	
 	@Test 
 	public void inputInvalidMinCustomerNoPDAM() { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP12 Input InValid Min Customer Number on PDAM");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP18 Input InValid Min Customer Number on PDAM");
 		try {
 			objPdamPage = new PdamPages(driver); 
 			objPdamPage.inputCustomerNo("9");
@@ -132,7 +132,7 @@ public class PdamTest extends driverTest {
 	
 	@Test 
 	public void ValidateInvalidMinCustomerNoPDAM() { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP12 Input InValid Min Customer Number on PDAM");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP19 Input InValid Min Customer Number on PDAM");
 		try {
 			objPdamPage = new PdamPages(driver); 
 			objPdamPage.clickButtonBayarPDAM();
@@ -145,7 +145,7 @@ public class PdamTest extends driverTest {
 	
 	@Test 
 	public void inputInvalidMaxCustomerNoPDAM() { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP13 Input InValid Min Customer Number on PDAM");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP20 Input InValid Min Customer Number on PDAM");
 		try {
 			objPdamPage = new PdamPages(driver); 
 			objPdamPage.inputCustomerNo("99999999999999900000000");
@@ -157,7 +157,7 @@ public class PdamTest extends driverTest {
 	
 	@Test 
 	public void ValidateInvalidMaxCustomerNoPDAM() { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP13 Input InValid Min Customer Number on PDAM");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP21 Input InValid Min Customer Number on PDAM");
 		try {
 			objPdamPage = new PdamPages(driver); 
 			objPdamPage.clickButtonBayarPDAM();
@@ -171,7 +171,7 @@ public class PdamTest extends driverTest {
 	
 	@Test 
 	public void inputValidCustomerNoPDAM() { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP14 Input Valid Customer Number on PDAM");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP22 Input Valid Customer Number on PDAM");
 		try {
 			objPdamPage = new PdamPages(driver); 
 			objPdamPage.inputCustomerNo("DEV00000");
@@ -183,7 +183,7 @@ public class PdamTest extends driverTest {
 	
 	@Test 
 	public void ValidateValidCustomerNoPDAM() { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP14 Input Valid Customer Number on PDAM");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP23 Validate Input Valid Customer Number on PDAM");
 		try {
 			objPdamPage = new PdamPages(driver); 
 			objPdamPage.clickButtonBayarPDAM();

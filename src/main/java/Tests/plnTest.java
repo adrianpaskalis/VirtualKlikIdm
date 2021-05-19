@@ -76,7 +76,7 @@ public class plnTest extends driverTest {
 	} 
 	@Test 
 	public void inputInvalidMinTokenPLN() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP18 Input Invalid Min Customer Number PLN");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP30 Input Invalid Min Customer Number PLN");
 		try { 
 			objPlnPage  = new PlnPage(driver);
 			objPlnPage.setInquiryPLN("00000000000");
@@ -90,7 +90,7 @@ public class plnTest extends driverTest {
 	
 	@Test 
 	public void inputInvalidMaxTokenPLN() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP19 Input Invalid Max Customer Number PLN");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP31 Input Invalid Max Customer Number PLN");
 		try { 
 			objPlnPage  = new PlnPage(driver);
 			objPlnPage.setInquiryPLN("99999999999");
@@ -103,7 +103,7 @@ public class plnTest extends driverTest {
 	}  
 	@Test 
 	public void inputValidTokenPLN() throws InterruptedException{
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP20 Input Valid Customer Number PLN");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP32 Input Valid Customer Number PLN");
 		try { 
 			objPlnPage  = new PlnPage(driver);
 			objPlnPage.setInquiryPLN("10000000100");

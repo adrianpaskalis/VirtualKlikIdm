@@ -117,7 +117,7 @@ public class PbbTest extends driverTest {
 	
 	@Test
 	public void inputInvalidMinNomorPajak() { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP15 Input Invalid Min Nomor Pajak PBB");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP24 Input Invalid Min Nomor Pajak PBB");
 		try { 
 			objPbbPage  = new PbbPages(driver);
 			objPbbPage.inputNomorPajak("99");
@@ -132,7 +132,7 @@ public class PbbTest extends driverTest {
 	
 	@Test
 	public void inputInvalidMaxNomorPajak() { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP16 Input Invalid Max Nomor Pajak PBB");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP26 Input Invalid Max Nomor Pajak PBB");
 		try { 
 			objPbbPage  = new PbbPages(driver);
 			objPbbPage.inputNomorPajak("00000000000000000");
@@ -147,7 +147,7 @@ public class PbbTest extends driverTest {
 	
 	@Test
 	public void inputValidNomorPajak() { 
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP17 Input Valid  Nomor Pajak PBB");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP28 Input Valid  Nomor Pajak PBB");
 		try { 
 			objPbbPage  = new PbbPages(driver);
 			objPbbPage.inputNomorPajak("DEV00000");
@@ -286,7 +286,7 @@ public class PbbTest extends driverTest {
 	
 	@Test 
 	public void validateInputInvalidMinNomorPajak() {
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP15 Input Invalid Min Nomor Pajak PBB");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP25 Input Invalid Min Nomor Pajak PBB");
 		try {
 			objPbbPage = new PbbPages(driver); 
 			objPbbPage.clickBtnBayarPBB();
@@ -300,7 +300,7 @@ public class PbbTest extends driverTest {
 	
 	@Test 
 	public void validateInputInvalidMaxNomorPajak() {
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP16 Input Invalid Max Nomor Pajak PBB");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP27 Input Invalid Max Nomor Pajak PBB");
 		try {
 			objPbbPage = new PbbPages(driver); 
 			objPbbPage.clickBtnBayarPBB();
@@ -314,7 +314,7 @@ public class PbbTest extends driverTest {
 	
 	@Test 
 	public void validateInputValidNomorPajak() {
-		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP17 Input Valid  Nomor Pajak PBB");
+		VirtualTestReports.getTest().log(Status.INFO,"TS05-EP29 Input Valid  Nomor Pajak PBB");
 		try {
 			objPbbPage = new PbbPages(driver); 
 			objPbbPage.clickBtnBayarPBB();

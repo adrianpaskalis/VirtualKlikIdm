@@ -300,6 +300,10 @@ public class HomePageVirtual extends LoginWithPageFactory {
 			waitElementClickable(resultSearchSamsatBanten);
 			resultSearchSamsatBanten.click();
 			Thread.sleep(1000);
+			String expectedResult = "https://virtual.klikindomaret.com/category/ESamsat?permalink=e-samsat-jawa-timur&productid=0deb539c-928d-4198-ac57-36ca5e27e44e";
+			String actualResult = driver.getCurrentUrl();
+			Assert.assertEquals(expectedResult, actualResult);
+			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 			}
@@ -311,6 +315,10 @@ public class HomePageVirtual extends LoginWithPageFactory {
 			waitElementClickable(resultSearchPulsa);
 			resultSearchPulsa.click();
 			Thread.sleep(1000);
+			String expectedResult = "https://virtual.klikindomaret.com/?fde94763-8c56-45a3-abc9-6efe422f321c";
+			String actualResult = driver.getCurrentUrl();
+			Assert.assertEquals(expectedResult, actualResult);
+			Thread.sleep(1000);
 		}catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -321,6 +329,10 @@ public class HomePageVirtual extends LoginWithPageFactory {
 			//waitElement(); 
 			waitElementClickable(resultSearchPLN);
 			resultSearchPLN.click();
+			Thread.sleep(1000);
+			String expectedResult = "https://virtual.klikindomaret.com/category/pln?permalink=pra-bayar&productid=3f74698b-6cc6-4f84-b507-bb02eb2f9567";
+			String actualResult = driver.getCurrentUrl();
+			Assert.assertEquals(expectedResult, actualResult);
 			Thread.sleep(1000);
 		}catch (InterruptedException e) {
 			e.printStackTrace();
@@ -336,6 +348,10 @@ public class HomePageVirtual extends LoginWithPageFactory {
 			//waitElementClickable();
 			resultSearchBPJS.click();
 			Thread.sleep(1000);
+			String expectedResult = "https://virtual.klikindomaret.com/category/bpjs?permalink=bpjs-kesehatan&productid=d45cd255-b92a-47db-bc2b-54a519403a2a";
+			String actualResult = driver.getCurrentUrl();
+			Assert.assertEquals(expectedResult, actualResult);
+			Thread.sleep(1000);
 		}catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -350,6 +366,10 @@ public class HomePageVirtual extends LoginWithPageFactory {
             .until(ExpectedConditions.elementToBeClickable(resultSearchPBB));
 			resultSearchPBB.click();
 			Thread.sleep(1000);
+			String expectedResult = "https://virtual.klikindomaret.com/category/pbb?permalink=pbb-dki-jakarta&productid=9ab3cce3-22e1-4f73-a228-cd5ef58b92bd";
+			String actualResult = driver.getCurrentUrl();
+			Assert.assertEquals(expectedResult, actualResult);
+			Thread.sleep(1000);
 		}catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -361,6 +381,11 @@ public class HomePageVirtual extends LoginWithPageFactory {
 			waitElementClickable(resultSearchPDAM);
 			resultSearchPDAM.click();
 			Thread.sleep(1000);
+			String expectedResult = "https://virtual.klikindomaret.com/category/pdam";
+			String actualResult = driver.getCurrentUrl();
+			Assert.assertEquals(expectedResult, actualResult);
+			Thread.sleep(1000);
+			
 		}catch (InterruptedException e) {
 			e.printStackTrace();
 		}
